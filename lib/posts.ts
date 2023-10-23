@@ -22,8 +22,9 @@ export function getSortedPostsData() {
 
     // Combine the data with the id
     return {
-      id,
-      ...matterResult.data,
+      id: id,
+      date: matterResult.data.date,
+      title: matterResult.data.title,
     };
   });
   // Sort posts by date
@@ -47,7 +48,15 @@ export function getAllPostIds() {
   });
 }
 
-export async function getPostData(id) {
+interface AllPostData {
+  id: string;
+  contentHtml: string;
+  date: Date;
+  title: string; // Add any other properties you expect to return
+  // Add any other properties you expect to return
+}
+
+export async function getPostData(id: string): Promise<AllPostData> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -62,8 +71,9 @@ export async function getPostData(id) {
 
   // Combine the data with the id and contentHtml
   return {
-    id,
-    contentHtml,
-    ...matterResult.data,
+    id: id,
+    contentHtml: contentHtml,
+    title: matterResult.data.title,
+    date: matterResult.data.date,
   };
 }

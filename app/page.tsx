@@ -6,10 +6,9 @@ import Date from '../components/date';
 
 export default function Home() {
   const allPostsData = getSortedPostsData();
-  console.log(allPostsData);
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -31,6 +30,6 @@ export default function Home() {
           ))}
         </ul>
       </section>
-    </Layout>
+    </>
   );
 }

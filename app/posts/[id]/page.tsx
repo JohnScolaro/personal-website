@@ -3,10 +3,7 @@ import Date from '../../../components/date';
 import { getPostData } from '../../../lib/posts';
 
 export default async function Post({params}) {
-  
-  console.log(params);
   const postData = await getPostData(params.id);
-  console.log(postData);
 
   return (<>
       <Head>
