@@ -1,12 +1,9 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
+import Head from "next/head";
+import Card from "../components/card";
+
+const siteTitle = "John's Website";
 
 export default function Home() {
-  const allPostsData = getSortedPostsData();
-
   return (
     <>
       <Head>
@@ -14,22 +11,37 @@ export default function Home() {
       </Head>
       <section>
         <p>Hi, I'm John!</p>
-        <p>Here is some more text.</p>
+        <p>This is my website.</p>
       </section>
-      <section>
-        <h2>Blog</h2>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div className="flex justify-center">
+        <div className="flex justify-around flex-wrap max-w-4xl gap-4">
+          <Card
+            title="Blog"
+            description="Sometimes I write things down"
+            link="/blog"
+          ></Card>
+          <Card
+            title="Active Statistics"
+            description="Visualise your Strava Statistics"
+            link="https://active-statistics.com"
+          ></Card>
+          <Card
+            title="Sketch Rank"
+            description="Rank sketches drawn by my partner and I"
+            link="/sketch-rank"
+          ></Card>
+          <Card
+            title="Recipes"
+            description="Ol' Scolaro Family Recipes"
+            link="/recipes"
+          ></Card>
+          <Card
+            title="Resume"
+            description="Things I've done"
+            link="/resume"
+          ></Card>
+        </div>
+      </div>
     </>
   );
 }
