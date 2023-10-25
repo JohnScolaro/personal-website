@@ -50,11 +50,17 @@ export default function ImageCompetition() {
   };
 
   return (
-    <div>
-      <div onClick={() => handleImageClick(true)}>
+    <div className="flex flex-col md:flex-row md:justify-center gap-4 items-center">
+      <div
+        className="p-2 border-2 rounded-lg border-gray-200 w-fit"
+        onClick={() => handleImageClick(true)}
+      >
         <img src={`/images/sketch-rank/${image1}`} alt="Image 1" />
       </div>
-      <div onClick={() => handleImageClick(false)}>
+      <div
+        className="p-2 border-2 rounded-lg border-gray-200 w-fit"
+        onClick={() => handleImageClick(false)}
+      >
         <img src={`/images/sketch-rank/${image2}`} alt="Image 2" />
       </div>
     </div>

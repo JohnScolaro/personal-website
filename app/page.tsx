@@ -9,37 +9,49 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section>
-        <p>Hi, I'm John!</p>
-        <p>This is my website.</p>
-      </section>
-      <div className="flex justify-center">
-        <div className="flex justify-around flex-wrap max-w-4xl gap-4">
-          <Card
-            title="Blog"
-            description="Sometimes I write things down"
-            link="/blog"
-          ></Card>
-          <Card
-            title="Active Statistics"
-            description="Visualise your Strava Statistics"
-            link="https://active-statistics.com"
-          ></Card>
-          <Card
-            title="Sketch Rank"
-            description="Rank sketches drawn by my partner and I"
-            link="/sketch-rank"
-          ></Card>
-          <Card
-            title="Recipes"
-            description="Ol' Scolaro Family Recipes"
-            link="/recipes"
-          ></Card>
-          <Card
-            title="Resume"
-            description="Things I've done"
-            link="/resume"
-          ></Card>
+      <div className="relative bg-white h-screen overflow-hidden">
+        <div className="h-10 sm:h-14 xl:h-20"></div>
+        <div className="w-[80%] m-auto text-center">
+          <section>
+            <h1 className="text-4xl xl:text-6xl font-bold z-10">
+              John Scolaro
+            </h1>
+          </section>
+        </div>
+        <div className="h-10 sm:h-14 xl:h-24"></div>
+        <div className="flex justify-center">
+          <div className="flex justify-around flex-wrap w-[80%] gap-6">
+            <Card
+              title="Blog"
+              description="Sometimes I write things down"
+              link="/blog"
+            ></Card>
+            <Card
+              title="Active Statistics"
+              description="Visualise your Strava Statistics"
+              link="https://active-statistics.com"
+            ></Card>
+            <Card
+              title="Sketch Rank"
+              description="Rank sketches my partner and I drew"
+              link="/sketch-rank"
+            ></Card>
+            <Card
+              title="Recipes"
+              description="Ol' Scolaro Family Recipes"
+              link="/recipes"
+            ></Card>
+            <Card
+              title="Resume"
+              description="Things I've done"
+              link="/resume"
+            ></Card>
+            <Card
+              title="Contact"
+              description="Please"
+              link="mailto:johnscolaro95@gmail.com"
+            ></Card>
+          </div>
         </div>
       </div>
     </>

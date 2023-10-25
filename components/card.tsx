@@ -13,17 +13,10 @@ export default function Card({
     <>
       <Link
         href={link}
-        className="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8"
+        className="p-2 sm:p-4 relative block overflow-hidden rounded-lg border border-gray-200 bg-gray-100 hover:bg-gray-200 hover:border-gray-300 w-72"
       >
-        <div className="sm:flex sm:justify-between sm:gap-4">
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 sm:text-xl">
-              {title}
-            </h3>
-          </div>
-        </div>
-
-        <div className="mt-4">
+        <h3 className="text-lg font-bold text-gray-900 sm:text-xl">{title}</h3>
+        <div className="mt-2 md:mt-4">
           <p className="max-w-[40ch] text-sm text-gray-500">{description}</p>
         </div>
       </Link>
