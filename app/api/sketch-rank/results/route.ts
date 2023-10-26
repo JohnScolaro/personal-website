@@ -17,7 +17,7 @@ export async function GET(request: Request) {
           ) AS SubQuery
    GROUP BY playerId
    ORDER BY WinsMinusLosses DESC;`;
-        return NextResponse.json({ result }, { status: 200 });
+        return NextResponse.json({ result }, { status: 200, headers: {'Cache-Control': 'no-store, max-age=0'} });
       } catch (error) {
         return NextResponse.json({ error }, { status: 500 });
       }
