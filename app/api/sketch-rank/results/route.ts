@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { sql } from '@vercel/postgres';
 
+export const fetchCache = 'force-no-store'
+
 export async function GET(request: Request) {
     try {
         const result =
