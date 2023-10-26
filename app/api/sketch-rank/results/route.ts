@@ -17,7 +17,7 @@ export async function GET(request: Request) {
           ) AS SubQuery
    GROUP BY playerId
    ORDER BY WinsMinusLosses DESC;`;
-        return NextResponse.json({ result }, { status: 200, headers: {'Cache-Control': 'no-store, max-age=0'} });
+        return NextResponse.json({ result }, { status: 200, headers: {'Cache-Control': 'no-store', 'CDN-Cache-Control': 'no-store', 'Vercel-CDN-Cache-Control': 'no-store'} });
       } catch (error) {
         return NextResponse.json({ error }, { status: 500 });
       }
