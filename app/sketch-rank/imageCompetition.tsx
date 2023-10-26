@@ -1,40 +1,46 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import sketchRankSecurity from "../../lib/encryption";
+import {
+  getRandomImageId,
+  getImageFileFromImageId,
+  getImageUrlFromImageName,
+} from "./utils";
 
-const getRandomImage = (imageArray) => {
-  const randomIndex = Math.floor(Math.random() * imageArray.length);
-  return imageArray[randomIndex];
-};
+interface ImageCompetitionProps {
+  numImages: number;
+}
 
-export default function ImageCompetition() {
-  const [image1, setImage1] = useState("");
-  const [image2, setImage2] = useState("");
-  const imageArray = ["1.png", "2.png", "3.png", "4.png"];
-
-  useEffect(() => {
-    newImages();
-  }, []);
+export default function ImageCompetition(props: ImageCompetitionProps) {
+  const [imageId1, setImageId1] = useState(getRandomImageId(props.numImages));
+  const [imageId2, setImageId2] = useState(
+    getRandomImageId(props.numImages, imageId1)
+  );
+  const [sessionId, setSessionId] = useState(
+    Math.floor(Math.random() * 1000000000)
+  );
 
   function newImages() {
-    const newImage1 = getRandomImage(imageArray);
-    let newImage2;
-    do {
-      newImage2 = getRandomImage(imageArray);
-    } while (newImage1 === newImage2);
-
-    setImage1(newImage1);
-    setImage2(newImage2);
+    const newImage1Id = getRandomImageId(props.numImages);
+    const newImage2Id = getRandomImageId(props.numImages, newImage1Id);
+    setImageId1(newImage1Id);
+    setImageId2(newImage2Id);
   }
 
   const handleImageClick = async (isFirstImageWinner: boolean) => {
-    const winner = isFirstImageWinner ? image1 : image2;
-    const loser = isFirstImageWinner ? image2 : image1;
+    const winner = isFirstImageWinner ? imageId1 : imageId2;
+    const loser = isFirstImageWinner ? imageId2 : imageId1;
 
     // Send a request to your API route with the winner and loser IDs
-    const response = await fetch("/api/record-winner", {
+    const response = await fetch("/api/sketch-rank/ingest", {
       method: "POST",
-      body: JSON.stringify({ winner: winner, loser: loser }),
+      body: JSON.stringify({
+        winner: winner,
+        loser: loser,
+        sessionId: sessionId,
+        secret: sketchRankSecurity(winner, loser, sessionId),
+      }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -43,25 +49,31 @@ export default function ImageCompetition() {
     if (response.status === 200) {
       // Handle a successful response from your API here.
     } else {
-      // Handle unseccuessful response here.
+      // Handle unsuccessful response here.
     }
 
     newImages();
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:justify-center gap-4 items-center">
+    <div className="flex flex-col sm:flex-row md:justify-center gap-4 items-center">
       <div
-        className="p-2 border-2 rounded-lg border-gray-200 w-fit"
+        className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit"
         onClick={() => handleImageClick(true)}
       >
-        <img src={`/images/sketch-rank/${image1}`} alt="Image 1" />
+        <img
+          src={getImageUrlFromImageName(getImageFileFromImageId(imageId1))}
+          alt="Image 1"
+        />
       </div>
       <div
-        className="p-2 border-2 rounded-lg border-gray-200 w-fit"
+        className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit"
         onClick={() => handleImageClick(false)}
       >
-        <img src={`/images/sketch-rank/${image2}`} alt="Image 2" />
+        <img
+          src={getImageUrlFromImageName(getImageFileFromImageId(imageId2))}
+          alt="Image 2"
+        />
       </div>
     </div>
   );

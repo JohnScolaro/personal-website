@@ -1,4 +1,6 @@
 import ImageCompetition from "./imageCompetition";
+import WrappedAwesomeButton from "../../components/wrapped-awesome-button";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -17,8 +19,15 @@ export default function Page() {
           out on top.
         </p>
         <div className="h-6"></div>
-        <div className="font-bolt">Click on the image you like the most:</div>
-        <ImageCompetition></ImageCompetition>
+        <div className="font-bold">Click on the image you like the most:</div>
+        <div className="h-6"></div>
+        <ImageCompetition numImages={88} />
+        <div className="h-6"></div>
+        <Link href={"/sketch-rank/results"}>
+          <WrappedAwesomeButton type="primary">
+            Take me to the results!
+          </WrappedAwesomeButton>
+        </Link>
       </div>
     </>
   );
