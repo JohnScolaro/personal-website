@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import sketchRankSecurity from "../../lib/encryption";
 import {
@@ -61,18 +62,22 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
         className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit"
         onClick={() => handleImageClick(true)}
       >
-        <img
+        <Image
           src={getImageUrlFromImageName(getImageFileFromImageId(imageId1))}
           alt="Image 1"
+          width={500}
+          height={500}
         />
       </div>
       <div
         className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit"
         onClick={() => handleImageClick(false)}
       >
-        <img
+        <Image
           src={getImageUrlFromImageName(getImageFileFromImageId(imageId2))}
           alt="Image 2"
+          width={500}
+          height={500}
         />
       </div>
     </div>
