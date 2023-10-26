@@ -67,6 +67,7 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
           alt="Image 1"
           width={500}
           height={500}
+          loading="eager"
         />
       </div>
       <div
@@ -78,6 +79,7 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
           alt="Image 2"
           width={500}
           height={500}
+          loading="eager"
         />
       </div>
     </div>
