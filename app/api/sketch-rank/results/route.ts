@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { sql } from '@vercel/postgres';
 
+export const fetchCache = 'force-no-store'
+
 export async function GET(request: Request) {
     try {
         const result =
@@ -17,7 +19,7 @@ export async function GET(request: Request) {
           ) AS SubQuery
    GROUP BY playerId
    ORDER BY WinsMinusLosses DESC;`;
-        return NextResponse.json({ result }, { status: 200 });
+        return NextResponse.json({ result }, { status: 200, headers: {'Cache-Control': 'no-store', 'CDN-Cache-Control': 'no-store', 'Vercel-CDN-Cache-Control': 'no-store'} });
       } catch (error) {
         return NextResponse.json({ error }, { status: 500 });
       }
