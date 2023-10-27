@@ -35,6 +35,10 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
       imageId2,
       newImage1Id,
     ]);
+
+    setImage1Loading(true);
+    setImage2Loading(true);
+
     setImageId1(newImage1Id);
     setImageId2(newImage2Id);
   }
@@ -43,14 +47,9 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
     setImagesRanked(imagesRanked + 1);
     const winner = isFirstImageWinner ? imageId1 : imageId2;
     const loser = isFirstImageWinner ? imageId2 : imageId1;
-    if (isFirstImageWinner) {
-      setImage1Loading(true);
-    } else {
-      setImage2Loading(true);
-    }
 
     // Send a request to your API route with the winner and loser IDs
-    const response = await fetch("/api/sketch-rank/ingest", {
+    fetch("/api/sketch-rank/ingest", {
       method: "POST",
       body: JSON.stringify({
         winner: winner,
@@ -61,13 +60,13 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
       headers: {
         "Content-Type": "application/json",
       },
+    }).then((response) => {
+      if (response.status === 200) {
+        // Handle successful response here
+      } else {
+        // handle non-200 response here
+      }
     });
-
-    if (response.status === 200) {
-      // Handle a successful response from your API here.
-    } else {
-      // Handle unsuccessful response here.
-    }
 
     newImages();
   };
@@ -93,10 +92,12 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
             width={500}
             height={500}
             loading="eager"
-            onLoadingComplete={() => {
+            onLoad={(event) => {
               setImage1Loading(false);
             }}
-            onClick={() => handleImageClick(true)}
+            onClick={() => {
+              handleImageClick(true);
+            }}
           />
         </div>
         <div className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit relative">
@@ -112,10 +113,12 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
             width={500}
             height={500}
             loading="eager"
-            onLoadingComplete={() => {
+            onLoad={(event) => {
               setImage2Loading(false);
             }}
-            onClick={() => handleImageClick(false)}
+            onClick={() => {
+              handleImageClick(false);
+            }}
           />
         </div>
       </div>
