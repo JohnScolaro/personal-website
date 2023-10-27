@@ -115,7 +115,7 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
             onLoadingComplete={() => {
               setImage2Loading(false);
             }}
-            onClick={() => handleImageClick(true)}
+            onClick={() => handleImageClick(false)}
           />
         </div>
       </div>
