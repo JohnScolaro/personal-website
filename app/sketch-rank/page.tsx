@@ -9,7 +9,7 @@ export default function Page() {
         <div className="mt-2 md:mt-4 font-bold text-3xl text-center">
           Sketch Rank
         </div>
-        <h1 className="font-bold mt-4">What is this?</h1>
+        <h2 className="font-bold mt-4">What?</h2>
         <p>
           Every night before bed, instead of scrolling endlessly on our devices,
           my partner and I draw a small sketch. There is a loose time limit of
@@ -18,16 +18,21 @@ export default function Page() {
           against each other. It'll be interesting to see which drawings come
           out on top.
         </p>
+        <h2 className="font-bold mt-4">How?</h2>
+        <p>
+          Click on the image you like the most! When you've tired yourself out,
+          scroll to the bottom to see the results.
+        </p>
+        <h2 className="font-bold mt-4">Results?</h2>
+        <p>
+          Interested in checking out the winners? Click ✨
+          <Link className="hyperlink" href={"/sketch-rank/results"}>
+            here
+          </Link>
+          ✨
+        </p>
         <div className="h-6"></div>
-        <div className="font-bold">Click on the image you like the most:</div>
-        <div className="h-6"></div>
-        <ImageCompetition numImages={88} />
-        <div className="h-6"></div>
-        <Link href={"/sketch-rank/results"}>
-          <WrappedAwesomeButton type="primary">
-            Take me to the results!
-          </WrappedAwesomeButton>
-        </Link>
+        <ImageCompetition numImages={88}></ImageCompetition>
       </div>
     </>
   );
