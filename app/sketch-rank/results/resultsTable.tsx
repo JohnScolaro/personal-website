@@ -23,7 +23,7 @@ export default function ResultsTable() {
           <th className="whitespace-nowrap px-4 py-2 font-medium">Wins</th>
           <th className="whitespace-nowrap px-4 py-2 font-medium">Losses</th>
           <th className="whitespace-nowrap px-4 py-2 font-medium">
-            Total Score
+            Win Ratio (%)
           </th>
         </tr>
       </thead>
@@ -48,7 +48,7 @@ export default function ResultsTable() {
                 {row.totallosses}
               </td>
               <td className="whitespace-nowrap p-1 text-gray-700 text-center">
-                {row.winsminuslosses}
+                {(parseFloat(row.winratio) * 100).toFixed(1)}
               </td>
             </tr>
           ))}
