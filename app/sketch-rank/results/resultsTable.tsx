@@ -48,7 +48,7 @@ export default function ResultsTable() {
                 {row.totallosses}
               </td>
               <td className="whitespace-nowrap p-1 text-gray-700 text-center">
-                {(parseFloat(row.winratio) * 100).toFixed(1)}
+                {(parseFloat(row.winpercent) * 100).toFixed(1)}
               </td>
             </tr>
           ))}
