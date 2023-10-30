@@ -25,6 +25,7 @@ export function getSortedPostsData() {
       id: id,
       date: matterResult.data.date,
       title: matterResult.data.title,
+      description: matterResult.data.description
     };
   });
   // Sort posts by date

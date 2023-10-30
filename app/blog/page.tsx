@@ -1,15 +1,30 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  description: "John Scolaro's Blog",
-};
+import Link from "next/link";
+import Date from "../../components/date";
+import { getSortedPostsData } from "../../lib/posts";
+import Card from "../../components/card";
 
 export default function Page() {
+  const allPostsData = getSortedPostsData();
+
   return (
-    <div className="h-screen flex flex-col justify-center">
-      <div className="flex flex-row justify-center text-2xl">
-        🚧 Work in Progress 🚧
-      </div>
-    </div>
+    <>
+      <section>
+        <div className="max-w-6xl p-4 m-auto">
+          <div className="mt-2 md:mt-4 font-bold text-3xl text-center">
+            Blog
+          </div>
+          <div className="flex flex-col items-center mt-4">
+            {allPostsData.map(({ id, date, title, description }) => (
+              <Card
+                title={title}
+                description={description}
+                link={`/blog/${id}`}
+                date={date}
+              ></Card>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
