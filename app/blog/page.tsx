@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description: "John Scolaro's Blog",
+};
+
 export default function Page() {
   return (
     <div className="h-screen flex flex-col justify-center">

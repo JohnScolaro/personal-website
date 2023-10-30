@@ -1,6 +1,10 @@
 import ImageCompetition from "./imageCompetition";
-import WrappedAwesomeButton from "../../components/wrapped-awesome-button";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description: "Rank the sketches drawn by my partner and I",
+};
 
 export default function Page() {
   return (

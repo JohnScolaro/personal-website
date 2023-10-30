@@ -1,26 +1,35 @@
-import Head from "next/head";
+import Image from "next/image";
 import Card from "../components/card";
+import type { Metadata } from "next";
 
-const siteTitle = "John's Website";
+export const metadata: Metadata = {
+  title: "John's Website",
+  description: "A personal website for John Scolaro.",
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <div className="relative bg-white h-screen overflow-hidden">
-        <div className="h-10 sm:h-14 xl:h-20"></div>
+      <div className="relative bg-white h-screen overflow-auto">
         <div className="w-[80%] m-auto text-center">
+          <div className="flex justify-center">
+            <Image
+              src={"/images/profile.jpg"}
+              alt={"A suave profile photo"}
+              height={200}
+              width={200}
+              className="rounded-full mt-8 md:mt-16 w-28 sm:w-36 md:w-max"
+              priority={true}
+            ></Image>
+          </div>
           <section>
-            <h1 className="text-4xl xl:text-6xl font-bold z-10">
+            <h1 className="text-4xl xl:text-6xl font-bold z-10 mt-6 md:mt-10">
               John Scolaro
             </h1>
           </section>
         </div>
-        <div className="h-10 sm:h-14 xl:h-24"></div>
-        <div className="flex justify-center">
-          <div className="flex justify-around flex-wrap w-[80%] gap-6">
+        <div className="flex justify-center m-auto max-w-5xl">
+          <div className="flex justify-around flex-wrap mx-6 gap-6 my-10 sm:my-14">
             <Card
               title="Blog"
               description="Sometimes I write things down"
