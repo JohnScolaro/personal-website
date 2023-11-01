@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import gfm from 'remark-gfm';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -25,6 +26,7 @@ export function getSortedPostsData() {
       id: id,
       date: matterResult.data.date,
       title: matterResult.data.title,
+      description: matterResult.data.description
     };
   });
   // Sort posts by date
@@ -65,6 +67,7 @@ export async function getPostData(id: string): Promise<AllPostData> {
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
+    .use(gfm) // Add the remark-gfm plugin
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
