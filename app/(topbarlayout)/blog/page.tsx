@@ -1,5 +1,5 @@
-import { getSortedPostsData } from "../../lib/posts";
-import Card from "../../components/card";
+import { getSortedPostsData } from "../../../lib/posts";
+import Card from "../../../components/card";
 
 export default function Page() {
   const allPostsData = getSortedPostsData();

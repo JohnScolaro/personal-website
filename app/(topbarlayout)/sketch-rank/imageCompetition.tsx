@@ -2,14 +2,13 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import sketchRankSecurity from "../../lib/encryption";
+import sketchRankSecurity from "../../../lib/encryption";
 import {
   getRandomImageId,
   getImageFileFromImageId,
   getImageUrlFromImageName,
 } from "./utils";
-import { CenteredSpinner } from "../../components/spinner/spinner";
-
+import { CenteredSpinner } from "../../../components/spinner/spinner";
 interface ImageCompetitionProps {
   numImages: number;
 }
