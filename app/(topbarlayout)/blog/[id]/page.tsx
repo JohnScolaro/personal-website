@@ -1,5 +1,5 @@
-import Date from "../../../components/date";
-import { getPostData } from "../../../lib/posts";
+import Date from "../../../../components/date";
+import { getPostData } from "../../../../lib/posts";
 
 export default async function Post({ params }) {
   const postData = await getPostData(params.id);
