@@ -5,6 +5,7 @@ import { getImageFileFromImageId, getImageUrlFromImageName } from "../utils";
 import Image from "next/image";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Link from "next/link";
 
 export default function ResultsTable() {
   const [data, setData] = useState(null);
@@ -39,15 +40,17 @@ export default function ResultsTable() {
             ? data.map((row) => (
                 <tr key={row.id} className="">
                   <td className="whitespace-nowrap p-1 text-gray-700 text-center">
-                    <Image
-                      src={getImageUrlFromImageName(
-                        getImageFileFromImageId(row.id)
-                      )}
-                      width={100}
-                      height={100}
-                      alt={""}
-                      priority={true}
-                    />
+                    <Link href={`/sketch-rank/results/${row.id}`}>
+                      <Image
+                        src={getImageUrlFromImageName(
+                          getImageFileFromImageId(row.id)
+                        )}
+                        width={100}
+                        height={100}
+                        alt={""}
+                        priority={true}
+                      />
+                    </Link>
                   </td>
                   <td className="whitespace-nowrap p-1 text-gray-700 text-center">
                     {row.totalwins}
