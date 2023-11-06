@@ -36,7 +36,7 @@ export default function Page() {
           ✨
         </p>
         <div className="h-6"></div>
-        <ImageCompetition numImages={88}></ImageCompetition>
+        <ImageCompetition numImages={124}></ImageCompetition>
       </div>
     </>
   );
