@@ -1,6 +1,7 @@
 import ImageCompetition from "./imageCompetition";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getNumSketchRankPhotos } from "../../../lib/sketch-rank/sketch-rank";
 
 export const metadata: Metadata = {
   description: "Rank the sketches drawn by my partner and I",
@@ -36,7 +37,9 @@ export default function Page() {
           ✨
         </p>
         <div className="h-6"></div>
-        <ImageCompetition numImages={124}></ImageCompetition>
+        <ImageCompetition
+          numImages={getNumSketchRankPhotos()}
+        ></ImageCompetition>
       </div>
     </>
   );

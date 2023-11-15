@@ -1,6 +1,5 @@
 import ResultsTable from "./resultsTable";
 import StatsParagraph from "./statsParagraph";
-import Link from "next/link";
 
 export default function Page() {
   return (
