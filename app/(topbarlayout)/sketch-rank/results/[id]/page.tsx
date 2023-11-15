@@ -83,8 +83,12 @@ export default function Page({ params }: { params: { id: string } }) {
 function isParamValid(id: string, totalPhotos: number): boolean {
   // Use parseInt to attempt conversion
   const parsedId = parseInt(id, 10);
-  // Check if the conversion was successful and the parsed value is not NaN
-  return !isNaN(parsedId);
+  // Return false if the conversion was unsuccessful and the parsed value is NaN.
+  if (isNaN(parsedId)) {
+    return false;
+  }
+
+  return parsedId >= 0 && parsedId < totalPhotos;
 }
 
 function getNextAndPreviousImages(
