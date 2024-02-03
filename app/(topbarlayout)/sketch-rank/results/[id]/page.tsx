@@ -105,5 +105,5 @@ function getNextAndPreviousImages(
 }
 
 function getImageSrcFromId(id: number): string {
-  return `/images/sketch-rank/${id.toString()}.png`;
+  return `/images/sketch-rank/${id.toString()}.jpg`;
 }
