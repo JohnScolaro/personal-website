@@ -24,7 +24,7 @@
     "sharp": "^0.32.6"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=18"
   },
   "devDependencies": {
     "@types/node": "20.8.7",
