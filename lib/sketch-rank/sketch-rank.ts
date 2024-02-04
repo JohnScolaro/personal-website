@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 
-// Define the function to count PNG files in a folder
+// Define the function to count JPG files in a folder
 export function getNumSketchRankPhotos(): number {
   const fullPath = path.resolve(
     process.cwd(),
@@ -13,11 +13,11 @@ export function getNumSketchRankPhotos(): number {
   // Read the contents of the folder
   const files = fs.readdirSync(fullPath);
 
-  // Filter out only the PNG files
-  const pngFiles = files.filter((file) => path.extname(file) === ".png");
+  // Filter out only the JPG files
+  const jpgFiles = files.filter((file) => path.extname(file) === ".jpg");
 
-  // Return the total number of PNG files
-  return pngFiles.length;
+  // Return the total number of JPG files
+  return jpgFiles.length;
 }
 
 interface SketchRankMetaData {
