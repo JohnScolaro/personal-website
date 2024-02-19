@@ -38,3 +38,17 @@ img {
   max-width: 100%;
   display: block;
 }
+
+details {
+  padding: 10px;
+}
+
+details summary {
+  cursor: pointer;
+  margin-bottom: -20px; /* for more prominent move */
+  transition: margin 250ms ease-out;
+}
+
+details[open] summary {
+  margin-bottom: 20px;
+}
