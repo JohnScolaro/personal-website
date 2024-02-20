@@ -36,6 +36,6 @@ What's that? You _also_ have a recipe for choc-chip cookies? Whoop-dee-doo, so d
 
 What makes this recipe so special? Well, it's what my siblings and I used to make with my Mum when we were kids. It's incredibly easy, and when I was a child there was nothing better than walking into the kitchen with a bunch of these bad boys cooling on the countertop. I even have a picture of the OG recipe page that Mum made and printed out on our PC to put into a homemade recipe book.
 
-![Image of detective Spongebob standing in front of a pole with a poster of himself on it, described as a maniac.](/images/recipes/choc_chip_cookies.jpg)
+![An image of the recipe shown above, but printed out on a piece of paper.](/images/recipes/choc_chip_cookies.jpg)
 
 </details>
