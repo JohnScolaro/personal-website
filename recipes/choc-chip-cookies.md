@@ -1,0 +1,41 @@
+---
+title: "Choc Chip Cookies"
+---
+
+# Choc Chip Cookies
+
+## Ingredient List
+
+- 250g butter
+- 1 cup sugar
+- 1 cup brown sugar
+- 1 teaspoon vanilla essence
+- 2 eggs
+- 3 1/2 cups SR flour
+- 1 teasp salt
+- 250g choc chips
+
+## Method
+
+1. Cream butter, sugar, eggs, vanilla
+2. Add salt and flour, mix well
+3. Roll into balls (add a little more flour if sticky)
+4. Makes 3 trays of biscuits
+5. Bake in moderate oven 15 minutes
+6. Cool on wire rack
+7. Enjoy!
+
+<details>
+<summary>
+Click here to read that dumb story recipes normally put at the top (you're welcome)
+</summary>
+
+## Optional Story
+
+What's that? You _also_ have a recipe for choc-chip cookies? Whoop-dee-doo, so does everyone. This is mine.
+
+What makes this recipe so special? Well, it's what my siblings and I used to make with my Mum when we were kids. It's incredibly easy, and when I was a child there was nothing better than walking into the kitchen with a bunch of these bad boys cooling on the countertop. I even have a picture of the OG recipe page that Mum made and printed out on our PC to put into a homemade recipe book.
+
+![An image of the recipe shown above, but printed out on a piece of paper.](/images/recipes/choc_chip_cookies.jpg)
+
+</details>
