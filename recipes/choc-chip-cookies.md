@@ -1,5 +1,6 @@
 ---
 title: "Choc Chip Cookies"
+description: "A recipe for choc-chip cookies I used to make in my youth."
 ---
 
 # Choc Chip Cookies
