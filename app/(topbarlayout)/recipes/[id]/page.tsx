@@ -1,4 +1,18 @@
-import { getRecipeData } from "../../../../lib/recipes";
+import { getRecipeData, getSortedRecipeData } from "../../../../lib/recipes";
+
+export async function generateMetadata({ params }) {
+  const allRecipeData = getSortedRecipeData();
+
+  // Find the recipe with the matching id
+  const matchingRecipe = allRecipeData.find(
+    (recipe) => recipe.id === params.id
+  );
+
+  return {
+    title: matchingRecipe.title,
+    description: matchingRecipe.description,
+  };
+}
 
 export default async function Post({ params }) {
   const recipeData = await getRecipeData(params.id);

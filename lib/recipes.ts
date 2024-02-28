@@ -25,6 +25,7 @@ export function getSortedRecipeData() {
     return {
       id: id,
       title: matterResult.data.title,
+      description: matterResult.data.description,
     };
   });
   // Sort recipes by date
@@ -51,9 +52,9 @@ export function getAllRecipeIds() {
 interface AllRecipeData {
   id: string;
   contentHtml: string;
+  title: string;
+  description: string;
   date: Date;
-  title: string; // Add any other properties you expect to return
-  // Add any other properties you expect to return
 }
 
 export async function getRecipeData(id: string): Promise<AllRecipeData> {
@@ -75,6 +76,7 @@ export async function getRecipeData(id: string): Promise<AllRecipeData> {
     id: id,
     contentHtml: contentHtml,
     title: matterResult.data.title,
+    description: matterResult.data.description,
     date: matterResult.data.date,
   };
 }

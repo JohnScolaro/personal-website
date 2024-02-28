@@ -8,6 +8,17 @@ import {
 } from "../../../../../lib/sketch-rank/sketch-rank";
 import WrappedAwesomeButton from "../../../../../components/wrapped-awesome-button";
 
+export async function generateMetadata({ params }) {
+  const sketchRankMetaData = getSketchRankMetaData();
+  const imageMeta = sketchRankMetaData[params.id];
+  const title = `${imageMeta.title} | SketchRank`;
+
+  return {
+    title: title,
+    description: imageMeta.description,
+  };
+}
+
 // If loading a variable font, you don't need to specify the font weight
 const tangerine = Tangerine({ subsets: ["latin"], weight: ["700"] });
 

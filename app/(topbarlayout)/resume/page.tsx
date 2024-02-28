@@ -3,7 +3,8 @@ import Link from "next/link";
 import ResumeCard from "./resumeCard";
 
 export const metadata: Metadata = {
-  description: "John's Resume",
+  title: "Resume",
+  description: "A list of some of the jobs that I've had",
 };
 
 export default function Page() {

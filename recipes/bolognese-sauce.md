@@ -1,5 +1,6 @@
 ---
 title: "Bolognese Sauce"
+description: "A recipe for succulent Italian bolognese sauce, just like my Dad taught me to make."
 ---
 
 # Bolognese Sauce

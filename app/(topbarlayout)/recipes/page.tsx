@@ -3,7 +3,8 @@ import { getSortedRecipeData } from "../../../lib/recipes";
 import Card from "../../../components/card";
 
 export const metadata: Metadata = {
-  description: "Recipes by John",
+  title: "Recipes",
+  description: "A list of all recipes important enough for me to write down",
 };
 
 export default function Page() {

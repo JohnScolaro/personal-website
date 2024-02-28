@@ -1,5 +1,11 @@
 import { getSortedPostsData } from "../../../lib/posts";
 import Card from "../../../components/card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description: "A list of all blog posts I've made",
+};
 
 export default function Page() {
   const allPostsData = getSortedPostsData();

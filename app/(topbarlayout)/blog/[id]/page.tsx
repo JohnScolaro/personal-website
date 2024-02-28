@@ -1,5 +1,17 @@
 import Date from "../../../../components/date";
-import { getPostData } from "../../../../lib/posts";
+import { getPostData, getSortedPostsData } from "../../../../lib/posts";
+
+export async function generateMetadata({ params }) {
+  const allPostData = getSortedPostsData();
+
+  // Find the post with the matching id
+  const matchingPost = allPostData.find((post) => post.id === params.id);
+
+  return {
+    title: matchingPost.title,
+    description: matchingPost.description,
+  };
+}
 
 export default async function Post({ params }) {
   const postData = await getPostData(params.id);

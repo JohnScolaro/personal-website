@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 import { getNumSketchRankPhotos } from "../../../lib/sketch-rank/sketch-rank";
 
 export const metadata: Metadata = {
-  description: "Rank the sketches drawn by my partner and I",
+  title: "SketchRank",
+  description: "Rank several sketches that my partner and I drew",
 };
 
 export default function Page() {

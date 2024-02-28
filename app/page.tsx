@@ -3,8 +3,8 @@ import Card from "../components/card";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "John's Website",
-  description: "A personal website for John Scolaro.",
+  title: "John Scolaro",
+  description: "The homepage for John Scolaro's personal website",
 };
 
 export default function Home() {
@@ -15,7 +15,9 @@ export default function Home() {
           <div className="flex justify-center">
             <Image
               src={"/images/profile.jpg"}
-              alt={"A suave profile photo"}
+              alt={
+                "A suave profile photo. If the photo doesn't load, just imagine that I'm really handsome."
+              }
               height={200}
               width={200}
               className="rounded-full mt-8 md:mt-16 w-28 sm:w-36 md:w-max"
