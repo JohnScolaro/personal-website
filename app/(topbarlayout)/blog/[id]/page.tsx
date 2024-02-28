@@ -6,7 +6,7 @@ export default async function Post({ params }) {
 
   return (
     <>
-      <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto">
+      <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full">
         <h1 className="mb-1 lg:mb-1 text-center">{postData.title}</h1>
         <div className="text-center">
           <Date dateString={postData.date} />
