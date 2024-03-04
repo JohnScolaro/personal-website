@@ -58,6 +58,11 @@ export default function Home() {
               link="/resume"
             ></Card>
             <Card
+              title="Links"
+              description="Some of my other profiles"
+              link="/links"
+            ></Card>
+            <Card
               title="Contact"
               description="Please"
               link="mailto:johnscolaro95@gmail.com"
