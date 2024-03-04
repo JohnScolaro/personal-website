@@ -6,7 +6,7 @@ export default async function sitemap() {
   const URL = "https://johnscolaro.xyz";
 
   // Other pages of the website.
-  const routes = ["" , "/resume"];
+  const routes = ["" , "/resume", "/links"];
 
   // Fetch posts data and generate routes
   const postsData = getSortedPostsData();
