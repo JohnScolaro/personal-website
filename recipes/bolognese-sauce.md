@@ -28,6 +28,8 @@ description: "A recipe for succulent Italian bolognese sauce, just like my Dad t
 4. Add the carrot/onion/garlic mixture back into the pan with the meat, and add tins of diced tomato, and about 1/2 a cup of water. This is also the time when you can add your wine.
 5. Turn the heat down so that the mix is barely simmering, put a lid on, and leave it simmer for ~2 hours, checking every now and then to make sure that it never sticks to the bottom. If it starts to look a little dry, just add a bit of water.
 
+![A plate of bolognese sauce](/images/recipes/bolognese_sauce.jpg)
+
 <details>
 <summary>
 Not detailed enough? Want me to hold your hand? Click here for an advanced Bolognese guide.
