@@ -40,7 +40,7 @@ I actually had a chuckle at that one. Reading this book felt like reading [The I
 
 ## Communism and Pessimism
 
-I generally have a pretty positive view of the world. It seems that the world has generally gotten better and better over the last several hundred years[2], and so I see no reason to be pessimistic about life and am thankful for the life I live and am excited for the future. Possibly because it's a different viewpoint to my own, or because I think constantly being negative achieves nothing in life except making you sadder, I don't really enjoy reading chronically negative books.
+I generally have a pretty positive view of the world. It seems that the world has generally improved over the last several hundred years[2], and so I see no reason to be pessimistic about life and am thankful for the life I live and am excited for the future. Possibly because it's a different viewpoint to my own, or because I think constantly being negative achieves nothing in life except making you sadder, I don't really enjoy reading chronically negative books.
 
 Ye Wenjie seems like a chronically negative person. I guess this makes sense since her father was killed in front of her, she barely escaped her own death, and living in the throes of the Chinese Cultural Revolution certainly does seem like a time where one could experience nothing but quality of life decreases throughout their own life. So assuming she was ignorant enough to not consider the entirety of human history up to her own life, I can kind of understand how she'd come to the conclusion that the human race was doomed? But then to take action to personally condemn all humanity to almost certain death via aliens, is INFURIATING to me.
 
@@ -57,6 +57,20 @@ The author does an excellent job of explaining all science, whether fiction or f
 "The sophons can draw on the energy of the vacuum to travel around at ~the speed of light without violating the laws of thermodynamics".
 
 I suppose all the made up concepts are plausible enough until you really start to think about it, and I like that. I really hope it doesn't confuse people as to what is and isn't true though.
+
+## Wang Miao's Poor Wife
+
+I swear my recollection of Wang Miao is:
+
+- Works all day
+- At night visits his science buddies and old lady
+- Comes home 1 night the entire week
+- Forces wife and son to take photos with his camera
+- Freaks out
+- Refuses to elaborate
+- Rips ~3 all-nighters and slams VR games after work for 3 days straight?
+
+Classic Wang Miao
 
 ## Also
 

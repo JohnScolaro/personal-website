@@ -47,4 +47,4 @@ So in combination, if you create files in the package directory when the package
 
 ## Whats the proper solution?
 
-Stop saving files in the dang package. Use something like the `tmpfile` module to generate temporary directories in a cross-platform way, and save the files in there. Save them ANYWHERE else! Just not in the package.
+Stop saving files in the dang package. Use something like the `platformdirs` module to get more sensible locations to store your files in a more cross-platform way, and save the files in there. Save them ANYWHERE else! Just not in the package.
