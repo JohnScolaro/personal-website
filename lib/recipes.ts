@@ -70,7 +70,6 @@ export async function getRecipeData(id: string): Promise<AllRecipeData> {
   let match: IteratorResult<RegExpMatchArray, any>;
   while (!(match = iterator.next()).done) {
     const [, src] = match.value;
-    console.log(src);
     try {
       // Images are stored in `public`
       const { width, height } = sizeOf(join("public", src));

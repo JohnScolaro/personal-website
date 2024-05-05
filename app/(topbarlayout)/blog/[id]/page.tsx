@@ -52,3 +52,11 @@ export default async function Post({ params }) {
     </>
   );
 }
+
+export async function generateStaticParams() {
+  const allPostData = getSortedPostsData();
+
+  return allPostData.map((post) => ({
+    id: post.id,
+  }));
+}

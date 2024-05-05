@@ -19,7 +19,6 @@ export async function generateMetadata({ params }) {
 
 export default async function Post({ params }) {
   const recipeData = await getRecipeData(params.id);
-  console.log(recipeData.imageSizes);
 
   return (
     <>
@@ -49,4 +48,12 @@ export default async function Post({ params }) {
       </article>
     </>
   );
+}
+
+export async function generateStaticParams() {
+  const allRecipeData = getSortedRecipeData();
+
+  return allRecipeData.map((post) => ({
+    id: post.id,
+  }));
 }
