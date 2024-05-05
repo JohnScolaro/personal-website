@@ -1,9 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
-import gfm from "remark-gfm";
+import sizeOf from "image-size";
+import { join } from "path";
 
 const recipeDirectory = path.join(process.cwd(), "recipes");
 
@@ -51,10 +50,11 @@ export function getAllRecipeIds() {
 
 interface AllRecipeData {
   id: string;
-  contentHtml: string;
+  markdown: string;
   title: string;
   description: string;
   date: Date;
+  imageSizes: Record<string, { width: number; height: number }>;
 }
 
 export async function getRecipeData(id: string): Promise<AllRecipeData> {
@@ -64,19 +64,29 @@ export async function getRecipeData(id: string): Promise<AllRecipeData> {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(gfm) // Add the remark-gfm plugin
-    .use(html, { sanitize: false })
-    .process(matterResult.content);
-  const contentHtml = processedContent.toString();
+  // Use some fancy regex I stole from the internet to get images
+  const imageSizes: AllRecipeData["imageSizes"] = {};
+  const iterator = matterResult.content.matchAll(/\!\[.*]\((.*)\)/g);
+  let match: IteratorResult<RegExpMatchArray, any>;
+  while (!(match = iterator.next()).done) {
+    const [, src] = match.value;
+    console.log(src);
+    try {
+      // Images are stored in `public`
+      const { width, height } = sizeOf(join("public", src));
+      imageSizes[src] = { width, height };
+    } catch (err) {
+      console.error(`Can’t get dimensions for ${src}:`, err);
+    }
+  }
 
-  // Combine the data with the id and contentHtml
+  // Combine the data with the gray-matter and markdown
   return {
     id: id,
-    contentHtml: contentHtml,
+    markdown: matterResult.content,
     title: matterResult.data.title,
     description: matterResult.data.description,
     date: matterResult.data.date,
+    imageSizes: imageSizes,
   };
 }
