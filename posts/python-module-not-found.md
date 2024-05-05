@@ -37,7 +37,7 @@ directory. If you're seeing both, even though you've installed editably, check t
 
 ## Why does this happen?
 
-When you install a package normally, it puts all it's contents in `site-packages`. When you install editably, pip always uninstalls the package, and then installs it in iditable mode. When pip uninstalls a package, it individually removes all files in the package from the package directory in site-packages. This means that any files NOT in the module, that have since been created, and the directories they sit in, will remain.
+When you install a package normally, it puts all it's contents in `site-packages`. When you install editably, pip always uninstalls the package, and then installs it in editable mode. When pip uninstalls a package, it individually removes all files in the package from the package directory in site-packages. This means that any files NOT in the module, that have since been created, and the directories they sit in, will remain.
 
 Now, when you import a packages with something like `from my_package.my_module import x` python seems to first look for the package in site-packages. If it can't find that, then it realises that the package has been installed editably and uses the code in the editable location.
 

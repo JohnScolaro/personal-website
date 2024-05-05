@@ -1,5 +1,8 @@
 import Date from "../../../../components/date";
 import { getPostData, getSortedPostsData } from "../../../../lib/posts";
+import ReactMarkdown from "react-markdown";
+import Image from "next/image";
+import remarkGfm from "remark-gfm";
 
 export async function generateMetadata({ params }) {
   const allPostData = getSortedPostsData();
@@ -23,8 +26,37 @@ export default async function Post({ params }) {
         <div className="text-center">
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <ReactMarkdown
+          components={{
+            img: (props) => {
+              if (postData.imageSizes[props.src]) {
+                const { width, height } = postData.imageSizes[props.src];
+                return (
+                  <Image
+                    src={props.src}
+                    alt={props.alt}
+                    width={width}
+                    height={height}
+                  />
+                );
+              } else {
+                return <img {...props} />;
+              }
+            },
+          }}
+          rehypePlugins={[remarkGfm]}
+        >
+          {postData.markdown}
+        </ReactMarkdown>
       </article>
     </>
   );
+}
+
+export async function generateStaticParams() {
+  const allPostData = getSortedPostsData();
+
+  return allPostData.map((post) => ({
+    id: post.id,
+  }));
 }

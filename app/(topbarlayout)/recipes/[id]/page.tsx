@@ -1,4 +1,7 @@
 import { getRecipeData, getSortedRecipeData } from "../../../../lib/recipes";
+import ReactMarkdown from "react-markdown";
+import Image from "next/image";
+import remarkGfm from "remark-gfm";
 
 export async function generateMetadata({ params }) {
   const allRecipeData = getSortedRecipeData();
@@ -20,8 +23,37 @@ export default async function Post({ params }) {
   return (
     <>
       <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto">
-        <div dangerouslySetInnerHTML={{ __html: recipeData.contentHtml }} />
+        <ReactMarkdown
+          components={{
+            img: (props) => {
+              if (recipeData.imageSizes[props.src]) {
+                const { width, height } = recipeData.imageSizes[props.src];
+                return (
+                  <Image
+                    src={props.src}
+                    alt={props.alt}
+                    width={width}
+                    height={height}
+                  />
+                );
+              } else {
+                return <img {...props} />;
+              }
+            },
+          }}
+          rehypePlugins={[remarkGfm]}
+        >
+          {recipeData.markdown}
+        </ReactMarkdown>
       </article>
     </>
   );
+}
+
+export async function generateStaticParams() {
+  const allRecipeData = getSortedRecipeData();
+
+  return allRecipeData.map((post) => ({
+    id: post.id,
+  }));
 }
