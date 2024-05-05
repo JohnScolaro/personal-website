@@ -23,6 +23,11 @@ export default function Page() {
               link="https://github.com/JohnScolaro"
             ></Card>
             <Card
+              title="Stack Overflow"
+              description="Debugger John"
+              link="https://stackoverflow.com/users/5834938/john-scolaro"
+            ></Card>
+            <Card
               title="IFPA"
               description="Pinball John"
               link="https://www.ifpapinball.com/player.php?p=69367"
@@ -36,6 +41,11 @@ export default function Page() {
               title="YouTube"
               description="Videographer John"
               link="https://www.youtube.com/channel/UCYSIT8sX6y8wp7hkwtecoQg"
+            ></Card>
+            <Card
+              title="Strava"
+              description="Athlete John"
+              link="https://www.strava.com/athletes/94896104"
             ></Card>
           </div>
         </div>
