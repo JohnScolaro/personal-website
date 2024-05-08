@@ -4,17 +4,17 @@ description: 'A review of the book, "The Dark Forest" by Liu Cixin'
 date: "2024-05-06"
 ---
 
-When contemplating whether or not I should read [The Three-Body Problem](<https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)>), I ran into a bunch of reviews online that said: "Yeah, it's good and all, but it really just sets up for the second and third books". So when I finished the first book and wrote my [silly review](http://johnscolaro.xyz/blog/the-three-body-problem), I started immediately on the second to see where the story went.
+When contemplating whether or not I should read [The Three-Body Problem](<https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)>), I ran into a bunch of reviews online that said: "Yeah, it's good and all, but it really just sets up for the second and third books". So when I finished the first book and wrote my [silly review](https://johnscolaro.xyz/blog/the-three-body-problem), I started immediately on the second to see where the story went.
 
 Well, obviously it was excellent. The way Liu Cixin puzzles together a multi-threaded story in a hypothetical future world with such detail and imagination is very impressive. He loves a twist, and the high stakes of "survival of all humanity" really keeps you invested. Like my last review though, I could write thousands of words of praise for the author, but who cares for that because everyone already loves the book, and endless praise has already been writen. Here are some plot points that don't make sense to me, or I found funny.
 
 ## The Chain of Believability
 
-In these sci-fi books, authors layer a series of assertions together like a delicious lasagna. First, A happens. People feel a certain way, and so then they do B, and then that changes things, so C seems like a rational decision, etc... Each step is a link in a chain, and the whole chain is the story. The total (verisimilitude)[https://en.wikipedia.org/wiki/Verisimilitude] (believability) of the story, for me, is the strength of the weakest link in the chain. Some of the following links in the chain that is [The Dark Forest](https://en.wikipedia.org/wiki/The_Dark_Forest) are looking very rusty:
+In these sci-fi books, authors layer a series of assertions together like a delicious lasagna. First, A happens. People feel a certain way, and so then they do B, and then that changes things, so C seems like a rational decision, etc... Each step is a link in a chain, and the whole chain is the story. The total [verisimilitude](https://en.wikipedia.org/wiki/Verisimilitude) (believability) of the story, for me, is the strength of the weakest link in the chain. Some of the following links in the chain that is [The Dark Forest](https://en.wikipedia.org/wiki/The_Dark_Forest) are looking very rusty:
 
 ### Nobody figuring out the "spell" or thinking it's important
 
-The book starts in the 21st century. Our good mate Luo Ji farts about for almost a decade doing essentially nothing after being selected as a Wallfacer. Suddenly he's like: "Oh shit, can I please send a message into space and then go to sleep for a really long time?" I'm pretty sure Mr Luo talks his plan through with other people before blasting out a message to the universe saying "This planet over here is sus". He tells the special wallfacer council that he cast a "spell" and refuses to elaborate.
+The book starts in the 21st century. Our good mate Luo Ji farts about for almost a decade doing essentially nothing after being selected as a Wallfacer. Suddenly he's like: "Oh shit, can I please send a message into space and then go to sleep for a really long time?" I'm pretty sure Mr Luo tells other people about his plan to blast out a message to the universe saying "This planet over here is sus". He tells the special wallfacer council that he cast a "spell" and refuses to elaborate.
 
 ![Dr Evil from Austin Powers doing air quotes with the word "spell" above him.](/images/blog/the-dark-forest/spell.jpg)
 
