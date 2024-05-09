@@ -6,7 +6,7 @@ date: "2024-05-07"
 
 [AnyLogic](https://en.wikipedia.org/wiki/AnyLogic) is a really old piece of simulation software, that like the [manatee](https://en.wikipedia.org/wiki/Manatee), exists because it has no real predators. Unfortunately companies still use it, so I've had to interact with it.
 
-[Probability distributions](https://en.wikipedia.org/wiki/Probability_distribution) are math functions that can tell you what the probability of something happening is. One such distribution is the [beta distribution](https://en.wikipedia.org/wiki/Beta_distribution). This distribution is a funky looking curve, defined between 0 and 1, which can look like any number of things depending on what the parameters α and β are (sometimes called p and q because mathmaticians all have different favourite letters). Here are some examples:
+[Probability distributions](https://en.wikipedia.org/wiki/Probability_distribution) are math functions that can tell you what the probability of something happening is. One such distribution is the [beta distribution](https://en.wikipedia.org/wiki/Beta_distribution). This distribution is a funky looking curve, defined between 0 and 1, which can look like any number of things depending on what the parameters α and β are (sometimes called p and q because mathematicians all have different favourite letters). Here are some examples:
 
 ![Some images of the beta distribution that I found on Wikipedia](/images/blog/anylogic-beta-distribution-is-sometimes-wrong/beta_distribution.png)
 
@@ -22,7 +22,7 @@ Using a Beta in the form `Beta(α, β)`, let's first visualise a `Beta(2, 5)` in
 
 Look at that, the mean is a touch under 0.3. That's good, because according to [the beta distribution page on Wikipedia I linked before](https://en.wikipedia.org/wiki/Beta_distribution), the mean of a beta distribution is actually always α / (α + β). This is ~0.28 for our case here, which looks about right.
 
-This python code should show the same thing:
+This Python code should show the same thing:
 
 ```
 import matplotlib.pyplot as plt
@@ -91,4 +91,6 @@ I wish AnyLogic was open source so I could create an issue.
 
 I wish AnyLogic threw an exception when p or q were too large.
 
-I wish AnyLogic could put a line about this in their woeful documentation.
+I wish AnyLogic could put a warning about this in their woeful documentation.
+
+I wish this team used [SimPy](https://simpy.readthedocs.io/en/latest/) instead.
