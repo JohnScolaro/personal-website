@@ -1,6 +1,6 @@
 import { getNumSketchRankPhotos } from '../lib/sketch-rank/sketch-rank'
-import { getSortedPostsData } from "lib/posts";
-import { getSortedRecipeData } from "lib/recipes";
+import { getSortedPostsData } from "../lib/posts";
+import { getSortedRecipeData } from "../lib/recipes";
 
 export default async function sitemap() {
   const URL = "https://johnscolaro.xyz";

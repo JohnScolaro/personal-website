@@ -2,6 +2,7 @@ import { getRecipeData, getSortedRecipeData } from "../../../../lib/recipes";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 export async function generateMetadata({ params }) {
   const allRecipeData = getSortedRecipeData();
@@ -41,7 +42,7 @@ export default async function Post({ params }) {
               }
             },
           }}
-          rehypePlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw, remarkGfm]}
         >
           {recipeData.markdown}
         </ReactMarkdown>
