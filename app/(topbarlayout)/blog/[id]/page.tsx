@@ -3,6 +3,7 @@ import { getPostData, getSortedPostsData } from "../../../../lib/posts";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 export async function generateMetadata({ params }) {
   const allPostData = getSortedPostsData();
@@ -44,7 +45,7 @@ export default async function Post({ params }) {
               }
             },
           }}
-          rehypePlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw, remarkGfm]}
         >
           {postData.markdown}
         </ReactMarkdown>
