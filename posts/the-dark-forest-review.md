@@ -4,9 +4,11 @@ description: 'A review of the book, "The Dark Forest" by Liu Cixin'
 date: "2024-05-06"
 ---
 
-When contemplating whether or not I should read [The Three-Body Problem](<https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)>), I ran into a bunch of reviews online that said: "Yeah, it's good and all, but it really just sets up for the second and third books". So when I finished the first book and wrote my [silly review](https://johnscolaro.xyz/blog/the-three-body-problem), I started immediately on the second to see where the story went.
+When contemplating whether or not I should read [The Three-Body Problem](<https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)>), I ran into a bunch of reviews online that said: "Yeah, it's good and all, but it really just sets up for the second and third books". So when I finished the first book and wrote my [silly review](https://johnscolaro.xyz/blog/the-three-body-problem-review), I started immediately on the second to see where the story went.
 
 Well, obviously it was excellent. The way Liu Cixin puzzles together a multi-threaded story in a hypothetical future world with such detail and imagination is very impressive. He loves a twist, and the high stakes of "survival of all humanity" really keeps you invested. Like my last review though, I could write thousands of words of praise for the author, but who cares for that because everyone already loves the book, and endless praise has already been writen. Here are some plot points that don't make sense to me, or I found funny.
+
+![The "always has been" meme, but the guy shooting is captioned: "Zhend Beihei" and the guy getting shot is captioned: "Solid State Rocket Enjoyer".](/images/blog/the-dark-forest-review/zhang_shoot.png)
 
 ## The Chain of Believability
 
@@ -16,7 +18,7 @@ In these sci-fi books, authors layer a series of assertions together like a deli
 
 The book starts in the 21st century. Our good mate Luo Ji farts about for almost a decade doing essentially nothing after being selected as a Wallfacer. Suddenly he's like: "Oh shit, can I please send a message into space and then go to sleep for a really long time?" I'm pretty sure Mr Luo tells other people about his plan to blast out a message to the universe saying "This planet over here is sus". He tells the special wallfacer council that he cast a "spell" and refuses to elaborate.
 
-![Dr Evil from Austin Powers doing air quotes with the word "spell" above him.](/images/blog/the-dark-forest/spell.jpg)
+![Dr Evil from Austin Powers doing air quotes with the word "spell" above him.](/images/blog/the-dark-forest-review/spell.jpg)
 
 The only reason to send communications is _for someone to recieve them_ and show they exist. I refuse to believe his message wasn't screened/understood by other humans and shared. The man is a Wallfacer! He's incredibly famous! People pay attention to what he does! So humanity must know that if anything happens to the specific planet that Luo mentioned, there are some big bad aliens out there. Even Trisolaris clearly thinks this is important because right after sending it, they send _additional ships_ to earth. Monitering this sus planet is _very_ important! Which makes it so jaw droppingly bizare that 200 years later after his beauty sleep, Luo is like: "Oh hey guys, did anything happen to that planet?" and the government is like
 
@@ -66,7 +68,7 @@ I find it quite hard to believe that the Trisolarans couldn't figure out Luo Ji'
 
 surely these interplanetary geniuses are like:
 
-![Money neuron activation meme](/images/blog/the-dark-forest/neuron_activation.png)
+![Money neuron activation meme](/images/blog/the-dark-forest-review/neuron_activation.png)
 
 Surely when he codes into his computer that the bombs should explode in a specific order, or when he calculates exactly how far away they need to be so that their detonation can be percieved as a signal, the Trisolarans cotton onto his plan and sophonically recuit some humans on Earth to kill him.
 
@@ -87,7 +89,7 @@ The Wallfacer/Wallbreaker interaction doesn't really seem like something that wo
 1. Yelled: "SECURITY!!!" and had them immediately dragged from the room before they could explain their plan.
 2. Even if they did guess it correctly, put their hands on their hips and say "nuh uh".
 
-![A cartoon image of a man with a smirk on his face going "nuh uh".](/images/blog/the-dark-forest/nuh_uh.png)
+![A cartoon image of a man with a smirk on his face going "nuh uh".](/images/blog/the-dark-forest-review/nuh_uh.png)
 
 Even if they _did_ guess your plan, and you _admit_ they guessed it, it's been 8 of the 400 years until Trisolarans arrive. Just **think of another plan**, don't kill yourself damn it.
 
