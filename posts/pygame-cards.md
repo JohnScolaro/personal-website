@@ -14,7 +14,7 @@ This was a fun and non-trivial challenge to do in Pygame-ce because it only supp
 
 I love a good card game. In the best card games, they often use effects to make the cards seem more than just a simple rectangle on a screen. Here are some cool examples of cards in some different games: (All served as glorious low definition gifs in an attempt to make this page easier to load).
 
-[A GIF of Balatro Card Movement](https://www.playbalatro.com/) Card Movement is implemented as a (probably smoothed) rotation around the Z axis.
+[Balatro](https://www.playbalatro.com/) Card Movement is implemented as a (probably smoothed) rotation around the Z axis.
 
 ![A GIF of Balatro Card Movement.](/images/blog/pygame-cards/balatro_card_jiggle.gif)
 
@@ -106,3 +106,7 @@ Slay the spire snaps it to the centre of the card.
 ![A GIF showing that in Slay the Spire, when you click on a card, the centre of the card snaps to the mouse.](/images/blog/pygame-cards/slay_the_spire_clicking_low.gif)
 
 Hearthstone also snaps it to the centre of the card, but you can't really tell because when you're hovering over the card to click it, it's replaced with a larger more readable version of itself. I implemented snapping to the centre for mine. I implemented it that way because it seemed more natural, easier, and I didn't even realise that Balatro did that until after writing this blog post!
+
+## Conclusion
+
+I think I've made quite a pretty card implementation that could be extended for use in a low resolution pixel art game.
