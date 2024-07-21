@@ -54,7 +54,7 @@ Explosions have a few frames of animation, and even throw out a few particles fo
 
 Writing the code for this component is probably one of the more complex things I've ever created. Over my career in the endless fight against complexity, I find myself avoiding state in classes as much as possible, because inevitably you treat `self` as a grab-bag of global variables that all functions in the class have access to. This component is very stateful, so I found it hard to split the code into logical sections and keep everything clean. After toying with it for a long time, the basic architecture looks like so:
 
-![A diagram showing the basic architecture of the match 3 class. It has 3 boxes labelled: "Gem", "Frontend Grid", and "Backend Grid".](/images/blog/pygame-match-3/animation_and_particle_effects.gif)
+![A diagram showing the basic architecture of the match 3 class. It has 3 boxes labelled: "Gem", "Frontend Grid", and "Backend Grid".](/images/blog/pygame-match-3/architecture.png)
 
 The three logical components I've came up with are:
 
