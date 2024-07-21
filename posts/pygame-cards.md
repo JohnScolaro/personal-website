@@ -1,5 +1,5 @@
 ---
-title: "Cards in PyGame"
+title: "Cards in Pygame"
 description: "Making rotating cards in Pygame"
 date: "2024-06-27"
 ---
