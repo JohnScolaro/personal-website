@@ -32,6 +32,20 @@ export default function Page() {
       <hr className=""></hr>
       <h2>Experience</h2>
       <ResumeCard
+        title="BHP"
+        imageSrc="/images/resume/bhp_logo.png"
+        imageAltText="BHP Logo"
+        roundImg={false}
+        date="2023 - Present"
+      >
+        <ul>
+          <li>
+            Created and maintain a Python framework used by a data analysis team
+            to gain insights about BHP's many mining operations.
+          </li>
+        </ul>
+      </ResumeCard>
+      <ResumeCard
         title="Polymathian (now Deswik)"
         imageSrc="/images/resume/polymathian_logo.jpg"
         imageAltText="Polymathian Logo"
@@ -118,7 +132,7 @@ export default function Page() {
         </p>
       </ResumeCard>
       <ResumeCard
-        title="Univeristy of Toronto"
+        title="University of Toronto"
         imageSrc="/images/resume/uoft_logo.png"
         imageAltText="UofT Logo"
         roundImg={false}
