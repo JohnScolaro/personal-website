@@ -6,7 +6,14 @@ import { join } from "path";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getSortedPostsData() {
+type PostData = {
+  id: string;
+  date: string;
+  title: string;
+  description: string;
+};
+
+export function getSortedPostsData(): PostData[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -36,6 +43,18 @@ export function getSortedPostsData() {
       return -1;
     }
   });
+}
+
+export function getSortedCustomPostsData(): PostData[] {
+  return [
+    {
+      id: "sunshine-coast-marathon-2024",
+      date: "2024-08-17",
+      title: "Sunshine Coast Marathon Festival 2024 Results",
+      description:
+        "A visualisation of the results from the Sunshine Coast Marathon 2024",
+    },
+  ];
 }
 
 export function getAllPostIds() {

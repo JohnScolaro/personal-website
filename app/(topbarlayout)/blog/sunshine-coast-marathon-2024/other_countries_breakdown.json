@@ -1,0 +1,1696 @@
+{
+    "data": [
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "NEW ZEALAND",
+            "marker": {
+                "color": "#636efa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "NEW ZEALAND",
+            "offsetgroup": "NEW ZEALAND",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "NEW ZEALAND"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                83
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "UNITED KINGDOM",
+            "marker": {
+                "color": "#EF553B",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "UNITED KINGDOM",
+            "offsetgroup": "UNITED KINGDOM",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "UNITED KINGDOM"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                29
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "SINGAPORE",
+            "marker": {
+                "color": "#00cc96",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "SINGAPORE",
+            "offsetgroup": "SINGAPORE",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "SINGAPORE"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                27
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "UNITED STATES",
+            "marker": {
+                "color": "#ab63fa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "UNITED STATES",
+            "offsetgroup": "UNITED STATES",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "UNITED STATES"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                18
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "JAPAN",
+            "marker": {
+                "color": "#FFA15A",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "JAPAN",
+            "offsetgroup": "JAPAN",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "JAPAN"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                17
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "TAIWAN, PROVINCE OF CHINA",
+            "marker": {
+                "color": "#19d3f3",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "TAIWAN, PROVINCE OF CHINA",
+            "offsetgroup": "TAIWAN, PROVINCE OF CHINA",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "TAIWAN, PROVINCE OF CHINA"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                17
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "HONG KONG",
+            "marker": {
+                "color": "#FF6692",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "HONG KONG",
+            "offsetgroup": "HONG KONG",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "HONG KONG"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                16
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "NORWAY",
+            "marker": {
+                "color": "#B6E880",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "NORWAY",
+            "offsetgroup": "NORWAY",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "NORWAY"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                10
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "GERMANY",
+            "marker": {
+                "color": "#FF97FF",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "GERMANY",
+            "offsetgroup": "GERMANY",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "GERMANY"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                7
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "FRANCE",
+            "marker": {
+                "color": "#FECB52",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "FRANCE",
+            "offsetgroup": "FRANCE",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "FRANCE"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                5
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "CANADA",
+            "marker": {
+                "color": "#636efa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "CANADA",
+            "offsetgroup": "CANADA",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "CANADA"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                5
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "PHILIPPINES",
+            "marker": {
+                "color": "#EF553B",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "PHILIPPINES",
+            "offsetgroup": "PHILIPPINES",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "PHILIPPINES"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                4
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "IRELAND",
+            "marker": {
+                "color": "#00cc96",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "IRELAND",
+            "offsetgroup": "IRELAND",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "IRELAND"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                3
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "AUSTRIA",
+            "marker": {
+                "color": "#ab63fa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "AUSTRIA",
+            "offsetgroup": "AUSTRIA",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "AUSTRIA"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                3
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "COLOMBIA",
+            "marker": {
+                "color": "#FFA15A",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "COLOMBIA",
+            "offsetgroup": "COLOMBIA",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "COLOMBIA"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                3
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "Unknown",
+            "marker": {
+                "color": "#19d3f3",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "Unknown",
+            "offsetgroup": "Unknown",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "Unknown"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                2
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "VIET NAM",
+            "marker": {
+                "color": "#FF6692",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "VIET NAM",
+            "offsetgroup": "VIET NAM",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "VIET NAM"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                2
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "KOREA, REPUBLIC OF",
+            "marker": {
+                "color": "#B6E880",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "KOREA, REPUBLIC OF",
+            "offsetgroup": "KOREA, REPUBLIC OF",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "KOREA, REPUBLIC OF"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                2
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "DENMARK",
+            "marker": {
+                "color": "#FF97FF",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "DENMARK",
+            "offsetgroup": "DENMARK",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "DENMARK"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                2
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "ITALY",
+            "marker": {
+                "color": "#FECB52",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "ITALY",
+            "offsetgroup": "ITALY",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "ITALY"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                2
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "CHINA",
+            "marker": {
+                "color": "#636efa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "CHINA",
+            "offsetgroup": "CHINA",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "CHINA"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "CZECH REPUBLIC",
+            "marker": {
+                "color": "#EF553B",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "CZECH REPUBLIC",
+            "offsetgroup": "CZECH REPUBLIC",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "CZECH REPUBLIC"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "HUNGARY",
+            "marker": {
+                "color": "#00cc96",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "HUNGARY",
+            "offsetgroup": "HUNGARY",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "HUNGARY"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "BRAZIL",
+            "marker": {
+                "color": "#ab63fa",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "BRAZIL",
+            "offsetgroup": "BRAZIL",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "BRAZIL"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "NEW CALEDONIA",
+            "marker": {
+                "color": "#FFA15A",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "NEW CALEDONIA",
+            "offsetgroup": "NEW CALEDONIA",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "NEW CALEDONIA"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "PORTUGAL",
+            "marker": {
+                "color": "#19d3f3",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "PORTUGAL",
+            "offsetgroup": "PORTUGAL",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "PORTUGAL"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "SOUTH AFRICA",
+            "marker": {
+                "color": "#FF6692",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "SOUTH AFRICA",
+            "offsetgroup": "SOUTH AFRICA",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "SOUTH AFRICA"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "UNITED ARAB EMIRATES",
+            "marker": {
+                "color": "#B6E880",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "UNITED ARAB EMIRATES",
+            "offsetgroup": "UNITED ARAB EMIRATES",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "UNITED ARAB EMIRATES"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "SPAIN",
+            "marker": {
+                "color": "#FF97FF",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "SPAIN",
+            "offsetgroup": "SPAIN",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "SPAIN"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        },
+        {
+            "alignmentgroup": "True",
+            "hovertemplate": "country=%{text}\u003cbr\u003eCountry=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+            "legendgroup": "SWITZERLAND",
+            "marker": {
+                "color": "#FECB52",
+                "pattern": {
+                    "shape": ""
+                }
+            },
+            "name": "SWITZERLAND",
+            "offsetgroup": "SWITZERLAND",
+            "orientation": "v",
+            "showlegend": true,
+            "text": [
+                "SWITZERLAND"
+            ],
+            "textposition": "auto",
+            "x": [
+                "Other"
+            ],
+            "xaxis": "x",
+            "y": [
+                1
+            ],
+            "yaxis": "y",
+            "type": "bar"
+        }
+    ],
+    "layout": {
+        "template": {
+            "data": {
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmapgl": [
+                    {
+                        "type": "heatmapgl",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "scatter": [
+                    {
+                        "fillpattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        },
+                        "type": "scatter"
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "type": "parcoords",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "bar": [
+                    {
+                        "error_x": {
+                            "color": "#2a3f5f"
+                        },
+                        "error_y": {
+                            "color": "#2a3f5f"
+                        },
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "marker": {
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "histogram"
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        },
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "aaxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "type": "carpet"
+                    }
+                ],
+                "table": [
+                    {
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "type": "table"
+                    }
+                ],
+                "barpolar": [
+                    {
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "barpolar"
+                    }
+                ],
+                "pie": [
+                    {
+                        "automargin": true,
+                        "type": "pie"
+                    }
+                ]
+            },
+            "layout": {
+                "autotypenumbers": "strict",
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#FFA15A",
+                    "#19d3f3",
+                    "#FF6692",
+                    "#B6E880",
+                    "#FF97FF",
+                    "#FECB52"
+                ],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "hovermode": "closest",
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "#E5ECF6",
+                "polar": {
+                    "bgcolor": "#E5ECF6",
+                    "angularaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "radialaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "ternary": {
+                    "bgcolor": "#E5ECF6",
+                    "aaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "caxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "sequential": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ]
+                },
+                "xaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "landcolor": "#E5ECF6",
+                    "subunitcolor": "white",
+                    "showland": true,
+                    "showlakes": true,
+                    "lakecolor": "white"
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "mapbox": {
+                    "style": "light"
+                }
+            }
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": ""
+            }
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.0,
+                1.0
+            ],
+            "title": {
+                "text": "Number of People"
+            }
+        },
+        "legend": {
+            "title": {
+                "text": "country"
+            },
+            "tracegroupgap": 0
+        },
+        "margin": {
+            "t": 60
+        },
+        "barmode": "relative",
+        "showlegend": false,
+        "title": {
+            "text": "A Breakdown of Other Countries"
+        }
+    }
+}

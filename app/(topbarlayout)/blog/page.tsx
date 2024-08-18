@@ -1,4 +1,7 @@
-import { getSortedPostsData } from "../../../lib/posts";
+import {
+  getSortedPostsData,
+  getSortedCustomPostsData,
+} from "../../../lib/posts";
 import Card from "../../../components/card";
 import { Metadata } from "next";
 
@@ -9,6 +12,17 @@ export const metadata: Metadata = {
 
 export default function Page() {
   const allPostsData = getSortedPostsData();
+  const allCustomPostsData = getSortedCustomPostsData();
+
+  const allPosts = [...allPostsData, ...allCustomPostsData];
+  // Sort posts by date
+  const sortedAllPosts = allPosts.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
 
   return (
     <>
@@ -18,7 +32,7 @@ export default function Page() {
             Blog
           </div>
           <div className="flex flex-col items-center mt-4 gap-4">
-            {allPostsData.map(({ id, date, title, description }) => (
+            {sortedAllPosts.map(({ id, date, title, description }) => (
               <Card
                 title={title}
                 description={description}

@@ -50,7 +50,7 @@ Which gives me Austin Powers time travel vibes:
 
 When the "dual-vector foil" (an excellent name for a 2D-plane btw) was delivered into the solar system, it was shrouded by some white protective coating until detonation. This implies that it's possible to contain a dimensional collapse. It's a shame that humanity never had enough time to research or attempt to create something that could contain this attack, but it makes sense that they didn't. The aliens who attacked with it are mentioned to have been at war, and implied to have already transformed themselves into 2D beings to survive the attack. Surely, if they possess the ability to contain a 2D weapon to attack, they could also contain a 2D weapon used to attack them?
 
-### How could the sophon could exist in higher dimensional space without collapsing?
+### How could the sophons exist in higher dimensional space without collapsing?
 
 In this book, higher dimensional space seems to degenerate into lower dimensional space when touched by it. We see pockets of 4D collapse into 3D, and the solar system collapse into 2D. Surely this implies that the Trisolarans possess the ability to prevent this dimensional collapse, since they've had 12D sophons zipping around earth forever without collapsing?
 
