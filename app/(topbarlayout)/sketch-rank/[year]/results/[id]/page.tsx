@@ -11,7 +11,7 @@ import WrappedAwesomeButton from "../../../../../../components/wrapped-awesome-b
 export async function generateMetadata({ params }) {
   const sketchRankMetaData = getSketchRankMetaData();
   const imageMeta = sketchRankMetaData[params.id];
-  const title = `${imageMeta.title} | SketchRank `;
+  const title = `${imageMeta.title} | SketchRank ${params.year}`;
 
   return {
     title: title,
