@@ -11,7 +11,7 @@ import WrappedAwesomeButton from "../../../../../../components/wrapped-awesome-b
 export async function generateMetadata({ params }) {
   const sketchRankMetaData = getSketchRankMetaData();
   const imageMeta = sketchRankMetaData[params.id];
-  const title = `${imageMeta.title} | SketchRank`;
+  const title = `${imageMeta.title} | SketchRank `;
 
   return {
     title: title,
@@ -22,8 +22,12 @@ export async function generateMetadata({ params }) {
 // If loading a variable font, you don't need to specify the font weight
 const tangerine = Tangerine({ subsets: ["latin"], weight: ["700"] });
 
-export default function Page({ params }: { params: { id: string } }) {
-  const numSketchRankPhotos = getNumSketchRankPhotos();
+export default function Page({
+  params,
+}: {
+  params: { id: string; year: string };
+}) {
+  const numSketchRankPhotos = getNumSketchRankPhotos(params.year);
 
   if (!isParamValid(params.id, numSketchRankPhotos)) {
     return (

@@ -45,7 +45,7 @@ export default function Home() {
             <Card
               title="Sketch Rank"
               description="Rank sketches my partner and I drew"
-              link="/sketch-rank/2024"
+              link="/sketch-rank"
             ></Card>
             <Card
               title="Recipes"
