@@ -46,7 +46,7 @@ export default function ResultsTable({ year }: ResultsTableProps) {
             ? data.map((row) => (
                 <tr key={row.id} className="">
                   <td className="whitespace-nowrap p-1 text-gray-700 text-center">
-                    <Link href={`/sketch-rank/results/${row.id}`}>
+                    <Link href={`/sketch-rank/${year}/results/${row.id}`}>
                       <Image
                         src={getImageUrlFromImageName(
                           year,
