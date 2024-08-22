@@ -9,7 +9,9 @@ import {
   getImageUrlFromImageName,
 } from "./utils";
 import { CenteredSpinner } from "../../../../components/spinner/spinner";
+
 interface ImageCompetitionProps {
+  year: string;
   numImages: number;
 }
 
@@ -54,7 +56,8 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
         winner: winner,
         loser: loser,
         sessionId: sessionId,
-        secret: sketchRankSecurity(winner, loser, sessionId),
+        year: props.year,
+        secret: sketchRankSecurity(winner, loser, sessionId, props.year),
       }),
       headers: {
         "Content-Type": "application/json",
@@ -86,7 +89,10 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
           ) : null}
           <Image
             className="cursor-pointer"
-            src={getImageUrlFromImageName(getImageFileFromImageId(imageId1))}
+            src={getImageUrlFromImageName(
+              props.year,
+              getImageFileFromImageId(imageId1)
+            )}
             alt="Image 1"
             width={500}
             height={500}
@@ -107,7 +113,10 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
           ) : null}
           <Image
             className="cursor-pointer"
-            src={getImageUrlFromImageName(getImageFileFromImageId(imageId2))}
+            src={getImageUrlFromImageName(
+              props.year,
+              getImageFileFromImageId(imageId2)
+            )}
             alt="Image 2"
             width={500}
             height={500}

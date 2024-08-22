@@ -1,13 +1,15 @@
 import { NextResponse } from "next/server";
-import { sql } from '@vercel/postgres';
+import { sql } from "@vercel/postgres";
 
-export const fetchCache = 'force-no-store';
+export const fetchCache = "force-no-store";
 export const revalidate = 0;
 
 export async function GET(request: Request) {
-    try {
-        const result =
-          await sql`SELECT
+  const url = new URL(request.url);
+  const year = url.searchParams.get("year");
+
+  try {
+    const result = await sql`SELECT
           playerId AS Id,
           SUM(winnerCount) AS TotalWins,
           SUM(loserCount) AS TotalLosses,
@@ -18,16 +20,26 @@ export async function GET(request: Request) {
       FROM (
           SELECT winnerId AS playerId, 1 AS winnerCount, 0 AS loserCount
           FROM SketchRankResults
+          WHERE year = ${year}
           UNION ALL
           SELECT loserId AS playerId, 0 AS winnerCount, 1 AS loserCount
           FROM SketchRankResults
+          WHERE year = ${year}
       ) AS SubQuery
       GROUP BY playerId
       ORDER BY WinPercent DESC;`;
-        return NextResponse.json({ result }, { status: 200, headers: {'Cache-Control': 'no-store', 'CDN-Cache-Control': 'no-store', 'Vercel-CDN-Cache-Control': 'no-store'} });
-      } catch (error) {
-        return NextResponse.json({ error }, { status: 500 });
+    return NextResponse.json(
+      { result },
+      {
+        status: 200,
+        headers: {
+          "Cache-Control": "no-store",
+          "CDN-Cache-Control": "no-store",
+          "Vercel-CDN-Cache-Control": "no-store",
+        },
       }
+    );
+  } catch (error) {
+    return NextResponse.json({ error }, { status: 500 });
+  }
 }
-
-

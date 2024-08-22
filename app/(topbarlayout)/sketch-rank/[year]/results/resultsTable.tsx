@@ -7,12 +7,18 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Link from "next/link";
 
-export default function ResultsTable() {
+type ResultsTableProps = {
+  year: string;
+};
+
+export default function ResultsTable({ year }: ResultsTableProps) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    // Fetch the data from your API endpoint
-    fetch("/api/sketch-rank/results")
+    const url = new URL("/api/sketch-rank/results", window.location.origin);
+    url.searchParams.append("year", year);
+
+    fetch(url.toString())
       .then((response) => response.json())
       .then((responseData) => setData(responseData.result.rows))
       .catch((error) => console.error("Error fetching data:", error));
@@ -43,6 +49,7 @@ export default function ResultsTable() {
                     <Link href={`/sketch-rank/results/${row.id}`}>
                       <Image
                         src={getImageUrlFromImageName(
+                          year,
                           getImageFileFromImageId(row.id)
                         )}
                         width={100}

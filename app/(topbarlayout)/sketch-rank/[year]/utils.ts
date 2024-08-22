@@ -17,6 +17,6 @@ export function getImageFileFromImageId(imageId: number) {
   return imageId.toString() + ".jpg";
 }
 
-export function getImageUrlFromImageName(imageName: string) {
-  return `/images/sketch-rank/${imageName}`;
+export function getImageUrlFromImageName(year: string, imageName: string) {
+  return `/images/sketch-rank/${year}/${imageName}`;
 }

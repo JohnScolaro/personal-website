@@ -33,13 +33,17 @@ export default function Page({ params }) {
         <h2 className="font-bold mt-4">Results?</h2>
         <p>
           Interested in checking out the winners? Click ✨
-          <Link className="hyperlink" href={"/sketch-rank/results"}>
+          <Link
+            className="hyperlink"
+            href={`/sketch-rank/${params.year}/results`}
+          >
             here
           </Link>
           ✨
         </p>
         <div className="h-6"></div>
         <ImageCompetition
+          year={params.year}
           numImages={getNumSketchRankPhotos(params.year)}
         ></ImageCompetition>
       </div>

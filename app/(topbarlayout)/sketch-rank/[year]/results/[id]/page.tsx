@@ -5,8 +5,8 @@ import { Tangerine } from "next/font/google";
 import {
   getNumSketchRankPhotos,
   getSketchRankMetaData,
-} from "../../../../../lib/sketch-rank/sketch-rank";
-import WrappedAwesomeButton from "../../../../../components/wrapped-awesome-button";
+} from "../../../../../../lib/sketch-rank/sketch-rank";
+import WrappedAwesomeButton from "../../../../../../components/wrapped-awesome-button";
 
 export async function generateMetadata({ params }) {
   const sketchRankMetaData = getSketchRankMetaData();

@@ -7,13 +7,15 @@ export const metadata: Metadata = {
   description: "The results of SketchRank voting.",
 };
 
-export default function Page() {
+export default function Page({ params }) {
+  const year = params.year;
+
   return (
     <div className="max-w-6xl p-4 m-auto">
       <div className="mt-2 md:mt-4 font-bold text-3xl text-center">Results</div>
       <div className="flex flex-col gap-4 items-center mt-4">
-        <StatsParagraph />
-        <ResultsTable />
+        <StatsParagraph year={year} />
+        <ResultsTable year={year} />
       </div>
     </div>
   );
