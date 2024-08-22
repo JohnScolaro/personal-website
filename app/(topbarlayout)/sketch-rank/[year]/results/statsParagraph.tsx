@@ -16,7 +16,7 @@ export default function StatsParagraph({ year }: StatsParagraphProps) {
 
   useEffect(() => {
     // Fetch the data from your API endpoint
-    fetch("/api/sketch-rank/votes-cast")
+    fetch(url.toString())
       .then((response) => response.json())
       .then((responseData) => {
         setData(responseData.result.rows[0]);
