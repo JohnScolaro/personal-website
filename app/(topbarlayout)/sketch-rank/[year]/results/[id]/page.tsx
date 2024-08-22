@@ -61,7 +61,7 @@ export default function Page({
     <div className="flex flex-col gap-4 p-4 items-stretch">
       <Image
         className="m-auto"
-        src={getImageSrcFromId(id)}
+        src={getImageSrcFromId(params.year, id)}
         alt={params.id}
         height={800}
         width={800}
@@ -119,6 +119,6 @@ function getNextAndPreviousImages(
   }
 }
 
-function getImageSrcFromId(id: number): string {
-  return `/images/sketch-rank/${id.toString()}.jpg`;
+function getImageSrcFromId(year: string, id: number): string {
+  return `/images/sketch-rank/${year}/${id.toString()}.jpg`;
 }
