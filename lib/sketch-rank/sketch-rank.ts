@@ -29,13 +29,14 @@ interface SketchRankMetaData {
   };
 }
 
-export function getSketchRankMetaData(): SketchRankMetaData {
+export function getSketchRankMetaData(year: string): SketchRankMetaData {
   // Read the JSON file synchronously
   const filePath = path.join(
     process.cwd(),
     "public",
     "images",
     "sketch-rank",
+    year,
     "meta.json"
   );
 

@@ -9,7 +9,7 @@ import {
 import WrappedAwesomeButton from "../../../../../../components/wrapped-awesome-button";
 
 export async function generateMetadata({ params }) {
-  const sketchRankMetaData = getSketchRankMetaData();
+  const sketchRankMetaData = getSketchRankMetaData(params.year);
   const imageMeta = sketchRankMetaData[params.id];
   const title = `${imageMeta.title} | SketchRank ${params.year}`;
 
@@ -39,7 +39,7 @@ export default function Page({
 
   const id = parseInt(params.id, 10);
 
-  const metaData = getSketchRankMetaData();
+  const metaData = getSketchRankMetaData(params.year);
 
   var title = "";
   var description = "";
