@@ -1,11 +1,12 @@
 import ResultsTable from "./resultsTable";
 import StatsParagraph from "./statsParagraph";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "SketchRank Results",
-  description: "The results of SketchRank voting.",
-};
+export async function generateMetadata({ params }) {
+  return {
+    title: `SketchRank ${params.year} Results`,
+    description: "The results of SketchRank voting.",
+  };
+}
 
 export default function Page({ params }) {
   const year = params.year;

@@ -1,13 +1,14 @@
 import ImageCompetition from "./imageCompetition";
 import Link from "next/link";
-import type { Metadata } from "next";
 import { getNumSketchRankPhotos } from "../../../../lib/sketch-rank/sketch-rank";
 import { getAllSketchRankYears } from "../utils";
 
-export const metadata: Metadata = {
-  title: "SketchRank",
-  description: "Rank several sketches that my partner and I drew",
-};
+export async function generateMetadata({ params }) {
+  return {
+    title: `SketchRank ${params.year}`,
+    description: "Rank several sketches that my partner and I drew.",
+  };
+}
 
 export default function Page({ params }) {
   return (

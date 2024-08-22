@@ -1,6 +1,4 @@
 import Image from "next/image";
-import fs from "fs";
-import path from "path";
 import { Tangerine } from "next/font/google";
 import {
   getNumSketchRankPhotos,
