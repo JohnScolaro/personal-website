@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import sketchRankSecurity from "../../../../lib/encryption";
 import {
   getRandomImageId,
@@ -16,16 +16,23 @@ interface ImageCompetitionProps {
 }
 
 export default function ImageCompetition(props: ImageCompetitionProps) {
-  const [imageId1, setImageId1] = useState(getRandomImageId(props.numImages));
-  const [imageId2, setImageId2] = useState(
-    getRandomImageId(props.numImages, imageId1)
-  );
-  const [sessionId, setSessionId] = useState(
-    Math.floor(Math.random() * 1000000000)
-  );
+  const [imageId1, setImageId1] = useState<number | null>(null);
+  const [imageId2, setImageId2] = useState<number | null>(null);
+  const [sessionId, setSessionId] = useState<number | null>(null);
+
   const [imagesRanked, setImagesRanked] = useState(0);
   const [image1Loading, setImage1Loading] = useState(true);
   const [image2Loading, setImage2Loading] = useState(true);
+
+  // Initialize image IDs on client side after component mounts
+  useEffect(() => {
+    const initialImageId1 = getRandomImageId(props.numImages);
+    const initialImageId2 = getRandomImageId(props.numImages, initialImageId1);
+    const initialSessionId = Math.floor(Math.random() * 1000000000);
+    setImageId1(initialImageId1);
+    setImageId2(initialImageId2);
+    setSessionId(initialSessionId);
+  }, [props.numImages]);
 
   function newImages() {
     // Image 1 can't be either of the previous images, and image 2 can't be
@@ -81,54 +88,58 @@ export default function ImageCompetition(props: ImageCompetitionProps) {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row md:justify-center gap-4 items-center mt-2">
-        <div className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit relative">
-          {image1Loading || image2Loading ? (
-            <div className="absolute w-full h-full left-0 top-0 bg-white rounded-lg">
-              <CenteredSpinner />
-            </div>
-          ) : null}
-          <Image
-            className="cursor-pointer"
-            src={getImageUrlFromImageName(
-              props.year,
-              getImageFileFromImageId(imageId1)
-            )}
-            alt="Image 1"
-            width={500}
-            height={500}
-            loading="eager"
-            onLoad={(event) => {
-              setImage1Loading(false);
-            }}
-            onClick={() => {
-              handleImageClick(true);
-            }}
-          />
-        </div>
-        <div className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit relative">
-          {image1Loading || image2Loading ? (
-            <div className="absolute w-full h-full left-0 top-0 bg-white rounded-lg">
-              <CenteredSpinner />
-            </div>
-          ) : null}
-          <Image
-            className="cursor-pointer"
-            src={getImageUrlFromImageName(
-              props.year,
-              getImageFileFromImageId(imageId2)
-            )}
-            alt="Image 2"
-            width={500}
-            height={500}
-            loading="eager"
-            onLoad={(event) => {
-              setImage2Loading(false);
-            }}
-            onClick={() => {
-              handleImageClick(false);
-            }}
-          />
-        </div>
+        {imageId1 !== null && (
+          <div className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit relative">
+            {image1Loading || image2Loading ? (
+              <div className="absolute w-full h-full left-0 top-0 bg-white rounded-lg">
+                <CenteredSpinner />
+              </div>
+            ) : null}
+            <Image
+              className="cursor-pointer"
+              src={getImageUrlFromImageName(
+                props.year,
+                getImageFileFromImageId(imageId1)
+              )}
+              alt="Image 1"
+              width={500}
+              height={500}
+              loading="eager"
+              onLoad={(event) => {
+                setImage1Loading(false);
+              }}
+              onClick={() => {
+                handleImageClick(true);
+              }}
+            />
+          </div>
+        )}
+        {imageId2 !== null && (
+          <div className="p-2 border-2 rounded-lg border-gray-200 hover:border-gray-400 w-fit relative">
+            {image1Loading || image2Loading ? (
+              <div className="absolute w-full h-full left-0 top-0 bg-white rounded-lg">
+                <CenteredSpinner />
+              </div>
+            ) : null}
+            <Image
+              className="cursor-pointer"
+              src={getImageUrlFromImageName(
+                props.year,
+                getImageFileFromImageId(imageId2)
+              )}
+              alt="Image 2"
+              width={500}
+              height={500}
+              loading="eager"
+              onLoad={(event) => {
+                setImage2Loading(false);
+              }}
+              onClick={() => {
+                handleImageClick(false);
+              }}
+            />
+          </div>
+        )}
       </div>
     </>
   );
