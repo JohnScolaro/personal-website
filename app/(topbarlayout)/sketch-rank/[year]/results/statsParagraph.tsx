@@ -4,12 +4,19 @@ import React, { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-export default function StatsParagraph() {
+type StatsParagraphProps = {
+  year: string;
+};
+
+export default function StatsParagraph({ year }: StatsParagraphProps) {
   const [data, setData] = useState(null);
+
+  const url = new URL("/api/sketch-rank/votes-cast", window.location.origin);
+  url.searchParams.append("year", year);
 
   useEffect(() => {
     // Fetch the data from your API endpoint
-    fetch("/api/sketch-rank/votes-cast")
+    fetch(url.toString())
       .then((response) => response.json())
       .then((responseData) => {
         setData(responseData.result.rows[0]);

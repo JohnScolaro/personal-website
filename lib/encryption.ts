@@ -1,11 +1,22 @@
 const crypto = require("crypto");
 
-export default function sketchRankSecurity(winnerId: number, loserId: number, sessionId: number) {
-    // If you're reading this, this isn't supposed to be airtight security,
-    // it's just supposed to stop people from being able to ruin my data
-    // without doing at least the bare minimum amount of work. If you're
-    // reading please *please* don't ruin my data. Pretty pwease!
-    return hashWithCrypto(winnerId.toString() + loserId.toString() + sessionId.toString() + "BANANA");
+export default function sketchRankSecurity(
+  winnerId: number,
+  loserId: number,
+  sessionId: number,
+  year: string
+) {
+  // If you're reading this, this isn't supposed to be airtight security,
+  // it's just supposed to stop people from being able to ruin my data
+  // without doing at least the bare minimum amount of work. If you're
+  // reading please *please* don't ruin my data. Pretty pwease!
+  return hashWithCrypto(
+    winnerId.toString() +
+      loserId.toString() +
+      sessionId.toString() +
+      year.toString() +
+      "BANANA"
+  );
 }
 
 function hashWithCrypto(input) {

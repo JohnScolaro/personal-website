@@ -1,17 +1,15 @@
 import Image from "next/image";
-import fs from "fs";
-import path from "path";
 import { Tangerine } from "next/font/google";
 import {
   getNumSketchRankPhotos,
   getSketchRankMetaData,
-} from "../../../../../lib/sketch-rank/sketch-rank";
-import WrappedAwesomeButton from "../../../../../components/wrapped-awesome-button";
+} from "../../../../../../lib/sketch-rank/sketch-rank";
+import WrappedAwesomeButton from "../../../../../../components/wrapped-awesome-button";
 
 export async function generateMetadata({ params }) {
-  const sketchRankMetaData = getSketchRankMetaData();
+  const sketchRankMetaData = getSketchRankMetaData(params.year);
   const imageMeta = sketchRankMetaData[params.id];
-  const title = `${imageMeta.title} | SketchRank`;
+  const title = `${imageMeta.title} | SketchRank ${params.year}`;
 
   return {
     title: title,
@@ -22,8 +20,12 @@ export async function generateMetadata({ params }) {
 // If loading a variable font, you don't need to specify the font weight
 const tangerine = Tangerine({ subsets: ["latin"], weight: ["700"] });
 
-export default function Page({ params }: { params: { id: string } }) {
-  const numSketchRankPhotos = getNumSketchRankPhotos();
+export default function Page({
+  params,
+}: {
+  params: { id: string; year: string };
+}) {
+  const numSketchRankPhotos = getNumSketchRankPhotos(params.year);
 
   if (!isParamValid(params.id, numSketchRankPhotos)) {
     return (
@@ -35,7 +37,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
   const id = parseInt(params.id, 10);
 
-  const metaData = getSketchRankMetaData();
+  const metaData = getSketchRankMetaData(params.year);
 
   var title = "";
   var description = "";
@@ -57,7 +59,7 @@ export default function Page({ params }: { params: { id: string } }) {
     <div className="flex flex-col gap-4 p-4 items-stretch">
       <Image
         className="m-auto"
-        src={getImageSrcFromId(id)}
+        src={getImageSrcFromId(params.year, id)}
         alt={params.id}
         height={800}
         width={800}
@@ -115,6 +117,6 @@ function getNextAndPreviousImages(
   }
 }
 
-function getImageSrcFromId(id: number): string {
-  return `/images/sketch-rank/${id.toString()}.jpg`;
+function getImageSrcFromId(year: string, id: number): string {
+  return `/images/sketch-rank/${year}/${id.toString()}.jpg`;
 }

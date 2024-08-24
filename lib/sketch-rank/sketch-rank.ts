@@ -2,12 +2,13 @@ import path from "path";
 import fs from "fs";
 
 // Define the function to count JPG files in a folder
-export function getNumSketchRankPhotos(): number {
+export function getNumSketchRankPhotos(year: string): number {
   const fullPath = path.resolve(
     process.cwd(),
     "public",
     "images",
-    "sketch-rank"
+    "sketch-rank",
+    year
   );
 
   // Read the contents of the folder
@@ -28,13 +29,14 @@ interface SketchRankMetaData {
   };
 }
 
-export function getSketchRankMetaData(): SketchRankMetaData {
+export function getSketchRankMetaData(year: string): SketchRankMetaData {
   // Read the JSON file synchronously
   const filePath = path.join(
     process.cwd(),
     "public",
     "images",
     "sketch-rank",
+    year,
     "meta.json"
   );
 

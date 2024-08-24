@@ -1,6 +1,7 @@
 import { getNumSketchRankPhotos } from '../lib/sketch-rank/sketch-rank'
 import { getSortedPostsData } from "../lib/posts";
 import { getSortedRecipeData } from "../lib/recipes";
+import {getAllSketchRankYears} from "./(topbarlayout)/sketch-rank/utils";
 
 export default async function sitemap() {
   const URL = "https://johnscolaro.xyz";
@@ -18,11 +19,17 @@ export default async function sitemap() {
   const recipeRoutes = recipeData.map(recipe => `/recipes/${recipe.id}`);
   const allRecipeRoutes = ["/recipes", ...recipeRoutes];
 
-  const sketchRankRoutes = ["/sketch-rank", "/sketch-rank/results"];
-  let i = 0;
-  while (i < getNumSketchRankPhotos()) {
-    sketchRankRoutes.push(`/sketch-rank/results/${i.toString()}`)
-    i++;
+  const sketchRankRoutes = ["/sketch-rank"];
+  const sketchRankYears = await getAllSketchRankYears();
+  for (const year of sketchRankYears) {
+    sketchRankRoutes.push(`/sketch-rank/${year}`);
+    sketchRankRoutes.push(`/sketch-rank/${year}/results`);
+
+    let i = 0;
+    while (i < getNumSketchRankPhotos(year)) {
+      sketchRankRoutes.push(`/sketch-rank/${year}/results/${i.toString()}`);
+      i++;
+    }
   }
   
   const allRoutes = [...routes, ...allBlogRoutes, ...allRecipeRoutes, ...sketchRankRoutes].map((route) => ({
