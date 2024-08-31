@@ -24,7 +24,7 @@ Look at that, the mean is a touch under 0.3. That's good, because according to [
 
 This Python code should show the same thing:
 
-```
+```python
 import matplotlib.pyplot as plt
 from scipy.stats import beta
 
