@@ -57,7 +57,18 @@ module.exports = {
     },
   },
   plugins: [
-    require("@tailwindcss/typography")
+    require("@tailwindcss/typography"),
+    require("tailwind-highlightjs")
   ],
+  safelist: [
+    {
+      pattern: /hljs+/,
+    },
+  ],
+  theme: {
+    hljs: {
+      theme: 'devibeans',
+    },
+  },
 }
 
