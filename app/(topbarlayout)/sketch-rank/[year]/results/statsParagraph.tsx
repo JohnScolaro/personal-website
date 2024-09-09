@@ -11,10 +11,10 @@ type StatsParagraphProps = {
 export default function StatsParagraph({ year }: StatsParagraphProps) {
   const [data, setData] = useState(null);
 
-  const url = new URL("/api/sketch-rank/votes-cast", window.location.origin);
-  url.searchParams.append("year", year);
-
   useEffect(() => {
+    const url = new URL("/api/sketch-rank/votes-cast", window.location.origin);
+    url.searchParams.append("year", year);
+
     // Fetch the data from your API endpoint
     fetch(url.toString())
       .then((response) => response.json())
