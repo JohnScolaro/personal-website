@@ -5,6 +5,19 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "John Scolaro",
   description: "The homepage for John Scolaro's personal website",
+  openGraph: {
+    title: "John Scolaro",
+    description: "The homepage for John Scolaro's personal website",
+    url: "https://johnscolaro.xyz",
+    images: [
+      {
+        url: "https://johnscolaro.xyz/images/preview_images/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "John Scolaro's Website Preview",
+      },
+    ],
+  },
 };
 
 export default function Home() {
