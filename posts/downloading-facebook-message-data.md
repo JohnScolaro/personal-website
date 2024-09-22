@@ -113,13 +113,13 @@ Very inconveniently, the JSON message formats between old messages and new ones 
 ### Older message format
 
 ```json
-    {
-      "sender_name": "Person A",
-      "timestamp_ms": 1709878199932,
-      "content": "Howdy Partner",
-      "reactions": [],
-      "is_geoblocked_for_viewer": false
-    },
+{
+  "sender_name": "Person A",
+  "timestamp_ms": 1709878199932,
+  "content": "Howdy Partner",
+  "reactions": [],
+  "is_geoblocked_for_viewer": false
+}
 ```
 
 ### Encrypted message format
