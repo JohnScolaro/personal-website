@@ -66,12 +66,12 @@ export default function Page({
       ></Image>
       <div className="flex justify-between">
         <WrappedAwesomeButton
-          href={`/sketch-rank/results/${previousId.toString()}`}
+          href={`/sketch-rank/${params.year}/results/${previousId.toString()}`}
         >
           Previous
         </WrappedAwesomeButton>
         <WrappedAwesomeButton
-          href={`/sketch-rank/results/${nextId.toString()}`}
+          href={`/sketch-rank/${params.year}/results/${nextId.toString()}`}
         >
           Next
         </WrappedAwesomeButton>

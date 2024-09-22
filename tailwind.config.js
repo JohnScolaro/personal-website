@@ -7,16 +7,6 @@ module.exports = {
   theme: {
     extend: {
       typography: ({ theme }) => ({
-        DEFAULT: {
-          css: {
-            'code::before': {
-              content: '""'
-            },
-            'code::after': {
-              content: '""'
-            },
-          },
-        },
         black: {
           css: {
             '--tw-prose-body': theme('colors.black'),
