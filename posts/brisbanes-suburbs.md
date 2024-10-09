@@ -106,7 +106,7 @@ To truely bloat our suburb count, Brisbane has accumulated a number of what I'm 
 
 And showcasing the wild, wacky and logic defying nature of human boundary definition and naming:
 
-- Mt Gravatt, Mt Gravatt East, and Upper Mt Gravatt (where Upper Mt Gravatt is further South **AND** lower in elevation than the other suburbs)[^3]
+- Mt Gravatt, Mt Gravatt East, and Upper Mt Gravatt (where Upper Mt Gravatt is further South **AND** lower in elevation than the other suburbs)[^2]
 - Kedron and Upper Kedron (which are located over 15km away from each other and Upper Kedron doesn't even touch Kedron Brook, it's namesake.)
 
 Anyhow, these group names are trouble for learning. When I look at the map, if I see Chermside West directly west of the suburb I'm trying to guess, I know it's obviously Chermside without having to link it to it's surrounding suburbs. For all "group suburbs" (except the non-adjacent Kedron's 😤) I made a new special-case card where they are both plotted in the same card, and you need to guess both names.
@@ -124,9 +124,8 @@ These cards look like this:
 ## References
 
 [^1]: According to [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_Brisbane_suburbs) and not the official localities KML file, but I'm sure it's close enough.
-[^2]: And by "we", I mean "[Queensland Place Names Board](https://en.wikipedia.org/wiki/Queensland_place_naming)" in the 1960's.
-[^3]: Check out a topographic map [here](https://en-au.topographic-map.com/map-hrvggp/Upper-Mount-Gravatt/?center=-27.54313%2C153.08126&zoom=13) if you want to check. I don't have average for the offical suburb boundaries, but it does appear that _upper_ Mt Gravatt is actually lower than Mt Gravatt and Mt Gravatt East.
+[^2]: Check out a topographic map [here](https://en-au.topographic-map.com/map-hrvggp/Upper-Mount-Gravatt/?center=-27.54313%2C153.08126&zoom=13) if you want to check. I don't have average for the offical suburb boundaries, but it does appear that _upper_ Mt Gravatt is actually lower than Mt Gravatt and Mt Gravatt East.
 
 ## MEmes to Sprinkle in in due course
 
-![](/images/blog/brisbane-suburbs/meme2.png)
+![](/images/blog/brisbane-suburbs/petrie-terrace-bad.png)
