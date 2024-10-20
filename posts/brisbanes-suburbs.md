@@ -38,13 +38,34 @@ Or:
 >
 > "haha cool"
 
+## Are you really complaining about arbitrary lines on a map?
+
+Yes. After all, isn't complaining about arbitrary lines on a map one of mankinds favourite passtimes? Where there is land and a reason to seperate it into areas, there will be arguments. Internationally, there are currently [hundreds of territorial disputes](https://en.wikipedia.org/wiki/List_of_territorial_disputes). Historically, the states of Australia have [had disputes](https://en.wikipedia.org/wiki/South_Australia%E2%80%93Victoria_border_dispute). There are obvious reasons why disputes would arise in the drawing of [federal electoral boundaries](https://www.abc.net.au/news/2011-11-02/a-beginners-guide-to-gerrymandering/9389878). It's fun for the whole family.
+
+In contract to any of the above example, my gripe is far more basic. I think Brisbane has too many suburbs.
+
+## What is a suburb anyway?
+
+Australia has a lot of different methods of dividing up its land.
+
+- States
+- Federal, State, and Local Government Electorates (for running the country)
+- Post Codes (for sending mail)
+- [Aged Care Planning Regions](https://www.abs.gov.au/census/guide-census-data/geography/census-geography-glossary#aged-care-planning-regions-acpr-) (for managing aged care)
+- [Australian Drainage Divisions](https://www.abs.gov.au/census/guide-census-data/geography/census-geography-glossary#australian-drainage-divisions-add-) (for managing water)
+- [Banana Biosecurity Zone](https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Boundaries/AdminBoundariesFramework/MapServer/132) (for managing banana 🍌)
+
+If you want to find more, have a browse of the [Queensland Spatial Catalogue](https://qldspatial.information.qld.gov.au/catalogue/custom/index.page) or the [Australian Bureau of Statistics](https://www.abs.gov.au/census/guide-census-data/geography).
+
+Suburbs are just another way of dividing up land. The definition of a suburb vaguely boils down to "an area in a city", and so the government has codified these somewhat arbitrary areas into official suburbs so they can be used for other purposes (Like statistical reporting, or combined together to form larger areas).
+
 ## What's the Problem?
 
 Brisbanites use suburbs to indicate different locations. If you need a more granular address, you can use street names or an actual address, but obviously nobody knows the location of every street in the city. If you need less detail you can give a vague direction like: "Northside" or an adjacent city like "Logan-way", but if you're explaining where you live to someone from Brisbane, you'll tend to use the suburb.
 
 In the Brisbane local government area (LGA), there are 190 mainland suburbs. That's right, **190**! And that doesn't even cover some big suburbs fairly close to the city!
 
-What's that? You live in Beenleigh? Well that's actually not in the Brisbane LGA, that's the "Logan City" LGA. How about Albany Creek? #pranked, that's in the "Morton Bay City" LGA. What about Goodna? It's 20km from Brisbane CBD, and is on the train line directly to Roma Street, surely it's in the Brisbane LGA right? WRONG! It's in the "Ipswich City" LGA! So even if you do manage to somehow memorise the whopping 190 suburbs of Brisbane, that STILL isn't enough.
+What's that? You live in Beenleigh? Well that's actually not in the Brisbane LGA, that's the "Logan City" LGA. How about Albany Creek? #pranked, that's in the "Morton Bay City" LGA. What about Goodna? It's on the train line directly to Roma Street, surely it's in the Brisbane LGA right? WRONG! It's in the "Ipswich City" LGA! So even if you do manage to somehow memorise the whopping 190 suburbs of Brisbane, that STILL isn't enough.
 
 The number of suburbs in the LGA's surrounding Brisbane are:[^1]
 
@@ -56,7 +77,7 @@ The number of suburbs in the LGA's surrounding Brisbane are:[^1]
 | Morton Bay City | 99          |
 | **Total**       | **430**     |
 
-Yikes, that's a lot. Realistically you wouldn't have to remember all of these suburbs. Probably just all of Brisbane's, and a couple of the most populous non-Brisbane suburbs + all the suburbs with train stations out to Ipswich and the Gold Coast. For example, Ipswich has a suburb called "[New Chum](https://en.wikipedia.org/wiki/New_Chum,_Queensland)" with a population of 0, so it's probably not worth learning about New Chum. 😔
+Yikes, that's a lot. Realistically you wouldn't have to remember all of these suburbs. Probably just all of Brisbane's, and a couple of the most populous non-Brisbane suburbs + all the suburbs with train stations out to Ipswich and the Gold Coast. For example, Brisbane has an industrial suburb called "[Larapinta](https://en.wikipedia.org/wiki/Larapinta,_Queensland)" with a population of 0, so it's probably not worth learning about Larapinta. 😔
 
 As a consequence of the extraordinary number of suburbs, it's hard to explain to someone where you live without using Google Maps as a crutch.
 
@@ -64,7 +85,7 @@ As a consequence of the extraordinary number of suburbs, it's hard to explain to
 
 ![An AI generated image of a man hovering above the ground as he sits in a cross legged meditative pose. In the background is Brisbane.](/images/blog/brisbane-suburbs/memorise_all_suburbs_man.jpg)
 
-I've been having a blast for the last month, slowly memorising all the countries/capitals/flags of the word with [Anki](<https://en.wikipedia.org/wiki/Anki_(software)>), a spaced-repetition flashcard app, using the [Ultimate Geography](https://ankiweb.net/shared/info/2109889812) deck. Over a month, I've stuffed my brain with over 700 cards worth of information, introducing the default 20 cards per day, and can somehow recall all of them pretty well. The spaced repetition system works wonders for remembering information. So why not create a set of flashcards for all Brisbane suburbs, _and just remember them all?_
+Recently, I've been having a blast slowly memorising all the countries/capitals/flags of the world with [Anki](<https://en.wikipedia.org/wiki/Anki_(software)>), a spaced-repetition flashcard app, using the [Ultimate Geography](https://ankiweb.net/shared/info/2109889812) deck. Over ~2 months, I've stuffed my brain with over 990 cards worth of information, and can somehow recall all of them pretty well. The spaced repetition system works wonders for remembering information. So why not create a set of flashcards for all Brisbane suburbs, _and just remember them all?_
 
 Well, thanks to the excellent work done by the Queensland Government, I can download the [detailed borders](https://qldspatial.information.qld.gov.au/catalogue/custom/detail.page?fid=%7B8F24D271-EE3B-491C-915C-E7DD617F95DC%7D) of all the localities (What we call "suburbs" are technically called "localities") of Queensland, and thanks to the creators of the [genanki](https://github.com/kerrickstaley/genanki) Python package, I can programatically generate myself flashcards for all of Brisbane's Suburbs! (If you want the deck for yourself, you can find it [here](https://ankiweb.net/shared/info/1610977540), or you can create it from the [source code](https://github.com/JohnScolaro/brisbane_suburbs_anki_cards) if you'd like).
 
@@ -91,40 +112,92 @@ On my first attempt creating the deck of suburbs, the suburbs were introduced in
 
 ![A meme of containing humanoid versions of the suburbs of Albion, Alderly, Algester laughing at me before Aspley suplexes me into the ground](/images/blog/brisbane-suburbs/suburb_meme.jpg)
 
-I regenerated the cards, but in order of "Increasing distance to Brisbane CBD" and started again.
+I regenerated the deck, but in order of "Increasing distance to Brisbane CBD" and started again.
 
 ### Deck Iteration 2
 
 To truely bloat our suburb count, Brisbane has accumulated a number of what I'm calling "suburb groups". Here are some examples:
 
-- Everton Park and Everton Hills
-- Stafford and Stafford Heights
-- Carina and Carina Heights
 - Kenmore and Kenmore Hills
-- Chermside and Chermside West
-- Holland Park and Holland Park West
+- Stafford and Stafford Heights
+- Wynnum and Wynnum West
+- Don't worry, there are a **lot** more
 
-And showcasing the wild, wacky and logic defying nature of human boundary definition and naming:
+For these adjacent suburbs, I think their sole purpose is that they allow you to do this:
 
-- Mt Gravatt, Mt Gravatt East, and Upper Mt Gravatt (where Upper Mt Gravatt is further South **AND** lower in elevation than the other suburbs)[^2]
-- Kedron and Upper Kedron (which are located over 15km away from each other and Upper Kedron doesn't even touch Kedron Brook, it's namesake.)
+![A meme of sleepie Pooh captioned "Brookfield" and fancy tuxuedoed Pooh captioned "Upper Brookfield"](/images/blog/brisbane-suburbs/brookfield_and_upper_brookfield.png)
 
-Anyhow, these group names are trouble for learning. When I look at the map, if I see Chermside West directly west of the suburb I'm trying to guess, I know it's obviously Chermside without having to link it to it's surrounding suburbs. For all "group suburbs" (except the non-adjacent Kedron's 😤) I made a new special-case card where they are both plotted in the same card, and you need to guess both names.
+These examples are some of the _most_ sensible I could find. Here are some of the less sensible groups, showcasing the wacky and logic defying nature of human boundary definition and naming:
+
+- Mt Gravatt, Mt Gravatt East, and Upper Mt Gravatt (where Upper Mt Gravatt is further South **AND** lower in elevation than the other suburbs)[^2].
+- Kedron and Upper Kedron (which are located over 15km away from each other and Upper Kedron doesn't even touch Kedron Brook, it's namesake).
+- Rochedale and Rochedale South, where Rochedale is in the Brisbane LGA, but Rochedale South is in the Logan LGA.
+- Everton Park and Everton Hills, where Everton Park is in the Brisbane LGA, but Everton Hills is in the Moreton Bay LGA.
+
+These 'suburb groups' make learning harder. When I look at the map, if I see Chermside West directly west of the suburb I'm trying to guess, I know it's obviously Chermside without having to link it to it's surrounding suburbs. For all "group suburbs" (except the non-adjacent Kedron's 😤) I made a new special-case card where they are both plotted in the same card, and you need to guess both names.
 
 These cards look like this:
 
-[INSERT EXAMPLE HERE]
+![A map of Brisbane with both Chermside and the neighboring Chermside West blanked out.](/images/blog/brisbane-suburbs/chermside_and_chermside_west.jpg)
 
-## How it's going
+I'm also making special case maps for the localities on Moreton island, showing their location relative to Moreton Island as a whole vs just the zoomed in locality, because for these rare localities, you really want to know where it is on the island, and the zoomed in images give no context.
 
-## Shittest Suburbs of Brisbane
+![Two small maps of Bulwer, labelled before and after. The 'before map' is huge, but it's essentially just a rectangle surrounded by green. The after map contains all of Moreton Island and just a small rectangle highlighted.](/images/blog/brisbane-suburbs/bulwer_before_and_after.jpg)
 
-## Best Suburbs of Brisbane
+## Solution 2 - Just Delete some Suburbs
+
+Remembering all the suburbs worked, but it was hard. An easier solution could be to just delete some suburbs. Can we delete suburbs? Sure! In 1975 Brisbane demoted [Rosalie](https://en.wikipedia.org/wiki/Rosalie,_Queensland) from suburb to a simple neighberhood in the suburb of Paddington. However, possibly because:
+
+- Demoting the suburb you're familiar with and identify as living in feeds 😠👎, while
+- Adding a suburb to recognise your special uniqueness and individual heritage feels 😊👍 (even if it increases the cognitive load of everyone else who lives in the city)
+
+this doesn't happen very often. Perhaps that's why we have so many suburbs in the first place?
+
+If we're going to delete some suburbs though, someone is going to have to pick some suburbs to delete. Here are my votes after forcing myself to memorise all of them:
+
+### Brisbane's Shittest Suburbs
+
+When I say shittest here, I'm talking purely about how much I think your suburb should exist, not the contents of the suburb. If the suburb is tiny and not particularly unique, perhaps it should be redesignated as a neighberhood.
+
+1. [Kalinga](https://en.wikipedia.org/wiki/Kalinga,_Queensland)
+2. [Petrie Terrace](https://en.wikipedia.org/wiki/Petrie_Terrace,_Queensland)
+3. [Stones Corner](https://en.wikipedia.org/wiki/Stones_Corner,_Queensland)
+4. [Grange](https://en.wikipedia.org/wiki/Grange,_Queensland)
+5. [Virginia](https://en.wikipedia.org/wiki/Virginia,_Queensland)
+6. [Robertson](https://en.wikipedia.org/wiki/Robertson,_Queensland) and [MacGregor](https://en.wikipedia.org/wiki/MacGregor,_Queensland)
+7. [Middle Park](https://en.wikipedia.org/wiki/Middle_Park,_Queensland) and [Westlake](https://en.wikipedia.org/wiki/Westlake,_Queensland)
+8. [Upper Kedron](https://en.wikipedia.org/wiki/Upper_Kedron,_Queensland)
+
+### Brisbane's Best Suburbs
+
+1. [Chermside](https://en.wikipedia.org/wiki/Chermside,_Queensland)
+2. [Sunnybank](https://en.wikipedia.org/wiki/Sunnybank,_Queensland)
+3. [St Lucia](https://en.wikipedia.org/wiki/St_Lucia,_Queensland)
+4. [New Farm](https://en.wikipedia.org/wiki/New_Farm,_Queensland)
+
+## Fun Facts About Brisbane I've Learnt While Doing This
+
+I tend to learn suburbs better if I read their Wikipedia page and can remember some interesting fact about the suburb, so a side effect of learning all the suburbs is that I've learnt some niche Brisbane fun-facts. Here are some of my favourite:
+
+- [Tarragindi](https://en.wikipedia.org/wiki/Tarragindi,_Queensland) was named after a guy called: "Tarra Gindi" who was transported to Australia from the Loyalty Islands in the late 1800's. He escaped and cleared land in what is now Tarragindi.
+
+- [Woolloongabba](https://en.wikipedia.org/wiki/Woolloongabba) used to be called: "One Mile Swamp", and [Eight Mile Plains](https://en.wikipedia.org/wiki/Eight_Mile_Plains,_Queensland) was 8 miles away from One Mile Swamp. [Stones Corner](https://en.wikipedia.org/wiki/Stones_Corner,_Queensland) was also known as "Burnett's Swamp". It's no wonder that Brisbane frequently floods.
+
+- [Coronation Drive](https://en.wikipedia.org/wiki/Coronation_Drive) used to be called: "River Road" which actually makes a lot more sense than being named after the coronation of another countries King.
+
+- There are a number of suburbs that "we actually forgot how we named it, haha, sorry 😬". We _think_ that [Virginia](https://en.wikipedia.org/wiki/Virginia,_Queensland) is named after the US State Virginia. We don't know how [Tingalpa](https://en.wikipedia.org/wiki/Tingalpa,_Queensland) got it's name, or [Pinjarra Hills](https://en.wikipedia.org/wiki/Pinjarra_Hills,_Queensland) either.
+
+- Some of our suburbs were spelt incorrectly and we just rolled with it. [Coopers Plains](https://en.wikipedia.org/wiki/Coopers_Plains,_Queensland) should really be "Cowper's Plains", [Algester](https://en.wikipedia.org/wiki/Algester,_Queensland) should really be "Alcester",[^3] and [Enogerra](https://en.wikipedia.org/wiki/Enoggera,_Queensland) should probably be "Euogerra".
+
+## In Conclusion
+
+![The classic Simpsons meme of "old man yells at cloud", except I've replaced the word "cloud" with "suburbs".](/images/blog/brisbane-suburbs/old_man_yells_at_suburb.png)
 
 ## References
 
 [^1]: According to [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_Brisbane_suburbs) and not the official localities KML file, but I'm sure it's close enough.
 [^2]: Check out a topographic map [here](https://en-au.topographic-map.com/map-hrvggp/Upper-Mount-Gravatt/?center=-27.54313%2C153.08126&zoom=13) if you want to check. I don't have average for the offical suburb boundaries, but it does appear that _upper_ Mt Gravatt is actually lower than Mt Gravatt and Mt Gravatt East.
+[^3]: The source for this isn't on the wikipedia page, you need to go to the [Queensland Place Names](https://www.qld.gov.au/environment/land/title/place-names/queensland-place-names-search) website, and specifically search for "Algester".
 
 ## MEmes to Sprinkle in in due course
 
