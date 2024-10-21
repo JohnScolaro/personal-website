@@ -63,9 +63,9 @@ Suburbs are just another way of dividing up land. The definition of a suburb vag
 
 Brisbanites use suburbs to indicate different locations. If you need a more granular address, you can use street names or an actual address, but obviously nobody knows the location of every street in the city. If you need less detail you can give a vague direction like: "Northside" or an adjacent city like "Logan-way", but if you're explaining where you live to someone from Brisbane, you'll tend to use the suburb.
 
-In the Brisbane local government area (LGA), there are 190 mainland suburbs. That's right, **190**! And that doesn't even cover some big suburbs fairly close to the city!
+In the Brisbane local government area (LGA), there are 190 mainland suburbs. That's right, **190**! And that's only the Brisbane LGA! If you dare drive more than 20 minutes out of the city into an adjacent LGA, you'll have to remember about ~200 more suburbs to know where you are, and you haven't even left the "Greater Brisbane Area" yet.
 
-What's that? You live in Beenleigh? Well that's actually not in the Brisbane LGA, that's the "Logan City" LGA. How about Albany Creek? #pranked, that's in the "Morton Bay City" LGA. What about Goodna? It's on the train line directly to Roma Street, surely it's in the Brisbane LGA right? WRONG! It's in the "Ipswich City" LGA! So even if you do manage to somehow memorise the whopping 190 suburbs of Brisbane, that STILL isn't enough.
+What's that? You live in Beenleigh? Well that's actually not in the Brisbane LGA, that's the "Logan City" LGA, which has another 63 wonderful suburbs. So if you truely want to learn all the suburbs of greater Brisbane you have a lot more to learn.
 
 The number of suburbs in the LGA's surrounding Brisbane are:[^1]
 
@@ -79,7 +79,11 @@ The number of suburbs in the LGA's surrounding Brisbane are:[^1]
 
 Yikes, that's a lot. Realistically you wouldn't have to remember all of these suburbs. Probably just all of Brisbane's, and a couple of the most populous non-Brisbane suburbs + all the suburbs with train stations out to Ipswich and the Gold Coast. For example, Brisbane has an industrial suburb called "[Larapinta](https://en.wikipedia.org/wiki/Larapinta,_Queensland)" with a population of 0, so it's probably not worth learning about Larapinta. 😔
 
-As a consequence of the extraordinary number of suburbs, it's hard to explain to someone where you live without using Google Maps as a crutch.
+Not only do we reference our suburbs in casual conversation, for some reason we've based our entire public transit system around an integral understanding of all Brisbane's suburbs. We've called the Brisbane train lines: "The Ferny Grove and Beenleigh Lines", "Shorncliffe and Cleveland Lines", or "The Springfield Service". They've been labelled by their destination suburb, requiring you to know the suburb to know where the train goes. And of the 5 suburbs mentioned above, only 1 of them is even in the Brisbane City LGA. Brisbane's extensive bus network is similar:
+
+![An image showing the from signage of 5 busses. They all have a number on the left and then the suburb name as the name of the bus.](/images/blog/brisbane-suburbs/busses.png)
+
+As a consequence of the extraordinary number of suburbs, it's hard to explain to someone where you live, or catch a train/bus without using Google Maps as a crutch.
 
 ## Solution 1 - Just remember every suburb
 
@@ -155,25 +159,31 @@ this doesn't happen very often. Perhaps that's why we have so many suburbs in th
 
 If we're going to delete some suburbs though, someone is going to have to pick some suburbs to delete. Here are my votes after forcing myself to memorise all of them:
 
-### Brisbane's Shittest Suburbs
+### Brisbane's Worst Suburbs
 
-When I say shittest here, I'm talking purely about how much I think your suburb should exist, not the contents of the suburb. If the suburb is tiny and not particularly unique, perhaps it should be redesignated as a neighberhood.
+When I say worst, I'm talking purely about how much I think the suburb should exist, not the contents of the suburb. If the suburb is tiny, with ill-defined boundaries, perhaps it should be redesignated as a neighberhood.
 
-1. [Kalinga](https://en.wikipedia.org/wiki/Kalinga,_Queensland)
-2. [Petrie Terrace](https://en.wikipedia.org/wiki/Petrie_Terrace,_Queensland)
-3. [Stones Corner](https://en.wikipedia.org/wiki/Stones_Corner,_Queensland)
-4. [Grange](https://en.wikipedia.org/wiki/Grange,_Queensland)
-5. [Virginia](https://en.wikipedia.org/wiki/Virginia,_Queensland)
-6. [Robertson](https://en.wikipedia.org/wiki/Robertson,_Queensland) and [MacGregor](https://en.wikipedia.org/wiki/MacGregor,_Queensland)
-7. [Middle Park](https://en.wikipedia.org/wiki/Middle_Park,_Queensland) and [Westlake](https://en.wikipedia.org/wiki/Westlake,_Queensland)
-8. [Upper Kedron](https://en.wikipedia.org/wiki/Upper_Kedron,_Queensland)
+#### 1: [Petrie Terrace](https://en.wikipedia.org/wiki/Petrie_Terrace,_Queensland)
+
+#### 2: [Stones Corner](https://en.wikipedia.org/wiki/Stones_Corner,_Queensland)
+
+#### 3: [Grange](https://en.wikipedia.org/wiki/Grange,_Queensland)
+
+#### 4: [Upper Kedron](https://en.wikipedia.org/wiki/Upper_Kedron,_Queensland)
+
+#### 5: [Robertson](https://en.wikipedia.org/wiki/Robertson,_Queensland) and [MacGregor](https://en.wikipedia.org/wiki/MacGregor,_Queensland)
+
+#### 6: [Middle Park](https://en.wikipedia.org/wiki/Middle_Park,_Queensland), [Riverhills](https://en.wikipedia.org/wiki/Riverhills,_Queensland), and [Westlake](https://en.wikipedia.org/wiki/Westlake,_Queensland)
 
 ### Brisbane's Best Suburbs
 
-1. [Chermside](https://en.wikipedia.org/wiki/Chermside,_Queensland)
-2. [Sunnybank](https://en.wikipedia.org/wiki/Sunnybank,_Queensland)
-3. [St Lucia](https://en.wikipedia.org/wiki/St_Lucia,_Queensland)
-4. [New Farm](https://en.wikipedia.org/wiki/New_Farm,_Queensland)
+#### 1: [Chermside](https://en.wikipedia.org/wiki/Chermside,_Queensland)
+
+#### 2: [Sunnybank](https://en.wikipedia.org/wiki/Sunnybank,_Queensland)
+
+#### 3: [St Lucia](https://en.wikipedia.org/wiki/St_Lucia,_Queensland)
+
+#### 4: [New Farm](https://en.wikipedia.org/wiki/New_Farm,_Queensland)
 
 ## Fun Facts About Brisbane I've Learnt While Doing This
 
