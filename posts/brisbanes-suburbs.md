@@ -161,29 +161,84 @@ If we're going to delete some suburbs though, someone is going to have to pick s
 
 ### Brisbane's Worst Suburbs
 
-When I say worst, I'm talking purely about how much I think the suburb should exist, not the contents of the suburb. If the suburb is tiny, with ill-defined boundaries, perhaps it should be redesignated as a neighberhood.
+When I say worst, I'm talking purely about how much I think the suburb should exist, not the contents of the suburb. If the suburb is tiny and has non-sensicle boundaries, perhaps it would best serve the City of Brisbane by being absorbed by a more well-known neighboring suburb.
 
 #### 1: [Petrie Terrace](https://en.wikipedia.org/wiki/Petrie_Terrace,_Queensland)
 
+![A map of Brisbane with Petrie Terrace highlighted](/images/blog/brisbane-suburbs/petrie_terrace.jpg)
+
+Top of the list of Brisbane's stupidest suburbs is Petrie Terrace. Petrie Terrice is literally a single road. It's named after an early Australia Pioneer [Andrew Petrie](https://en.wikipedia.org/wiki/Andrew_Petrie), who does seem like a guy worth honoring, but luckily for us, there is ALREADY A SUBURB NAMED AFTER HIM CALLED [PETRIE](https://en.wikipedia.org/wiki/Petrie,_Queensland) ALSO IN BRISBANE. We don't need two suburbs named after the same man. It also has a measly population of ~1,000, compared to the ~10,000 of the average suburb.
+
+Petrie Terrace being a standalone suburb is a joke. In my opinion, it should be combined into Milton.
+
 #### 2: [Stones Corner](https://en.wikipedia.org/wiki/Stones_Corner,_Queensland)
+
+![A map of Brisbane with Stones Corner highlighted](/images/blog/brisbane-suburbs/stones_corner.jpg)
+
+Stones Corner is another tiny suburb, with a population of ~2,000 this time. It's simply the corner of two roads, and is named after James Stone, a man who failed to apply for a hotel license in the 1800's and doesn't have a Wikipedia page. (No hate James, I don't either). It's well known that Stones Corner is a silly suburb, because it was deleted in 1975, before being brought back because "Stones Corner is such an iconic area of not just our local community, but Brisbane as a whole".[^4]
+
+If I can speak as a Brisbane resident of 30 years, I don't really know anyone outside Stones Corner who cares about it at all, and I'd hazard a guess that most people wouldn't be able to tell you where it is on a map. I'd also argue that it's not iconic in the slightest, as it has the smallest Wikipedia article out of all the Brisbane suburb articles that I've read. If someone could point me in the direction of a single historical event that ever occured in Stones Corner, I'd happily drop this down the list.
+
+Delete this suburb.
 
 #### 3: [Grange](https://en.wikipedia.org/wiki/Grange,_Queensland)
 
+![A map of Brisbane with Grange highlighted](/images/blog/brisbane-suburbs/grange.jpg)
+
+Grange is an interesting one. It has a population of ~4000, so it's on the small side. It also has an boring name, named after a tanning company from the 1800's that was later developed. It contains a single school, Wilston State School, which is shamefully named after the neighboring suburb of Wilston because nobody really knows about Grange. Already it's not looking great, but let me show you my main gripe about Grange.
+
+In Brisbane, the suburbs and train lines often share the same name. Take for instance the lovely suburbs of Chelmer, Graceville, Sherwood, and Corinda:
+
+![A map of Brisbane with Chelmer, Graceville, Sherwood and Corinda highlighted](/images/blog/brisbane-suburbs/corinda_4.jpg)
+
+You can see here, that these suburbs are nicely arranged in order, containing all streets on either side of the train line, bounded by the river. There are 4 train stations in these suburbs, named the exact same as the suburbs they are in. 👏It👏just👏makes👏sense👏.
+
+Now peer back to the map of Grange. We can see the train snake by, and Grange is less than 500m away from Alderly, Newmarket, and Wilston stations. Why isn't this land part of those suburbs? It would 👏just👏make👏sense👏 if the boundaries of Alderly, Newmarket, and Wilston stretched up to Kedron Brook. I mean, the school is already called Wilston State School, would it hurt to just chop up the suburb?
+
 #### 4: [Upper Kedron](https://en.wikipedia.org/wiki/Upper_Kedron,_Queensland)
 
-#### 5: [Robertson](https://en.wikipedia.org/wiki/Robertson,_Queensland) and [MacGregor](https://en.wikipedia.org/wiki/MacGregor,_Queensland)
+![A map of Brisbane with Kedron and Upper Kedron highlighted](/images/blog/brisbane-suburbs/kedrons.jpg)
 
-#### 6: [Middle Park](https://en.wikipedia.org/wiki/Middle_Park,_Queensland), [Riverhills](https://en.wikipedia.org/wiki/Riverhills,_Queensland), and [Westlake](https://en.wikipedia.org/wiki/Westlake,_Queensland)
+Do I really explain why Upper Kedron should be removed? Kedron is an inner city suburb. It's on the Kedron brook. Upper Kedron is 15km west, and is **not** on the Kedron Brook. If you specifically designed a city to be as confusing as possibly, this is sort of shit you'd pull.
+
+Upper Kedron also has the benefit of being near Ferny Grove, a fairly well known suburb, so why not just combine Ferny Grove and Upper Kedron?
+
+#### 5: [Middle Park](https://en.wikipedia.org/wiki/Middle_Park,_Queensland), [Riverhills](https://en.wikipedia.org/wiki/Riverhills,_Queensland), and [Westlake](https://en.wikipedia.org/wiki/Westlake,_Queensland)
+
+![A map of Brisbane with Middle Park, Riverhills, and Westlake highlighted](/images/blog/brisbane-suburbs/centenary_suburbs.jpg)
+
+These suburbs are actually quite cool. Originally all this land (Middle Park, Riverhills, Westland, Jindalee, Mount Ommaney, Jamboree Height, and Sumner) was known as Jindalee. These became known as the Centenary suburbs as they were developed in 1959 (to mark 100 years since Queenland's seperation from New South Wales in 1859), and were split up into a number of smaller suburbs.
+
+My main points here are that:
+
+- These suburbs were all developed from the same farmland, share the same heritage, and aren't different from eachother in any meaningful way.
+- Westlake, Middle Park, and River Hills are some of the most garbage named suburbs in all of Brisbane.
+
+"West Lake" - It's because this is the western suburb with the lake in it. 💀
+
+"Middle Park" - Oh let me guess, there is a park in the middle? 🫠
+
+"River Hills" - Oh perhaps it's the hills by the river? 🙃
+
+Delete all of these, and restore the glorious mega-Jindalee.
 
 ### Brisbane's Best Suburbs
 
+In contrast to those terrible suburbs above which I'd argue should be deleted, let's give some examples of totally EPIC suburbs.
+
 #### 1: [Chermside](https://en.wikipedia.org/wiki/Chermside,_Queensland)
 
-#### 2: [Sunnybank](https://en.wikipedia.org/wiki/Sunnybank,_Queensland)
+![A map of Brisbane with Chermside and Chermside West highlighted](/images/blog/brisbane-suburbs/chermside_and_chermside_west.jpg)
 
-#### 3: [St Lucia](https://en.wikipedia.org/wiki/St_Lucia,_Queensland)
+If you live northside, people will ask: "Is it near Chermide?"
 
-#### 4: [New Farm](https://en.wikipedia.org/wiki/New_Farm,_Queensland)
+#### 2: [St Lucia](https://en.wikipedia.org/wiki/St_Lucia,_Queensland)
+
+![A map of Brisbane with St Lucia highlighted](/images/blog/brisbane-suburbs/centenary_suburbs.jpg)
+
+#### 3: [New Farm](https://en.wikipedia.org/wiki/New_Farm,_Queensland)
+
+![A map of Brisbane with Newfarm highlighted](/images/blog/brisbane-suburbs/centenary_suburbs.jpg)
 
 ## Fun Facts About Brisbane I've Learnt While Doing This
 
@@ -208,6 +263,7 @@ I tend to learn suburbs better if I read their Wikipedia page and can remember s
 [^1]: According to [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_Brisbane_suburbs) and not the official localities KML file, but I'm sure it's close enough.
 [^2]: Check out a topographic map [here](https://en-au.topographic-map.com/map-hrvggp/Upper-Mount-Gravatt/?center=-27.54313%2C153.08126&zoom=13) if you want to check. I don't have average for the offical suburb boundaries, but it does appear that _upper_ Mt Gravatt is actually lower than Mt Gravatt and Mt Gravatt East.
 [^3]: The source for this isn't on the wikipedia page, you need to go to the [Queensland Place Names](https://www.qld.gov.au/environment/land/title/place-names/queensland-place-names-search) website, and specifically search for "Algester".
+[^4]: The source for this quote is [here](https://www.couriermail.com.au/questnews/southeast/stones-corner-community-wins-battle-to-return-as-a-suburb/news-story/a481fd8c72fe3f56c6d7da4fc1d9ebb8) if you truely want to read about this marvelous event.
 
 ## MEmes to Sprinkle in in due course
 
