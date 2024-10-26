@@ -1,7 +1,7 @@
 ---
 title: "Brisbane has too many Suburbs"
 description: "And my personal quest to remember all 190+ of them"
-date: "2024-10-06"
+date: "2024-10-26"
 ---
 
 Brisbane has far too many suburbs. Seriously. I've lived in this city for almost 30 years, and the amount of interactions I've had that take this form is insane:
@@ -284,6 +284,8 @@ I tend to learn suburbs better if I read their Wikipedia page and can remember s
 I showed the 10 smallest suburbs, so here is another chart I made of the 10 largest:
 
 ![A bar chart showing the 10 largest Brisbane suburbs against the average suburb size.](/images/blog/brisbane-suburbs/brisbanes_10_largest_suburbs.png)
+
+If you want to learn all of Brisbane's suburbs like me, feel free to download my [Anki desk](https://ankiweb.net/shared/info/1610977540).
 
 [^1]: According to [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_Brisbane_suburbs) and not the official localities KML file, but I'm sure it's close enough.
 [^2]: Check out a topographic map [here](https://en-au.topographic-map.com/map-hrvggp/Upper-Mount-Gravatt/?center=-27.54313%2C153.08126&zoom=13) if you want to check. I don't have an average for the official suburb boundaries, but it does appear that _upper_ Mt Gravatt is actually lower than Mt Gravatt and Mt Gravatt East.
