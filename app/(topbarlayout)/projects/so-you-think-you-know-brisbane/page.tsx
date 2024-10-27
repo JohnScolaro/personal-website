@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Projects",
     description:
       "A game where you attempt to guess Brisbane's suburbs using a map of adjacent suburbs.",
-    url: "https://johnscolaro.xyz/so-you-think-you-know-brisbane",
+    url: "https://johnscolaro.xyz/projects/so-you-think-you-know-brisbane",
     images: [
       {
         url: "https://johnscolaro.xyz/images/preview_images/so_you_think_you_know_brisbane.png",
