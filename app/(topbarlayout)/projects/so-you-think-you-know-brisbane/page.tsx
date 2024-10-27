@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "A game where you attempt to guess Brisbane's suburbs using a map of adjacent suburbs.",
   openGraph: {
-    title: "Projects",
+    title: "So you think you know Brisbane?",
     description:
       "A game where you attempt to guess Brisbane's suburbs using a map of adjacent suburbs.",
     url: "https://johnscolaro.xyz/projects/so-you-think-you-know-brisbane",
