@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: "https://johnscolaro.xyz",
     images: [
       {
-        url: "https://johnscolaro.xyz/images/preview_images/preview.png",
+        url: "https://johnscolaro.xyz/images/preview_images/johns_website.png",
         width: 1200,
         height: 630,
         alt: "John Scolaro's Website Preview",
@@ -50,10 +50,15 @@ export default function Home() {
               description="Sometimes I write things down"
               link="/blog"
             ></Card>
-            <Card
+            {/* <Card
               title="Active Statistics"
               description="Visualise your Strava Statistics"
               link="https://active-statistics.com"
+            ></Card> */}
+            <Card
+              title="Projects"
+              description="My Personal Projects"
+              link="/projects"
             ></Card>
             <Card
               title="Sketch Rank"
