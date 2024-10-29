@@ -30,15 +30,19 @@ export default function Page() {
         <p>Guess the suburb from the map.</p>
         <SuburbGuesser></SuburbGuesser>
         <p>
-          Brisbane has a lot of suburbs,{" "}
+          Brisbane has{" "}
           <Link
             href={"https://johnscolaro.xyz/blog/brisbane-has-too-many-suburbs"}
           >
-            possibly too many
-          </Link>
-          , and I think the amount of suburbs we have makes knowing where things
-          are hard. I made this little game after trying to guess the suburbs
-          with my friends, and realising it was kinda fun.
+            {" "}
+            a lot of suburbs
+          </Link>{" "}
+          - 190 to be exact and that doesn’t include islands and a few other
+          localities.
+        </p>
+        <p>
+          Turns out trying to guess them is pretty fun. Reckon you can name them
+          all?
         </p>
       </div>
     </>

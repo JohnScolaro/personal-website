@@ -68,6 +68,7 @@ const CustomFilteredPlotlyChart = () => {
         defaultValue={{ value: "Marathon", label: "Marathon" }}
         required={true}
         onChange={(option) => setSelectedEvent(option.value)}
+        id="Race Type Dropdown"
       ></ReactSelect>
       <p>Gender:</p>
       <ReactSelect
@@ -79,6 +80,7 @@ const CustomFilteredPlotlyChart = () => {
         defaultValue={{ value: "Both", label: "Both" }}
         required={true}
         onChange={(option) => setSelectedGender(option.value)}
+        id="Gender Dropdown"
       ></ReactSelect>
       <PlotlyChart
         data={filteredData}
