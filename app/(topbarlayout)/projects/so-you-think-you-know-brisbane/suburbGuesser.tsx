@@ -64,8 +64,8 @@ export default function SuburbGuesser() {
     setShowNext(false);
 
     let newSuburb;
-    if (lastSuburbs.length <= 3) {
-      // Use an initial known suburb for the first 3 selections
+    if (lastSuburbs.length <= 1) {
+      // Use an initial known suburb for the first 2 selections
       const remainingEasySuburbs = easySuburbs.filter(
         (suburb) => !lastSuburbs.includes(suburb)
       );
@@ -140,6 +140,7 @@ export default function SuburbGuesser() {
                 height={500}
                 loading="eager"
                 onLoad={() => setImageLoading(false)}
+                priority={true}
               />
             </div>
           )}
@@ -152,6 +153,7 @@ export default function SuburbGuesser() {
             onChange={(option) => setGuess(option ? option.value : null)}
             defaultValue={null}
             isClearable={true}
+            id="suburbDropdown"
             required
           />
         </div>
@@ -173,22 +175,27 @@ export default function SuburbGuesser() {
             <WrappedAwesomeButton
               onPress={handleSubmitGuess}
               disabled={!guess} // Disable if no guess selected
+              containerProps={{ type: "button" }}
             >
               Submit
             </WrappedAwesomeButton>
-            <WrappedAwesomeButton onPress={handleGiveUp}>
+            <WrappedAwesomeButton
+              onPress={handleGiveUp}
+              containerProps={{ type: "button" }}
+            >
               Give Up
             </WrappedAwesomeButton>
           </div>
         )}
         {/* Next Suburb Button */}
         {showNext && (
-          <button
-            onClick={loadNewImage}
+          <WrappedAwesomeButton
+            onPress={loadNewImage}
             className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            containerProps={{ type: "button" }}
           >
             Next Suburb
-          </button>
+          </WrappedAwesomeButton>
         )}
       </div>
     </>
