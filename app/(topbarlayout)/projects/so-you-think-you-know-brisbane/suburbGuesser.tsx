@@ -172,30 +172,30 @@ export default function SuburbGuesser() {
         {/* Submit and Give Up buttons */}
         {!showNext && (
           <div className="flex gap-2 mt-4">
-            <WrappedAwesomeButton
-              onPress={handleSubmitGuess}
+            <button
+              onClick={handleSubmitGuess}
               disabled={!guess} // Disable if no guess selected
-              containerProps={{ type: "button" }}
+              // containerProps={{ type: "button" }}
             >
               Submit
-            </WrappedAwesomeButton>
-            <WrappedAwesomeButton
-              onPress={handleGiveUp}
-              containerProps={{ type: "button" }}
+            </button>
+            <button
+              onClick={handleGiveUp}
+              // containerProps={{ type: "button" }}
             >
               Give Up
-            </WrappedAwesomeButton>
+            </button>
           </div>
         )}
         {/* Next Suburb Button */}
         {showNext && (
-          <WrappedAwesomeButton
-            onPress={loadNewImage}
+          <button
+            onClick={loadNewImage}
             className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-            containerProps={{ type: "button" }}
+            // containerProps={{ type: "button" }}
           >
             Next Suburb
-          </WrappedAwesomeButton>
+          </button>
         )}
       </div>
     </>
