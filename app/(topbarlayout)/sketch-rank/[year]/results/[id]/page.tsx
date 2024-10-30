@@ -66,12 +66,12 @@ export default function Page({
       ></Image>
       <div className="flex justify-between">
         <StyledButton
-          href={`/sketch-rank/${params.year}/results/${nextId.toString()}`}
+          href={`/sketch-rank/${params.year}/results/${previousId.toString()}`}
         >
           Previous
         </StyledButton>
         <StyledButton
-          href={`/sketch-rank/${params.year}/results/${previousId.toString()}`}
+          href={`/sketch-rank/${params.year}/results/${nextId.toString()}`}
         >
           Next
         </StyledButton>
