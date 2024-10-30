@@ -4,9 +4,9 @@ import suburbInfo from "./suburbInfo.json";
 import { useEffect, useState } from "react";
 import { CenteredSpinner } from "../../../../components/spinner/spinner";
 import Image from "next/image";
-import WrappedAwesomeButton from "../../../../components/wrapped-awesome-button";
 import ReactSelect from "../../../../components/wrapped-select";
 import JSConfetti from "js-confetti";
+import StyledButton from "../../../../components/styled-button";
 
 export default function SuburbGuesser() {
   const [imageName, setImageName] = useState<string | null>(null);
@@ -64,8 +64,8 @@ export default function SuburbGuesser() {
     setShowNext(false);
 
     let newSuburb;
-    if (lastSuburbs.length <= 1) {
-      // Use an initial known suburb for the first 2 selections
+    if (lastSuburbs.length < 1) {
+      // Use an initial central suburb for the first selection
       const remainingEasySuburbs = easySuburbs.filter(
         (suburb) => !lastSuburbs.includes(suburb)
       );
@@ -136,8 +136,8 @@ export default function SuburbGuesser() {
                 className="cursor-pointer"
                 src={getImageUrlFromImageName(imageName)}
                 alt={`An image of ${imageName}, a suburb of Brisbane`}
-                width={500}
-                height={500}
+                width={750}
+                height={750}
                 loading="eager"
                 onLoad={() => setImageLoading(false)}
                 priority={true}
@@ -172,30 +172,21 @@ export default function SuburbGuesser() {
         {/* Submit and Give Up buttons */}
         {!showNext && (
           <div className="flex gap-2 mt-4">
-            <button
+            <StyledButton
               onClick={handleSubmitGuess}
               disabled={!guess} // Disable if no guess selected
-              // containerProps={{ type: "button" }}
             >
               Submit
-            </button>
-            <button
-              onClick={handleGiveUp}
-              // containerProps={{ type: "button" }}
-            >
+            </StyledButton>
+            <StyledButton onClick={handleGiveUp} color="red">
               Give Up
-            </button>
+            </StyledButton>
           </div>
         )}
+
         {/* Next Suburb Button */}
         {showNext && (
-          <button
-            onClick={loadNewImage}
-            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-            // containerProps={{ type: "button" }}
-          >
-            Next Suburb
-          </button>
+          <StyledButton onClick={loadNewImage}>Next Suburb</StyledButton>
         )}
       </div>
     </>
