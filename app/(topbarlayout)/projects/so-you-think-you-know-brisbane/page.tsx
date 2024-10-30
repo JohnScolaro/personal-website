@@ -30,15 +30,8 @@ export default function Page() {
         <p>Guess the suburb from the map.</p>
         <SuburbGuesser></SuburbGuesser>
         <p>
-          Brisbane has{" "}
-          <Link
-            href={"https://johnscolaro.xyz/blog/brisbane-has-too-many-suburbs"}
-          >
-            {" "}
-            a lot of suburbs
-          </Link>{" "}
-          - 190 to be exact and that doesn’t include islands and a few other
-          localities.
+          Brisbane has a lot of suburbs. 190 to be exact, and that doesn't
+          include islands and a few other localities.
         </p>
         <p>
           Turns out trying to guess them is pretty fun. Reckon you can name them
