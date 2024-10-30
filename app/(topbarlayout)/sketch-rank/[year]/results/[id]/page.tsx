@@ -4,7 +4,7 @@ import {
   getNumSketchRankPhotos,
   getSketchRankMetaData,
 } from "../../../../../../lib/sketch-rank/sketch-rank";
-import WrappedAwesomeButton from "../../../../../../components/wrapped-awesome-button";
+import StyledButton from "../../../../../../components/styled-button";
 
 export async function generateMetadata({ params }) {
   const sketchRankMetaData = getSketchRankMetaData(params.year);
@@ -65,16 +65,16 @@ export default function Page({
         width={800}
       ></Image>
       <div className="flex justify-between">
-        <WrappedAwesomeButton
+        <StyledButton
           href={`/sketch-rank/${params.year}/results/${previousId.toString()}`}
         >
           Previous
-        </WrappedAwesomeButton>
-        <WrappedAwesomeButton
+        </StyledButton>
+        <StyledButton
           href={`/sketch-rank/${params.year}/results/${nextId.toString()}`}
         >
           Next
-        </WrappedAwesomeButton>
+        </StyledButton>
       </div>
       <div className="border-2 border-gray-300 rounded-lg p-4 mt-8">
         <div
