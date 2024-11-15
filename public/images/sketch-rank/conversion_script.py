@@ -40,10 +40,10 @@ def resize_images(input_folder: str, output_folder: str, new_size: tuple[int, in
 
 if __name__ == "__main__":
     # Set the input folder containing PNG files
-    input_folder = "./2024"
+    input_folder = "./to_convert"
 
     # Set the output folder for JPEG files
-    output_folder = "./2024"
+    output_folder = "./to_convert"
 
     # Set the new dimensions for the images
     new_size = (1500, 1500)
