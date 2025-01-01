@@ -13,6 +13,7 @@ much additional effort. This script does the conversion.
 from PIL import Image
 import os
 
+
 def resize_images(input_folder: str, output_folder: str, new_size: tuple[int, int]):
     # Create the output folder if it doesn't exist
     os.makedirs(output_folder, exist_ok=True)
@@ -21,22 +22,24 @@ def resize_images(input_folder: str, output_folder: str, new_size: tuple[int, in
     for filename in os.listdir(input_folder):
         if filename.endswith(".png"):
             input_path = os.path.join(input_folder, filename)
-            output_path = os.path.join(output_folder, os.path.splitext(filename)[0] + ".jpg")
+            output_path = os.path.join(
+                output_folder, os.path.splitext(filename)[0] + ".jpg"
+            )
 
             # Open the image
             with Image.open(input_path) as img:
-
                 # Remove transparency in PNG somehow.
-                if img.mode == 'RGBA':
-                    img = img.convert('RGB')
+                if img.mode == "RGBA":
+                    img = img.convert("RGB")
 
                 # Resize the image
-                resized_img = img.resize(new_size, Image.ANTIALIAS)
+                resized_img = img.resize(new_size, Image.LANCZOS)
 
                 # Save the resized image as JPEG
                 resized_img.save(output_path, "JPEG", quality=95)
 
-            print(f'Converted image {filename}')
+            print(f"Converted image {filename}")
+
 
 if __name__ == "__main__":
     # Set the input folder containing PNG files
