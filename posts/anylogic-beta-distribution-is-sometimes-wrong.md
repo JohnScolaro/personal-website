@@ -1,6 +1,6 @@
 ---
 title: "AnyLogic Beta Distribution is Wrong for Large P or Q"
-description: "For p or q parameters greater than ~int32_max, AnyLogic's Beta distribution samples incorrect values."
+description: "For p or q parameters greater than ~int32_max, AnyLogic's Beta distribution samples incorrect values"
 date: "2024-05-07"
 ---
 
