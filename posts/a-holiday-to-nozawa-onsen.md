@@ -191,6 +191,11 @@ It's the hatoguruma, or "dove cart", a folk toy made in Nozawa Onsen village sin
 
 ![A very old painting of a hatoguruma from 1847.](/images/blog/a-holiday-to-nozawa-onsen/hatoguruma_old.jpg)
 
+Here is a modern representation from Helen herself:
+
+![A stupid sketch of a Hatohuruma Helen draw. It looks very goofy.](/images/blog/a-holiday-to-nozawa-onsen/hatoguruma_new.png)
+
+Ain't he cute?
 
 ### Why do I keep seeing this symbol everything?
 
