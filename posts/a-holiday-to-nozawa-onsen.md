@@ -1,6 +1,6 @@
 ---
 title: "A holiday to Nozawa Onsen"
-description: "Some details and information about our winter holiday in Nozawaonsen, in which we stayed at the Berg Marukaneya"
+description: "Some information and travel ideas from our winter holiday in Nozawa Onsen, in which we stayed at the Berg Marukaneya"
 date: "2025-02-10"
 ---
 
