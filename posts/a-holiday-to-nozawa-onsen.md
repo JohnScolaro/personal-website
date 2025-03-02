@@ -18,9 +18,9 @@ Travelling here is really easy, and not worth stressing about. No advanced booki
 
 ## Accommodation
 
-There are a limited number of hotels in Nozawa Onsen, and if you come in on-peak snow season to enjoy the consistent Japanese snow, you'll be competing with lots of tourists (and what seems like the entire population of Australia) to book the best spots.
+There are a limited number of hotels in Nozawa Onsen, and if you come in peak snow season to enjoy the consistent Japanese snow, you'll be competing with lots of tourists (and what seems like the entire population of Australia) to book the best spots.
 
-We booked 4 months in advance, and most accommodation had already booked out. The cheapest accommodation by far was the "Berg Marukaneya", which is where we booked. It's a small, 2 star hotel. I think it was available and inexpensive because it's: on the far side of town, doesn't have individual bathrooms (only shared), and has little to no online presence. This is enough to spook a classic western tourist, but spurred on by the promise of good value, we booked it.
+We booked 4 months in advance, and most accommodation had already booked out. The cheapest accommodation by far was the "Berg Marukaneya", which is where we booked. It's a small, 2 star hotel. I think it was available and inexpensive because it's: on the far side of town, the ad says it doesn't have individual bathrooms (it does have individual toilets, just not showers), and has little to no online presence.  This is enough to spook a classic western tourist, but spurred on by the promise of good value, we booked it.
 
 ![The front door of Hotel Marukaneya](/images/blog/a-holiday-to-nozawa-onsen/marukaneya_front_door.jpg)
 
@@ -28,9 +28,9 @@ The hotel was incredible, and I'm half tempted to not write any more about it so
 
 ### But it's so far away from town!
 
-Sure, it's a good 15 minute walk to the center of the town, but if you're booking yourself a ski holiday, you're probably physically fit enough that a 15 minute walk doesn't scare you. There are also plenty of food options nearer than the centre of town, so you won't have to walk into town if you don't want to.
+Sure, it's a good 15 minute walk to the center of the town, but if you're booking yourself a ski holiday, you're probably physically fit enough that a 15 minute walk doesn't scare you. There are also plenty of food options closer than the centre of town, so you won't have to walk into town if you don't want to.
 
-Additionally, the ski resort area can be accessed from multiple locations. If you're staying in town, you'll have fairly easy access to the Hikage or Nagasaka area gondolas. You'll probably have to walk a short distance up a steep hill before you get to these. These feel like the "main" ski areas with the most popular gondolas, big green slopes for learning, and the main ski resort building for ski lessons. 
+Additionally, the ski resort area can be accessed from multiple locations. If you're staying in town, you'll have fairly easy access to the Hikage or Nagasaka area gondolas. You'll probably have to walk up a steep hill, but it's not far. These feel like the "main" ski areas with the most popular gondolas, big green slopes for learning, and the main ski resort building for ski lessons. 
 
 If you stay on the south side of town (where Berg Marukaneya is), you have access to the Karasawa slope and its lift. You can take that, and then do a nice traverse to the main area! The walk from Berg Marukaneya to the lift was significantly shorter than the trip from most hotels in town to the main area.
 
@@ -42,11 +42,11 @@ And in an attempt to give you some perspective on where things are in Nozawa, he
 
 Here, A is the center of town, and the entrance to the main ski area. B is the Karasawa chair lift. There is another set of car parks and lift between these, but it was closed when I was here, so I'm leaving it out. From the ski map, you can see that accessing the whole maintain from Karasawa is possible using only green slopes if you're a beginner.
 
-Staying at the south side of town is not far away from the ski lifts at all. 😊
+Staying at the south side of town is not far away from the ski lifts at all, and I'd argue even easier to get to the slopes. 😊
 
 ### It doesn't have bathrooms!
 
-Booking.com says: "All rooms are fitted with a shared bathroom", which gives the wrong idea and probably scares people away. All rooms have their own toilets + sink. If you want to shower, the hotel has a large shared bathroom downstairs where you can clean up after a long day on the slopes. In this room, there are 4 separate shower stations where you clean yourself with supplied soap + shampoo + conditioner, before getting in a big hot bath to relax. It's very Japanese, so you have to get naked with the homies. If that scares you, fair enough, but in Nozawa __Onsen__ the public baths (Onsens) are kinda one of the main draws of the town, no? So you should embrace it!
+Booking.com says: "All rooms are fitted with a shared bathroom", which gives the wrong idea and probably scares people away. All rooms have their own toilets + sink. If you want to shower, the hotel has a large shared bathroom downstairs where you can clean up after a long day on the slopes. In this room, there are 4 separate shower stations where you clean yourself with supplied soap + shampoo + conditioner, before getting in a big hot bath to relax. It's very Japanese, so you have to get naked with the homies. If that scares you, fair enough, but in Nozawa __Onsen__ the public baths (onsens) are kinda one of the main draws of the town, no? So you should embrace it!
 
 ### Breakfast
 
@@ -101,12 +101,12 @@ The Berg Marukaneya doesn't supply humidifiers. I don't know why, but no ski res
 
 ## Onsens
 
-One of the main draws to Nozawa Onsen are, well, the Onsens. On the south side of town, there was only really [one that was a short walk](https://maps.app.goo.gl/fS4Vy8Zh81YKrBgB9), but in the centre of town there are loads. If you specifically came to sample all the onsens, I'd recommend staying further in town.
+One of the main draws to Nozawa Onsen are, well, the onsens. On the south side of town, there was only really [one that was a short walk](https://maps.app.goo.gl/fS4Vy8Zh81YKrBgB9), but in the centre of town there are loads. If you specifically came to sample all the onsens, I'd recommend staying further in town.
 
 Before you go, brush up on your onsen etiquette first. But here are some additional tips for specifically these onsens from an uncultured Australian who didn't know what he was doing:
 
 * You have to clean yourself before you use the onsen. If you want to do a good job of that, you'll have to bring your own soap/shampoo to the cleaning station, because unlike fancier onsens, it's not provided here.
-* The cleaning stations have a single tap which ejects absulutely _freezing_ mountain water. Unless you _want_ to clean yourself with 0 degree water, you're supposed to get a bucket and scoop scalding water from the onsen, and then add cold water if you want something more tepid, and use that for washing. Don't give yourself an ice bath like me.
+* The cleaning stations have a single tap which ejects absolutely _freezing_ mountain water. Unless you _want_ to clean yourself with 0 degree water, you're supposed to get a bucket and scoop scalding water from the onsen, and then add cold water if you want something more tepid, and use that for washing. Don't give yourself an ice bath like me.
 
 As an Australian who swam a lot growing up, we'd all bring flip-flops to the pool so your feet wouldn't touch the ground in the showers, because it always felt gross and unclean. The onsens here are cleaned regularly and everyone sits their bare ass on the ground and it's normal.
 
@@ -159,7 +159,7 @@ If you're looking for a cheap and quiet night, our favourite was "[Restaurant](h
 
 ![A photo from the inside of the restaurant "Restaurant".](/images/blog/a-holiday-to-nozawa-onsen/restaurant.jpg)
 
-If you want a louder more social atmophere, we can recommend [Food Village Kongou](https://maps.app.goo.gl/zHfQk3L7XArcDFnJ7) which is a loud and warm food hall with ~5 different Japanese food options + ample seating. The selection is large so you're bound to find something tasty, and it's cheaper and taster than most options I found in town.
+If you want a louder more social atmophere, we can recommend [Food Village Kongou](https://maps.app.goo.gl/zHfQk3L7XArcDFnJ7) which is a loud and warm food hall with ~5 different Japanese food options + ample seating. The selection is large so you're bound to find something tasty, and it's cheaper and tastier than most options I found in town.
 
 ![A photo of the outside of the food hall.](/images/blog/a-holiday-to-nozawa-onsen/food_hall.jpg)
 
@@ -167,7 +167,7 @@ If you want a louder more social atmophere, we can recommend [Food Village Kongo
 
 ### Laundry
 
-We used the [Fuwara Coin Laundry](https://maps.app.goo.gl/U6cFULhnAQxdfmQW9) once to do all our clothes, and they have fantastic machines that wash and dry 15kg (right?!) loads for ~$15 AUD. Better machines and pricing than most huge hotels I've found in the city. Very convenient, and definately recommend for washing your stinky ski underlayers.
+We used the [Fuwara Coin Laundry](https://maps.app.goo.gl/U6cFULhnAQxdfmQW9) once to do all our clothes, and they have fantastic machines that wash and dry 15kg (right?!) loads for ~$15 AUD. Better machines and pricing than most huge hotels I've found in the city. Very convenient, and definitely recommend for washing your stinky ski underlayers.
 
 ![A photo of the Coin Laundry building](/images/blog/a-holiday-to-nozawa-onsen/coin_laundry.jpg)
 
