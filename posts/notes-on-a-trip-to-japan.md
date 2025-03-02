@@ -25,13 +25,13 @@ Japan has excellent baths, both public and private. I'd say Japan even has 'bath
 
 ![A schematic showing the difference between western and Japanese baths.](/images/blog/notes-on-a-trip-to-japan/japan_bath.png)
 
-In Japanese baths, I can actually get the water up to my neck confortably. Way better than regular western baths.
+In Japanese baths, I can actually get the water up to my neck comfortably. Way better than regular western baths.
 
 Also while we're on this topic, the Japanese enjoy bathing together. After staying at the [APA Hotel in Yokohama](https://www3.apahotel.com/hotel/shutoken/kanagawa/yokohama-bay-tower/), and being _super_ impressed by the insane public baths, it got me thinking: "Surely it's significantly more efficient for hotels to have two huge public baths, than to have showers in each room". But I suppose that doesn't really work because if there are ONLY public baths, then there wouldn't be anywhere to wash if you have open wounds, or tattoos, which are a no-no in public baths.
 
-![The floorplan of the public baths in the APA Yokohama building.](/images/blog/notes-on-a-trip-to-japan/floorplan.png)
+![The floor plan of the public baths in the APA Yokohama building.](/images/blog/notes-on-a-trip-to-japan/floorplan.png)
 
-This is the floorplan of the public baths in the APA. I miss them every day. 😔
+This is the floor plan of the public baths in the APA. I miss them every day. 😔
 
 ## Heated toilet seats
 
@@ -39,11 +39,11 @@ I didn't realise that I always brace for impact when sitting down on a cold toil
 
 I was also amazed at how comfortable heated car seats were when I first used them in Canada. Maybe I'm just a hot-place man being entertained by cold-place comforts. 
 
-Australia's cars should have seat, belt, and stearing wheel cooling in summer to give foreigners the same feeling when visiting us.
+Australia's cars should have seat, belt, and steering wheel cooling in summer to give foreigners the same feeling when visiting us.
 
 ## Everything has a mascot
 
-Japan just does "cute" better than us, and one fascet of this is the use of cool mascots EVERYWHERE. I swear every city, prefecture, business, and city has it's own mascot. Naturally you can buy plushies of all the mascots, and they're adorable. [Except for this one](http://www.jadij.com/2014/10/the-mascot-abomination-melon-bear.html). [Other people](https://mondomascots.com/index.php/category/japan/) have done a far better job of documenting them all though, so take a look at some of their photos or just Google "Japanese Mascots" to find some of the funniest.
+Japan just does "cute" better than us, and one facet of this is the use of cool mascots EVERYWHERE. I swear every city, prefecture, business, and city has it's own mascot. Naturally you can buy plushies of all the mascots, and they're adorable. [Except for this one](http://www.jadij.com/2014/10/the-mascot-abomination-melon-bear.html). [Other people](https://mondomascots.com/index.php/category/japan/) have done a far better job of documenting them all though, so take a look at some of their photos or just Google "Japanese Mascots" to find some of the funniest.
 
 Name one thing in Brisbane that has a mascot. I'll wait.
 
@@ -66,7 +66,7 @@ Here is an advertisement for manufacturing in Toyama train station.
 
 ![An advertisement showing a RF connector.](/images/blog/notes-on-a-trip-to-japan/engineering_ad_1.jpg)
 
-And here is the end credits of an advertisement on the train in Tokyo. The preceeding video shows a number of robot arms and automatic conveyor belts moving items around automatically to end customers.
+And here is the end credits of an advertisement on the train in Tokyo. The preceding video shows a number of robot arms and automatic conveyor belts moving items around automatically to end customers.
 
 ![An advertisement saying: "Daifuku: Automation that Inspires".](/images/blog/notes-on-a-trip-to-japan/engineering_ad_2.jpg)
 
@@ -89,11 +89,11 @@ Back in 2014 I lived in Toronto for ~9 months. Toronto's snow handling methods w
 
 Toronto functions pretty amazingly despite the frigid hand it's been delt, so I figured this was state-of-the-art anti-snow weaponry, but Japan surprised me with some new tricks.
 
-Nozawaonsen where I skiied had heated roads, and Nozawa, Iiyama and even Toyama had water spraying on the roads. The secret is that Japan, being located in a tectonically active location, has bountiful access to geothermally heated water. You can run pipes through your roads to keep them "warm" (above freezing) when it's snowing, and snow will pile up on the sides of the road, but instantly melt on the road. Practically it only heats the road up a few degrees, but this is enough to keep the road clear on all but the heaviest snow days.
+Nozawaonsen where I skied had heated roads, and Nozawa, Iiyama and even Toyama had water spraying on the roads. The secret is that Japan, being located in a tectonically active location, has bountiful access to geothermally heated water. You can run pipes through your roads to keep them "warm" (above freezing) when it's snowing, and snow will pile up on the sides of the road, but instantly melt on the road. Practically it only heats the road up a few degrees, but this is enough to keep the road clear on all but the heaviest snow days.
 
 Some roads pipe water alongside the road, and every few meters have a number of small holes shooting this water out onto the road to warm it up and melt snow.
 
-Additionally, I saw driveways and entrances to businesses kept clear of snow by simply bringing a big pipe outside with holes poked every ~30cm, so that a shallow layer of water is constantly rushing over a pathway. I suppose if hot water is literally bubbling out of the ground, it would be silly to not use it like this. Some of these paths must use regular heated water, but I also saw some that use "raw" water (I don't know the technical term for this) because it left residual sulphor stains on the ground, and smelt heavily of eggs.
+Additionally, I saw driveways and entrances to businesses kept clear of snow by simply bringing a big pipe outside with holes poked every ~30cm, so that a shallow layer of water is constantly rushing over a pathway. I suppose if hot water is literally bubbling out of the ground, it would be silly to not use it like this. Some of these paths must use regular heated water, but I also saw some that use "raw" water (I don't know the technical term for this) because it left residual sulphur stains on the ground, and smelt heavily of eggs.
 
 In Nozawa, to handle all this extra water constantly rushing around, there are deep drains flowing heavily with melting snow and geothermally heated water. This vast network of drains ALSO helps locals, who can often be seen shoveling snow off the roof or from the driveway, directly into these drains! The running water melts this snow and takes it away so residents aren't left with giant piles of snow on their property.
 
@@ -113,7 +113,7 @@ The Japanese DO however do this when leaving a restaurant. It's one of my favour
 
 ## More chocolate per packet please
 
-Most things I love about Japan, but something I don't is the serving size of chocolates. This complaint makes me feel like a fat westerner, but when I buy chocolate in Australia, I can get bars of ~200g. The closest thing I found in Japan are Meiji chocolate bars, which are 55g. There are a miriad of other little sweeties, but the quantities of chocolate on them is absolutely dismal. Probably good for my waistline though.
+Most things I love about Japan, but something I don't is the serving size of chocolates. This complaint makes me feel like a fat westerner, but when I buy chocolate in Australia, I can get bars of ~200g. The closest thing I found in Japan are Meiji chocolate bars, which are 55g. There are a myriad of other little sweeties, but the quantities of chocolate on them is absolutely dismal. Probably good for my waistline though.
 
 ![A meme showing Aldi and Cadbury chocolate as far superior to Meiji chocolate.](/images/blog/notes-on-a-trip-to-japan/chocolate_meme.jpg)
 
@@ -129,9 +129,9 @@ To give some credit, seats are aplenty in public parks, however when it's -2 deg
 
 ## Surely single use plastics per person are high in Japan?
 
-Japan doesn't seem to have hopped on the "use wooden products more" wagon, and instead has all it's eggs in the same plastic bag. Covering everything in plastic feels a little icky, and Japan loves to do it. I don't need plastic covered wet wipes, a tissue would be fine. I don't need my Japanese pringles to be plastic wrapped inside the already plastic tube.
+Japan doesn't seem to have hopped on the "use wooden products more" wagon, and instead has all it's eggs in the same plastic bag. Covering everything in plastic feels a little icky, and Japan loves to do it. I don't need plastic covered wet wipes, a tissue would be fine. I don't need my Japanese Pringles to be plastic wrapped inside the already plastic tube.
 
-In saying that, quickly Googling "plastic consumption per capita" brings up a whole bunch of webpages of dubious quality, which **all** seem to show that Australians use more plastic per capita than the Japanese... I don't know why this stat is so disconnected to my experience, but possibly because I was constantly consuming as a tourist I just experienced more plastic than a normal person living in Japan would. Or perhaps the more SEO optimised webpages incorrectly interpreted data from a number of studies. Interesting. 🤷
+In saying that, quickly Googling "plastic consumption per capita" brings up a bunch of webpages of dubious quality, which **all** seem to show that Australians use more plastic per capita than the Japanese... I don't know why this stat is so disconnected to my experience, but possibly because I was constantly consuming as a tourist I just experienced more plastic than a normal person living in Japan would. Or perhaps the more SEO optimised webpages incorrectly interpreted data from a number of studies. Interesting. 🤷
 
 ## Japanese Sheet Topology
 
