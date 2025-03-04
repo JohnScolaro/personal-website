@@ -11,6 +11,7 @@
     "@vercel/postgres": "^0.9.0",
     "@vercel/speed-insights": "^1.0.12",
     "cookies-next": "^4.0.0",
+    "cursor-effects": "^1.0.17",
     "date-fns": "^2.29.3",
     "eslint-config-next": "^14.0.0",
     "gray-matter": "^4.0.3",
