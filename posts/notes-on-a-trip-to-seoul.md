@@ -94,7 +94,7 @@ Like, people have just continued to put things into this bag until it overflowed
 
 ![Another image of some garbage on the street.](/images/blog/notes-on-a-trip-to-seoul/garbage_2.jpg)
 
-It's also not particularly aesthetic, even it they remain closed.
+It's also not particularly aesthetic, even if they remain closed.
 
 ## Crossroad Time
 
@@ -182,3 +182,4 @@ So you can imagine my surprise when I saw this on the menu of a big Korean Chick
 
 What the heck is Toowoomba chicken? The waitress didn't speak English, so I zoomed in on Toowoomba on Google Maps and she looked at me like I was crazy. Can anyone explain?
 
+EDIT: Ok, so I asked the Toowoomba Reddit community [here](https://old.reddit.com/r/Toowoomba/comments/1j2hvca/i_was_recently_in_korea_and_i_saw_this_in_a_fried/), and the comments lead me down a rabbit hole, explaining that "Toowoomba Chicken" is a flavour based on "Toowoomba Pasta" which is a pasta that has recently become [extremely popular](https://www.abc.net.au/news/2024-08-04/toowoomba-pasta-sign-of-potential-export-opportunities-korea/104168528) in South Korea. The flavour was invented by [Outback Steakhouse](https://en.wikipedia.org/wiki/Outback_Steakhouse), an American restaurant chain that pretends to be Australian. They just made a random pasta, attached a random Australian name ("Toowoomba" in this case) to it, and it went surprisingly well. I've been told that Toowoomba pasta should be available to buy from my local asian grocer, so I'm going to have to buy some ASAP.
