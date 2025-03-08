@@ -6,14 +6,14 @@ export default function Card({
   link,
   date,
   tags = [],
-  tagColors,
+  tagColors = {},
 }: {
   title: string;
   description: string;
   link: string;
   date?: string;
   tags?: string[];
-  tagColors: Record<string, string>;
+  tagColors?: Record<string, string>;
 }) {
   return (
     <div className="p-2 sm:p-4 relative block overflow-hidden rounded-lg border border-gray-200 bg-gray-100 hover:bg-gray-200 hover:border-gray-300 w-72">
@@ -27,7 +27,7 @@ export default function Card({
 
       <div className="mt-2 flex flex-wrap gap-2">
         {tags.map((tag) => {
-          const tagColor = tagColors[tag] || tagColors["default"];
+          const tagColor = tagColors[tag] || 'bg-gray-500';
           return (
             <Link
               key={tag}
