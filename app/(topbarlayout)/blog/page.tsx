@@ -13,6 +13,7 @@ const tagColors: Record<string, string> = {
   "Programming": "bg-blue-500",
   "Brisbane": "bg-red-500",
   "Review": "bg-yellow-500",
+  "Japan": "bg-orange-500",
 };
 export default function Page({ searchParams }: { searchParams: { tag?: string } }) {
   const allPostsData = getSortedPostsData();
