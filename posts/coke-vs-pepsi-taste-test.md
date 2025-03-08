@@ -2,6 +2,7 @@
 title: "Coke vs Pepsi Taste Test"
 description: "A writeup about an experiment I performed to test some friends abilities to descriminate between Coke and Pepsi"
 date: "2024-02-20"
+tags: []
 ---
 
 ## Abstract

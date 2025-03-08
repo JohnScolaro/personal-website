@@ -2,6 +2,7 @@
 title: "Review: Death's End"
 description: 'A review of the book: "Death''s End" by Liu Cixin'
 date: "2024-05-20"
+tags: ['Review']
 ---
 
 [Death's End](https://en.wikipedia.org/wiki/Death%27s_End) is the final book in the [Rememberance of Earth's Past](https://en.wikipedia.org/wiki/Remembrance_of_Earth%27s_Past) series by [Liu Cixin](https://en.wikipedia.org/wiki/Liu_Cixin). It's also the first book to contain an apostrophe in the title, which forced me to learn how to escape quotes in my blog's description field. 🙄 Naturally, after unveiling two mind-blowing reviews of [The Three-Body Problem](https://johnscolaro.xyz/blog/the-three-body-problem-review) and [The Dark Forest](https://johnscolaro.xyz/blog/the-dark-forest-review) to international acclaim (idk, I think maybe two people read them) as if I wasn't going to write a third. 💅

@@ -2,6 +2,7 @@
 title: "Brisbane has too many Suburbs"
 description: "And my personal quest to remember all 190+ of them"
 date: "2024-10-26"
+tags: ['Brisbane']
 ---
 
 Brisbane has far too many suburbs. Seriously. I've lived in this city for almost 30 years, and the amount of interactions I've had that take this form is insane:

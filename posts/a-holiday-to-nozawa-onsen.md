@@ -2,6 +2,7 @@
 title: "A holiday to Nozawa Onsen"
 description: "Some information and travel ideas from our winter holiday in Nozawa Onsen, in which we stayed at the Berg Marukaneya"
 date: "2025-02-10"
+tags: ['Travel', 'Japan']
 ---
 
 In February 2025, Helen and I spent a week in Nozawa Onsen (野沢温泉村) (Sometimes written as Nozawaonsen) and enjoyed the town and slopes. Here is a collection of information about the town and our stay that hopefully people can find useful.

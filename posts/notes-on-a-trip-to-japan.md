@@ -2,6 +2,7 @@
 title: "Notes on some differences between Japan and Australia"
 description: "Some interesting differences between Japan and Australia that I wrote down while on a 3 week holiday in Japan."
 date: "2025-03-01"
+tags: ['Travel' , 'Japan']
 ---
 
 This three week trip to Japan was my second visit to the country. I love visiting Japan for a variety of reasons, but one of my favourite reasons for visiting any other country, is to experience all the small differences between how people live their mundane day-to-day lives.

@@ -2,6 +2,7 @@
 title: "AWS - Multiple Subdomains Per Certificate"
 description: "How to configure a certificate to cover subdomains AND apex domain."
 date: "2023-11-01"
+tags: ['Programming']
 ---
 
 ## TL;DR

@@ -1,49 +1,53 @@
-import {
-  getSortedPostsData,
-  getSortedCustomPostsData,
-} from "../../../lib/posts";
-import Card from "../../../components/card";
+import { getSortedPostsData, getSortedCustomPostsData } from "../../../lib/posts";
 import { Metadata } from "next";
+import BlogList from "./BlogList";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "A list of all blog posts I've made",
 };
 
-export default function Page() {
+const tagColors: Record<string, string> = {
+  "Travel": "bg-green-500",
+  "Programming": "bg-blue-500",
+  "Brisbane": "bg-red-500",
+  "Review": "bg-yellow-500",
+};
+export default function Page({ searchParams }: { searchParams: { tag?: string } }) {
   const allPostsData = getSortedPostsData();
   const allCustomPostsData = getSortedCustomPostsData();
-
   const allPosts = [...allPostsData, ...allCustomPostsData];
-  // Sort posts by date
-  const sortedAllPosts = allPosts.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  const filterTag = searchParams.tag;
+  const tagColor = filterTag ? tagColors[filterTag] || tagColors["default"] : "";
 
   return (
-    <>
-      <section>
-        <div className="max-w-6xl p-4 m-auto">
-          <div className="mt-2 md:mt-4 font-bold text-3xl text-center">
-            Blog
-          </div>
-          <div className="flex flex-col items-center mt-4 gap-4">
-            {sortedAllPosts.map(({ id, date, title, description }) => (
-              <Card
-                title={title}
-                description={description}
-                link={`/blog/${id}`}
-                date={date}
-                key={id}
-              ></Card>
-            ))}
-          </div>
+    <section>
+      <div className="max-w-6xl p-4 m-auto">
+        <div className="mt-2 md:mt-4 font-bold text-3xl text-center">
+          {filterTag ? (
+            <div className="flex items-center justify-center gap-2">
+              <span>Blog posts about:</span>
+              <span className={`px-3 py-1 text-sm font-semibold text-white ${tagColor} rounded-full`}>
+                {filterTag}
+              </span>
+            </div>
+          ) : (
+            "Blog"
+          )}
         </div>
-      </section>
-    </>
+        {filterTag && (
+          <div className="mt-4 text-center">
+            <Link
+              href="/blog"
+              className="px-4 py-2 text-sm font-semibold text-white bg-red-500 rounded hover:bg-red-600 transition"
+            >
+              Remove filter
+            </Link>
+          </div>
+        )}
+        <BlogList allPosts={allPosts} filterTag={filterTag} tagColors={tagColors} />
+      </div>
+    </section>
   );
 }

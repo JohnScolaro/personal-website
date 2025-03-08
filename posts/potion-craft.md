@@ -2,6 +2,7 @@
 title: "Potion Craft Review"
 description: "A summary, review, and musings about the game 'Potion Craft'."
 date: "2024-03-02"
+tags: ['Review']
 ---
 
 ![The Potion Craft title screen.](/images/blog/potion-craft/potion_craft.jpg)

@@ -11,6 +11,7 @@ type PostData = {
   date: string;
   title: string;
   description: string;
+  tags: string[];
 };
 
 export function getSortedPostsData(): PostData[] {
@@ -33,16 +34,11 @@ export function getSortedPostsData(): PostData[] {
       date: matterResult.data.date,
       title: matterResult.data.title,
       description: matterResult.data.description,
+      tags: matterResult.data.tags || [],
     };
   });
   // Sort posts by date
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
 export function getSortedCustomPostsData(): PostData[] {
@@ -53,6 +49,7 @@ export function getSortedCustomPostsData(): PostData[] {
       title: "Sunshine Coast Marathon Festival 2024 Results",
       description:
         "A visualisation of the results from the Sunshine Coast Marathon 2024",
+      tags: ['Running', 'Data Visualisation']
     },
   ];
 }
@@ -94,7 +91,7 @@ export async function getPostData(id: string): Promise<AllPostData> {
       const { width, height } = sizeOf(join("public", src));
       imageSizes[src] = { width, height };
     } catch (err) {
-      console.error(`Can’t get dimensions for ${src}:`, err);
+      console.error(`Can't get dimensions for ${src}:`, err);
     }
   }
 

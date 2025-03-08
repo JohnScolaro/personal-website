@@ -2,6 +2,7 @@
 title: "Dynamically Specifying Dependencies in Python with Setuptools and pyproject.toml"
 description: "Using setuptools to specify project metadata in pyproject.toml, but dependencies in python"
 date: "2024-09-22"
+tags: ['Programming']
 ---
 
 The Python packaging ecosystem is transitioning to using `pyproject.toml` as the standard for specifying project metadata, replacing older approaches like `setup.py` files. While this simplifies many aspects of packaging, it poses challenges when you need dynamic logic to figure out your build parameters, such as environment-specific dependencies.

@@ -2,6 +2,7 @@
 title: "AnyLogic Beta Distribution is Wrong for Large P or Q"
 description: "For p or q parameters greater than ~int32_max, AnyLogic's Beta distribution samples incorrect values"
 date: "2024-05-07"
+tags: ['Programming']
 ---
 
 [AnyLogic](https://en.wikipedia.org/wiki/AnyLogic) is a really old piece of simulation software, that like the [manatee](https://en.wikipedia.org/wiki/Manatee), exists because it has no real predators. Unfortunately companies still use it, so I've had to interact with it.
