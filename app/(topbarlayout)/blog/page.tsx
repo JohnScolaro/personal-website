@@ -19,7 +19,7 @@ export default function Page({ searchParams }: { searchParams: { tag?: string } 
   const allCustomPostsData = getSortedCustomPostsData();
   const allPosts = [...allPostsData, ...allCustomPostsData];
   const filterTag = searchParams.tag;
-  const tagColor = filterTag ? tagColors[filterTag] || tagColors["default"] : "";
+  const tagColor = filterTag ? tagColors[filterTag] || "bg-gray-500" : "";
 
   return (
     <section>
