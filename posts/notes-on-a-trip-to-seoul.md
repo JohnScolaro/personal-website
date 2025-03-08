@@ -2,6 +2,7 @@
 title: "Notes on some differences between Korea and Australia"
 description: "Some interesting differences between Korea, Japan and Australia that I wrote down while in Seoul."
 date: "2025-03-02"
+tags: ['Travel', 'Korea']
 ---
 
 In 2014 I spent 12 hours in South Korea while I waiting for a connecting flight to Canada. In 2025, I returned to actually walk around a little bit. I spent 4 full days in Seoul, and enjoyed each one of them. As an Australian, and coming from 3 weeks in Japan, whenever I saw something new, niche, or interesting, I wrote it down. Here is an expanded version of that list.

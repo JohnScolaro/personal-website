@@ -2,6 +2,7 @@
 title: "Plotly Histogram is too big"
 description: "Some code to make a reasonable sized plotly histogram."
 date: "2024-09-19"
+tags: ['Programming']
 ---
 
 I recently made a plot with plotly's `px.histogram` function in a Jupyter notebook, and saved it. I was surprised to find that the resulting plot was enormous in size! The chart bloated the notebook to 30Mb in size, which slowed down the notebook and caused some issues with other downstream custom tools in the data analysis pipeline. The issue can be recreated by running some python code like the following:

@@ -2,6 +2,7 @@
 title: "Review: The Dark Forest"
 description: 'A review of the book, "The Dark Forest" by Liu Cixin'
 date: "2024-05-06"
+tags: ['Review']
 ---
 
 When contemplating whether or not I should read [The Three-Body Problem](<https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)>), I ran into a bunch of reviews online that said: "Yeah, it's good and all, but it really just sets up for the second and third books". So when I finished the first book and wrote my [silly review](https://johnscolaro.xyz/blog/the-three-body-problem-review), I started immediately on the second to see where the story went.

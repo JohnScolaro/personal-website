@@ -2,6 +2,7 @@
 title: "Review: The Three-Body Problem"
 description: 'A review of the famous book, "The Three-Body Problem" by Liu Cixin'
 date: "2024-04-28"
+tags: ['Review']
 ---
 
 When I was younger I devoured books at an unrelenting pace. I'm sure this is a relatively common story, but over the last 15 years with more and more to consume on the internet, and phones becoming more pervasive in our lives, my "reading" has become more about tech-blogs and personal investment tips on my phone than full 'feature-length' novels. I occasionally partake in the weaponized brainrot of TikTok before bed, so every now and then I like to prove to myself that I can still read an entire book, and that all my poor brain cells haven't wilted.

@@ -2,6 +2,7 @@
 title: "Python Import Error when in Editable Mode"
 description: "Fixing a Python bug caused by some interesting pip behaviour"
 date: "2024-04-11"
+tags: ['Programming']
 ---
 
 ## Summary

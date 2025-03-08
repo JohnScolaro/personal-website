@@ -2,6 +2,7 @@
 title: "Downloading all your Facebook messages"
 description: "A guide on how to download all your Facebook messages for storage or analysis"
 date: "2024-09-11"
+tags: ['Programming']
 ---
 
 ## Summary

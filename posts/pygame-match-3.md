@@ -2,6 +2,7 @@
 title: "Creating a 'Match 3' game in Pygame"
 description: "Exploring the hidden complexity of a good Match 3 game implementation."
 date: "2024-07-21"
+tags: ['Programming', 'Pygame']
 ---
 
 I made a working "Match 3" component in Pygame, which could potentially be added to a game in the future. It looks a little something like this:

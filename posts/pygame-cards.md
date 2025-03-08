@@ -2,6 +2,7 @@
 title: "Cards in Pygame"
 description: "Making rotating cards in Pygame"
 date: "2024-06-27"
+tags: ['Programming', 'Pygame']
 ---
 
 Computer games with cards in them often have cool or "juicy" effects on the cards to make them more satisfying to drag around and play with. I wanted to see if a rotating "Hearthstone-like" effect could be achieved in [Pygame](https://pyga.me/) with a card object. I created a `Card()` object that looks something like this:

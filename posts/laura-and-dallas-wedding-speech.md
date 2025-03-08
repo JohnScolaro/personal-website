@@ -2,6 +2,7 @@
 title: "Wedding Speech"
 description: "My speech at Laura and Dallas's Wedding"
 date: "2024-10-05"
+tags: ['Speech']
 ---
 
 For my sisters wedding, I put a good amount of effort into:

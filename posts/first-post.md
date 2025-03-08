@@ -2,6 +2,7 @@
 title: "My Blog"
 description: "My first blog post."
 date: "2023-10-30"
+tags: []
 ---
 
 I have been having lots of fun learning about Next.js recently. The first tutorial I encountered was from the team behind Next.js, and it runs the beginner through the creation of a basic blogging website, highlighting the features and design choices of the framework along the way.

@@ -2,6 +2,7 @@
 title: "Serverless Python Websites"
 description: 'Some notes about the process of creating a serverless Python website, so that it is hosted for free on AWS.'
 date: "2025-02-02"
+tags: ['Programming']
 ---
 
 ## Introduction
