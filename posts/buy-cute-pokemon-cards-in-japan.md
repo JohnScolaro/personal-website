@@ -2,7 +2,7 @@
 title: "Kill Time in Japan by Finding the Cutest Pokemon Cards"
 description: "An idea for how to kill time in Japan by buying cute Japanese pokemon cards, and obtain a cute memento of the trip."
 date: "2025-03-05"
-tags: ['Travel', 'Pokemon']
+tags: ['Travel', 'Pokemon', 'Japan']
 ---
 
 As the [last few blog posts probably indicate](https://johnscolaro.xyz/blog/notes-on-a-trip-to-japan), I've recently returned from Japan. Sometimes between museum visits, shopping trips, strolls in the gardens, etc, we'd have to kill an hour or two before another activity. In these spare hours, I challenge you to find the cutest pokemon cards you can. Like these!
