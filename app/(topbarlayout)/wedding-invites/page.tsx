@@ -10,37 +10,38 @@ const INVITED_GUESTS = [
     { code: "best_swimmers", persons: ["Christina Scolaro", "Martin Banks"] },
     { code: "chloe_poop", persons: ["Laura Douglas", "Dallas Douglas"] },
     { code: "peeba_stinky", persons: ["Anna Scolaro", "Joshua You"] },
-    { code: "", persons: ["Robyn Bohl", "Gordon Bohl"] },
-    { code: "", persons: ["Graham Bohl", "Kim Bohl"] },
-    { code: "", persons: ["Alex Bohl"] },
+    { code: "coobie123", persons: ["Robyn Bohl", "Gordon Bohl"] },
+    { code: "optics", persons: ["Graham Bohl", "Kim Bohl"] },
+    { code: "railing_king", persons: ["Alex Bohl"] },
     { code: "prime_numba", persons: ["Harrison Bohl"] },
-    { code: "", persons: ["Tanya Revell"] },
-    { code: "", persons: ["Brooke Revell"] },
-    { code: "", persons: ["Tom Revell"] },
-    { code: "", persons: ["John Revell"] },
-    { code: "", persons: ["Tanya Partner"] },
-    { code: "", persons: ["Robert Scolaro", "Gemma Scolaro"] },
-    { code: "", persons: ["Robert Bianchi", "Katrina Bianchi"] },
-    { code: "", persons: ["Nicholas Bianchi"] },
-    { code: "", persons: ["Sophia Bianchi"] },
-    { code: "", persons: ["Matthew Scolaro"] },
-    { code: "", persons: ["Linda Scanlan"] },
-    { code: "", persons: ["Lauren Baade"] },
-    { code: "", persons: ["Kirsten Baade"] },
-    { code: "", persons: ["Ingrid Aulike"] },
-    { code: "", persons: ["Sharron"] },
-    { code: "", persons: ["Robert Baade", "Fiona"] },
-    { code: "", persons: ["Ryan Watson", "Niamh Watson"] },
+    { code: "mooloolaba_swimmer", persons: ["Tanya Revell"] },
+    { code: "chookie", persons: ["Brooke Revell"] },
+    { code: "mr_electricity", persons: ["Tom Revell"] },
+    { code: "big_john", persons: ["John Revell"] },
+    { code: "bianchi", persons: ["Robert Bianchi", "Katrina Bianchi"] },
+    { code: "big_biceps", persons: ["Nicholas Bianchi"] },
+    { code: "sophie", persons: ["Sophia Bianchi"] },
+    { code: "teo", persons: ["Matthew Scolaro"] },
+    { code: "linny", persons: ["Linda Scanlan"] },
+    { code: "vase_queen", persons: ["Lauren Baade"] },
+    { code: "flower_power", persons: ["Kirsten Baade"] },
+    { code: "epic_mother_of_bride", persons: ["Ingrid Aulike"] },
+    { code: "gone_fishing", persons: ["Robert Baade", "Fiona Mackie"] },
+    { code: "stardew_valley", persons: ["Ryan Watson", "Niamh Watson"] },
     { code: "pallywallyacuttman", persons: ["Calum Acutt", "Jasmine"] },
-    { code: "", persons: ["Harry Buchanan", "Bree"] },
-    { code: "", persons: ["Lucas Rossdeutcher", "Christina Nicolas"] },
-    { code: "", persons: ["Harry Sax", "Emily Sax"] },
-    { code: "", persons: ["Milyka McCutcheon", "Natalie Alkass"] },
-    { code: "", persons: ["Natalie McNeill", "Jordan Falvey"] },
-    { code: "", persons: ["Ceara Swyripa", "Sam Gansberg"] },
-    { code: "elliots_parents", persons: ["Chloe Dorkhom", "Michael Dorkhom"] },
-    { code: "browns_plains", persons: ["Jess Adams", "Jordan Adams"] },
+    { code: "barry", persons: ["Harry Buchanan", "Bree"] },
+    { code: "spaghetti", persons: ["Lucas Rossdeutcher", "Christina Nicolas"] },
+    { code: "toby", persons: ["Harry Sax", "Emily Sax"] },
+    { code: "red_fortnite", persons: ["Milyka McCutcheon", "Natalie Alkass"] },
+    { code: "yellow_chef", persons: ["Natalie McNeill", "Jordan Falvey"] },
+    { code: "green_lego", persons: ["Ceara Swyripa", "Sam Gansberg"] },
+    { code: "elliott", persons: ["Chloe Dorkhom", "Michael Dorkhom"] },
+    { code: "uq_track", persons: ["Jess Adams", "Jordan Adams"] },
     { code: "theo_cute", persons: ["Julia Uecker", "Mickey Traber Juhl Anderson"] },
+    { code: "nana_jean", persons: ["Jean Baade"] },
+    { code: "uncle_craig", persons: ["Craig Baade", "Susan Baade"] },
+    { code: "uncle_greg", persons: ["Greg Baade", "Linda Baade"] },
+    { code: "uncle_andrew", persons: ["Andrew Baade"] },
 ];
 
 export default function WeddingRSVP() {
@@ -48,9 +49,12 @@ export default function WeddingRSVP() {
     const [guests, setGuests] = useState([]);
     const [validCode, setValidCode] = useState(false);
 
-    // Initialize emojiCursor only on the client-side
     useEffect(() => {
-        emojiCursor({ emoji: ["❤️"] });
+        const effect = new emojiCursor({ emoji: ["❤️"] });
+
+        return () => {
+            document.querySelectorAll(".emojiCursor").forEach(el => el.remove());
+        };
     }, []);
 
     const handleCodeSubmit = () => {
