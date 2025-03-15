@@ -39,7 +39,7 @@ const INVITED_GUESTS = [
     { code: "uq_track", persons: ["Jess Adams", "Jordan Adams"] },
     { code: "theo_cute", persons: ["Julia Uecker", "Mickey Traber Juhl Anderson"] },
     { code: "nana_jean", persons: ["Jean Baade"] },
-    { code: "uncle_craig", persons: ["Craig Baade", "Susan Baade"] },
+    { code: "uncle_craig", persons: ["Craig Baade", "Susan Goodland-Baade"] },
     { code: "uncle_greg", persons: ["Greg Baade", "Linda Baade"] },
     { code: "uncle_andrew", persons: ["Andrew Baade"] },
 ];
