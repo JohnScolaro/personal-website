@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         url: "https://johnscolaro.xyz/wedding-invites",
         images: [
             {
-                url: "https://johnscolaro.xyz/images/wedding-invites/img.jpg",
+                url: "https://johnscolaro.xyz/images/wedding-invite/img.jpg",
                 width: 1133,
                 height: 1133,
                 alt: 'An image of John and Helen',
