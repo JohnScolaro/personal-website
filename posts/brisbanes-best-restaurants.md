@@ -94,6 +94,6 @@ And they did.
 
 ## The next GCP Billing Cycle
 
-Due to aformentioned monopoly, I'm back. With a vengance.
+Due to aformentioned monopoly, I'm back.
 
 ![A meme of Bernie Sanders, but captioned "I'm once again asking for Brisbane's Restaurant Data".](/images/blog/brisbanes-best-restaurants/once_again.jpg)
