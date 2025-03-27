@@ -31,7 +31,7 @@ export default function Page() {
                     <Date dateString={"2024-08-17"} />
                 </div>
                 <h2>Introduction</h2>
-                <p>blah blah blah test for now</p>
+                <p>This is John's Special Ranking of all the restaurants in Brisbane. I was inspired by this post [reference], to use Google's data [reference], and an algorithm [reference] to find a good place to eat. If you'd like to see more fun statistics and read some more about how I made this, see this [reference].</p>
                 <RestaurantTable />
             </article>
         </>
