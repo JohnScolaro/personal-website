@@ -42,6 +42,11 @@ export default function Page() {
               description="Do you know all Brisbane's Suburbs?"
               link="/projects/so-you-think-you-know-brisbane"
             ></Card>
+            <Card
+              title="Brisbane's Best Restaurants"
+              description="The results of a project to find Brisbane's Best Restaurants."
+              link="/projects/brisbanes-best-restaurants/2025"
+            ></Card>
           </div>
         </div>
       </div>
