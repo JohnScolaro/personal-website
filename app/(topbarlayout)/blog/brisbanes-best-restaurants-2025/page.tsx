@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { useState, useMemo } from "react";
-import RestaurantTable from "./RestaurantTable";
+import RestaurantTable from "../../projects/brisbanes-best-restaurants/2025/RestaurantTable";
 import Date from "../../../../components/date";
 import Image from "next/image";
 
 // Pre-processed data for showing static plots.
-import processed_restaurant_data from "./processed_restaurants.json";
 import scatter_plot_1 from "./scatter_plot_rating_vs_reviews.json";
 import scatter_plot_2 from "./scatter_plot_rating_vs_reviews_categories.json";
 
@@ -18,6 +17,7 @@ import funny_review from "./funny_review.png";
 import meme from "./meme.png";
 import histogram_of_number_of_reviews from "./histogram_of_number_of_reviews.png";
 import histogram_of_review_ratings from "./histogram_review_ratings.png";
+import PlotlyChart from "../../../../components/wrapped-plotly-chart";
 
 export const metadata: Metadata = {
   title: "Brisbane's Best Restaurants - 2025",
@@ -193,6 +193,18 @@ export default function Page() {
         width={600}
         height={400}
       ></Image>
+      <p>Also this table:</p>
+      <RestaurantTable></RestaurantTable>
+      <PlotlyChart
+        data={scatter_plot_1.data}
+        layout={scatter_plot_1.layout}
+        config={{}}
+      ></PlotlyChart>
+      <PlotlyChart
+        data={scatter_plot_2.data}
+        layout={scatter_plot_2.layout}
+        config={{}}
+      ></PlotlyChart>
     </article>
   );
 }
