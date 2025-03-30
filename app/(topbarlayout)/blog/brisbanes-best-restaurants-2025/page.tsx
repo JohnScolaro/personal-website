@@ -24,9 +24,16 @@ export const metadata: Metadata = {
   description: "I do some data analysis to find Brisbane's best restaurants.",
 };
 
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 
 export default function Page() {
+  const PlotlyChart = dynamic(
+    () => import("../../../../components/wrapped-plotly-chart"),
+    {
+      ssr: false,
+    }
+  );
+
   return (
     <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full">
       <h1 className="mb-1 lg:mb-1 text-center">
