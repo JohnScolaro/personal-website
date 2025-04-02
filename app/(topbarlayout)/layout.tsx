@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <div className="flex border-b-2 border-gray-300 p-2 items-center">
-        <Link href={"/"}>
+        <Link href={"/"} className="flex-shrink-0">
           <Image
             src="/icon.png"
             alt="Website Logo"

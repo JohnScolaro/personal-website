@@ -7,21 +7,16 @@ export default function BreadCrumbs() {
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
 
   return (
-    <div className="text-gray-400 flex">
+    <div className="text-gray-400 flex flex-wrap min-w-0">
       {pathSegments.map((segment, index) => (
-        <div key={index.toString() + "/"}>
-          <span className="whitespace-pre-wrap" key={index.toString() + "/"}>
-            {" / "}
-          </span>
-          <span key={index} className="underline hover:no-underline">
-            <a
-              key={index.toString() + "link"}
-              href={`/${pathSegments.slice(0, index + 1).join("/")}`}
-            >
+        <span key={index.toString() + "/"} className="flex items-center">
+          <span className="whitespace-nowrap"> / </span>
+          <span className="underline hover:no-underline whitespace-nowrap">
+            <a href={`/${pathSegments.slice(0, index + 1).join("/")}`}>
               {segment}
             </a>
           </span>
-        </div>
+        </span>
       ))}
     </div>
   );
