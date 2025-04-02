@@ -25,6 +25,7 @@ export default function Page() {
                 link={`/sketch-rank/${year}`}
                 date={""}
                 key={year}
+                image={`/images/preview_images/sketch_rank_${year}.png`}
               ></Card>
             ))}
           </div>

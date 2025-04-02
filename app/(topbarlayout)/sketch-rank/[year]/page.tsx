@@ -7,6 +7,19 @@ export async function generateMetadata({ params }) {
   return {
     title: `SketchRank ${params.year}`,
     description: "Rank several sketches that my partner and I drew.",
+    openGraph: {
+      title: `SketchRank ${params.year}`,
+      description: "Rank several sketches that my partner and I drew.",
+      url: `https://johnscolaro.xyz/projects/sketch-rank/${params.year}`,
+      images: [
+        {
+          url: `/images/preview_images/sketch_rank_${params.year}.png`,
+          width: 1200,
+          height: 624,
+          alt: `A little silly doodle saying: Sketch Rank ${params.year}`,
+        },
+      ],
+    },
   };
 }
 
