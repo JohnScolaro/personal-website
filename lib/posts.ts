@@ -52,7 +52,7 @@ export function getSortedCustomPostsData(): PostData[] {
       tags: ['Running', 'Data Visualisation']
     }, {
       id: "brisbanes-best-restaurants-2025",
-      date: "2025-03-25",
+      date: "2025-04-04",
       title: "Brisbane's Best Restaurants 2025",
       description: "I do some data analysis to find Brisbane's best restaurants.",
       tags: ['Brisbane', 'Data Visualisation']
