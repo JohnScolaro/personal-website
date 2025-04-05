@@ -40,9 +40,9 @@ export default function RestaurantTable() {
   const sortedRestaurants = useMemo(() => {
     let filtered = processed_restaurant_data;
 
-    if (priceFilter.value !== "ALL") {
-      filtered = filtered.filter((r) => r.price === priceFilter.value);
-    }
+    // if (priceFilter.value !== "ALL") {
+    //   filtered = filtered.filter((r) => r.price === priceFilter.value);
+    // }
 
     const restaurantsWithScores = filtered.map((restaurant) => ({
       ...restaurant,
