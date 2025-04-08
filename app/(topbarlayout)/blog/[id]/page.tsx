@@ -5,16 +5,44 @@ import Image from "next/image";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
+import { Metadata } from "next";
+import path from "path";
+import fs from "fs";
+import sizeOf from "image-size";
 
-export async function generateMetadata({ params }) {
-  const allPostData = getSortedPostsData();
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const postData = await getPostData(params.id);
 
-  // Find the post with the matching id
-  const matchingPost = allPostData.find((post) => post.id === params.id);
+  const imagePath = path.join(
+    process.cwd(),
+    "public",
+    "images",
+    "preview_images",
+    `${postData.id}.png`
+  );
+  let images;
+
+  if (fs.existsSync(imagePath)) {
+    const dimensions = sizeOf(imagePath);
+    images = [
+      {
+        url: `https://johnscolaro.xyz/images/preview_images/${postData.id}.png`,
+        width: dimensions.width,
+        height: dimensions.height,
+        alt: "An image of John and Helen",
+      },
+    ];
+  }
 
   return {
-    title: matchingPost.title,
-    description: matchingPost.description,
+    title: postData.title,
+    description: postData.description,
+    openGraph: {
+      title: postData.title,
+      description: postData.description,
+      url: `https://johnscolaro.xyz/${postData.id}`,
+      ...(images && { images }),
+    },
   };
 }
 

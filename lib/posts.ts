@@ -76,6 +76,7 @@ interface AllPostData {
   markdown: string;
   date: Date;
   title: string;
+  description: string;
   imageSizes: Record<string, { width: number; height: number }>;
 }
 
@@ -106,6 +107,7 @@ export async function getPostData(id: string): Promise<AllPostData> {
     id: id,
     markdown: matterResult.content,
     title: matterResult.data.title,
+    description: matterResult.data.description,
     date: matterResult.data.date,
     imageSizes: imageSizes,
   };
