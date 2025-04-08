@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://johnscolaro.xyz/projects/brisbanes-best-restaurants/2025",
     images: [
       {
-        url: "https://johnscolaro.xyz/images/preview_images/brisbanes-best-restaurant-2025.png",
+        url: "https://johnscolaro.xyz/images/preview_images/brisbanes-best-restaurants-2025.png",
         width: 1200,
         height: 624,
         alt: "An image of text saying: 'Brisbanes Best Restaurant 2025'",
