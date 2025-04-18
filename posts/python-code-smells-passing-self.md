@@ -109,7 +109,7 @@ Sure, the `Wheel` can get the car's speed, but the way it does so is constrained
 
 Well let's ask Mr ChatGPT, who has trained for millions of man years on the finest publicly available code examples:
 
-![An image of some text from ChatGPT agreeing with me](/images/blog/python-code-smells-passing-self/chatgpt.png)
+![An image of some text from ChatGPT agreeing with me](/images/blog/python-code-smells-passing-self/chatgpt.jpg)
 
 Wow, I couldn't have put it better myself. In fact, I literally couldn't because I wrote this whole blog post which can be entirely summated in that single sentence above.
 
