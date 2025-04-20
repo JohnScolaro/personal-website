@@ -33,9 +33,9 @@ export default function Page() {
         </div>
         <p>
           AI's pretty cool, eh? As humanity has been grappling with large
-          language models (LLMs), and new audiovisual generative models over the
-          last year or two, we've found oodles of fun new niches where it can
-          help us be more productive. For me personally, it's
+          language models (LLMs), and a wave of new audiovisual generative tools
+          over the last year or two, we've found oodles of fun new niches where
+          it can help us be more productive. For me personally, it's
         </p>
         <ul>
           <li>dramatically improved my programming productivity,</li>
@@ -126,7 +126,7 @@ export default function Page() {
           more accurate, but my friends are usually funnier.
         </p>
         <p>
-          LLM's also won't make up excuses to not hang out with you if you
+          LLMs also won't make up excuses to not hang out with you if you
           propose 12 hours of continuously estimating the winners of fights.
         </p>
         <p>
@@ -152,7 +152,7 @@ export default function Page() {
         <h3>Which LLM to use?</h3>
         <p>
           I could see this project potentially needing a maximum of 1 million
-          queries and :
+          queries and:
         </p>
         <p>If I use a prompt similar to this:</p>
         <pre className="bg-gray-900 text-green-400 font-mono p-6 rounded-lg shadow-md text-sm leading-relaxed whitespace-pre-wrap">
@@ -162,26 +162,26 @@ export default function Page() {
           Because the tokenisation of text is significantly more complex than
           "one word = one token", I just asked ChatGPT how many tokens this
           prompt was and it says ~60-65. Let's say that a successful single word
-          output is 2 tokens on average. Assuming the model correctly outputs a
-          single word for every query, for 1 million prompts, we're looking at:
+          output is 2 tokens on average. If we use OpenAI's most advanced model,
+          assuming the model correctly outputs a single word for every query,
+          for 1 million prompts, we're looking at:
         </p>
         <ul>
-          <li>65 million input tokens</li>
+          <li>65 million input tokens, and</li>
           <li>2 million output tokens</li>
         </ul>
         <p>
-          for a total cost of $81 USD. Using their cheapest model, we're looking
+          This will cost $81 USD. Using OpenAI's cheapest model, we're looking
           at $4 USD. But that opens the door for mistakes that cost extra money,
           I need to make an account and add my card details, and paying for LLM
-          results? In this economy? What if I just run an LLM locally using
-          Ollama instead?
+          results? In this economy?! What if I run a LLM locally using Ollama
+          instead?
         </p>
         <p>
           I tested a couple different Ollama models to see if any could solve my
           problem.
         </p>
         <p>
-          {" "}
           <b>deepseek-r1:7b</b>: Deepseeks whole schtick is that it likes to
           think. If I tell it to respond with a single token, it first thinks
           for 30 seconds and spews out hundreds of tokens before finally
@@ -227,18 +227,18 @@ export default function Page() {
           <li>Knockout bracket, where the loser is eliminated.</li>
         </ul>
         <p>
-          Round robin is preferable because I think it will yield more
-          interesting data, but it drastically increases the number of battles
-          we need to perform. For only 1,000 competitors, we need to perform
-          1,000,000 battles. At a rate of 2 battles each second, that will take
-          almost a week of continuous battling.{" "}
+          Round robin is preferable because it will yield more interesting data,
+          but it drastically increases the number of battles we need to perform.
+          For only 1,000 competitors, we need to perform 1,000,000 battles. At a
+          rate of 2 battles each second, that will take almost a week of
+          continuous battling.{" "}
         </p>
         <p>
           {" "}
           In a knockout elimination competition, we only need 999 battles for
-          1000 competitors, so it's a lot more feasble. However, since it only
-          takes one unlucky battle to knock you out, I think the results would
-          be a lot less accurate and interesting.
+          1000 competitors, so it's more feasible. However, since it only takes
+          one unlucky battle to knock someone out, the results would be a lot
+          less meaningful.
         </p>
         <p>
           Originally my plan was to battle every english word against each
@@ -307,8 +307,8 @@ export default function Page() {
           <Link
             href={"https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model"}
           >
-            Bradley-Terry Model{" "}
-          </Link>
+            Bradley-Terry Model
+          </Link>{" "}
           because it seems like this is a fitting use-case, and I can just pump
           my results through the{" "}
           <Link href={"https://pypi.org/project/choix/"}>choix</Link> library in
@@ -328,9 +328,9 @@ export default function Page() {
           <li>Love most certainly doesn't beat war.</li>
         </ul>
         <p>
-          It was at this point where I realised that this word choice sucks.
-          What does it mean for "fact" to fight "keep"? Who cares? I need a
-          better selection of words that make more sense.
+          It was at this point where I realised that the 200 most used nouns are
+          a terrible choice. What does it mean for "fact" to fight "keep"? Who
+          cares? I need a better selection of words that make more sense.
         </p>
         <h2>Battle 2: Animals</h2>
         <p>
@@ -434,7 +434,7 @@ export default function Page() {
         <p>
           This stupid weekend project has been a lot of fun, and inspired more
           questions than answers. I have half a mind to run all the questions
-          again with other local LLM's see how the heatmaps differ. We could
+          again with other local LLMs see how the heatmaps differ. We could
           construct an ultimate ranking from the results of all the LLMs, but
           that would be time-consuming, useless, and feels like I'm implementing
           a mixture-of-experts model manually. I'm also half tempted to pay for
