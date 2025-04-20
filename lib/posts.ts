@@ -56,6 +56,12 @@ export function getSortedCustomPostsData(): PostData[] {
       title: "Brisbane's Best Restaurants 2025",
       description: "I do some data analysis to find Brisbane's best restaurants.",
       tags: ['Brisbane', 'Data Visualisation']
+    }, {
+      id: "llm-fight-club",
+      date: "2025-04-19",
+      title: "LLM Fight Club",
+      description: "Using technology to answer important questions like: Who would win in a fight, X or Y.",
+      tags: ['AI'],
     }
   ];
 }
