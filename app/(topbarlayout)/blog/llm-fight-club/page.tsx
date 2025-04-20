@@ -4,6 +4,7 @@ import AnimatedBarChart from "./AnimatedBarChart";
 import WordAnimator from "./WordAnimator";
 import Image from "next/image";
 import Link from "next/link";
+import BattleHeatmap from "./HeatMapChart";
 
 import battle from "./battle.png";
 import lions from "./lions_vs_sun.webp";
@@ -250,6 +251,22 @@ export default function Page() {
           <Link href={"https://pypi.org/project/wordfreq/"}>wordfreq</Link>{" "}
           library to get word frequencies.
         </p>
+        <p>
+          I wrote some code to query ollama, and save the results in a sensible
+          format and left my laptop on overnight to grind battles.
+        </p>
+        <p>
+          Then the next night day I changed my latop settings to not sleep
+          immediately, and <i>actually </i>ran the experiment.
+        </p>
+        <p>Here is a heatmap of the results:</p>
+        <BattleHeatmap
+          players={["test", "test2"]}
+          results={[
+            [1, -1],
+            [-1, 1],
+          ]}
+        ></BattleHeatmap>
         <h2>Battle 2: Animals</h2>
         <p></p>
         <h2>Battle 3: Colours?</h2>
