@@ -371,11 +371,12 @@ export default function Page() {
           The final showdown.
         </p>
         <p>
-          The most interest feature of this heatmap seems to be that the red and
-          green 'blurring' around the diagonal is 'tighter'? I feel that this
-          indicates that the AI is far more certain about it's answer compared
-          to the last battle. These animals probably have a more obvious
-          heirarchy compared to the semi-random nouns that came before them.
+          The most interesting feature of this heatmap seems to be that the red
+          and green 'blurring' around the diagonal is 'tighter'? I feel that
+          this indicates that the AI is far more certain about it's answer
+          compared to the last battle. These animals probably have a more
+          obvious heirarchy compared to the semi-random nouns that came before
+          them.
         </p>
         <p>Here is the official ranking:</p>
         <AnimalsHorizontalBarChart></AnimalsHorizontalBarChart>
