@@ -11,7 +11,7 @@ I absolutely loved it. Similarly to my [other](https://johnscolaro.xyz/blog/the-
 
 ---
 
-"The Will of the Many" is the first book of a planned trilogy by Australian author James Islington. I don't really know how to categorise it. It feels like sci-fi, but sci-fi usually conjurs thoughts of spaceships and polished stainless tubing, and this story is set in the cities, countryside, and islands of a fictional post-apocalyptic ancient Rome. Consequently, it doesn't feel like classic sci-fi, and describing it as sci-fi also feels like a disservice, because the main storyline is more of a politically motivated murder mystery, which probably appeals to a slightly different audience than simply "sci-fi enjoyers".
+"The Will of the Many" is the first book of a planned trilogy by Australian author James Islington. I don't really know how to categorise it. It feels like sci-fi, but sci-fi usually conjures thoughts of spaceships and polished stainless tubing, and this story is set in the cities, countryside, and islands of a fictional post-apocalyptic ancient Rome. Consequently, it doesn't feel like classic sci-fi, and describing it as sci-fi also feels like a disservice, because the main storyline is more of a politically motivated murder mystery, which probably appeals to a slightly different audience than simply "sci-fi enjoyers".
 
 ## Why I Like the Book
 
