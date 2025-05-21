@@ -45,6 +45,7 @@ const INVITED_GUESTS = [
     { code: "footy_star", persons: ["Greta Bodey"] },
     { code: "julie_and_john", persons: ["Julie-Ann Pook", "John Pook"]},
     { code: "sue_and_greg", persons: ["Sue Heck", "Greg Heck"]},
+    { code: "slay", persons: ["Sam Moore", "Eliza Sullivan"]},
 ];
 
 export default function WeddingRSVP() {
