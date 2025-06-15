@@ -2,7 +2,7 @@
 title: "Self Referential Type Hints with | in Python"
 description: "Exploring a quirk of Python's type hinting with the pipe operator"
 date: "2024-10-14"
-tags: ['Programming']
+tags: ["Programming", "Python"]
 ---
 
 I ran into an interesting quirk lately with Python 3.12. Let's take a classic binary tree node class implementation. You would **think** this would work, but it actually doesn't:
