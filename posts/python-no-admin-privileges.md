@@ -2,7 +2,7 @@
 title: "Changing Python Version on Windows with no Admin Privileges"
 description: "How to install Python - The eternal question"
 date: "2023-11-27"
-tags: ['Programming']
+tags: ["Programming", "Python"]
 ---
 
 ## Summary
