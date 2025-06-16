@@ -382,7 +382,7 @@ function getTimeOfDayCard(
             tooltip: {},
             xAxis: {
               type: "category",
-              data: [...Array(24).keys()].map((h) => `${h}:00`),
+              data: Array.from({ length: 24 }, (_, h) => `${h}:00`),
               axisLabel: { rotate: 45 },
             },
             yAxis: {
