@@ -31,8 +31,14 @@ export default async function sitemap() {
       i++;
     }
   }
+
+  const customProjectRoutes = [
+    "/projects/brisbanes-best-restaurants/2025",
+    "/projects/so-you-think-you-know-brisbane",
+    "/projects/uber-eats-visualiser"
+  ];
   
-  const allRoutes = [...routes, ...allBlogRoutes, ...allRecipeRoutes, ...sketchRankRoutes].map((route) => ({
+  const allRoutes = [...routes, ...allBlogRoutes, ...allRecipeRoutes, ...customProjectRoutes, ...sketchRankRoutes].map((route) => ({
     url: `${URL}${route}`,
   }));
  
