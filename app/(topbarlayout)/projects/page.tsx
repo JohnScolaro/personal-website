@@ -47,6 +47,11 @@ export default function Page() {
               description="The results of a project to find Brisbane's Best Restaurants."
               link="/projects/brisbanes-best-restaurants/2025"
             ></Card>
+            <Card
+              title="Uber Eats Data Visualiser"
+              description="Visualise your personal Uber Eats data."
+              link="/projects/uber-eats-visualiser"
+            ></Card>
           </div>
         </div>
       </div>
