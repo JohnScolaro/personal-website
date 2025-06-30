@@ -66,7 +66,7 @@ export function getSortedCustomPostsData(): PostData[] {
     {
       id: "do-llms-have-style",
       date: "2025-06-30",
-      title: "Do LLM's have style?",
+      title: "Do LLMs have style?",
       description: "A quick experiment of the stylistic tastes of LLMs in frontend design.",
       tags: ['AI', 'Programming']
     },

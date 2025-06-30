@@ -9,33 +9,36 @@ export default function LLMStylePost() {
   return (
     <>
       <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full">
-        <h1 className="mb-1 lg:mb-1 text-center">Do LLM's have style?</h1>
+        <h1 className="mb-1 lg:mb-1 text-center">Do LLMs have style?</h1>
         <div className="text-center">
-          <Date dateString={"2025-04-19"} />
+          <Date dateString={"2025-06-30"} />
         </div>
         <p>
           As a primarily backend software developer, the intricacies and great
-          depth of frontend software development is uncharted territory. I can
+          depth of frontend software development are uncharted territory. I can
           cobble together something basic (like this site) and adhere to its
           style of "mainly white with some gray and black text" and things don't
           look too terrible.
         </p>
         <p>
-          I recently made a website to send out marriage invitations however,
-          and my stock standard card didn't cut it any more:
+          I recently made a website to send out marriage invitations, and
+          suddenly my stock standard card didn't cut it any more:
         </p>
         <div className="flex justify-center my-4">
           <Card title="See!" description="How boring is this!" />
         </div>
         <p>
-          I gave an LLM my <code>&lt;Card&gt;</code> component and said
-          something like: "Make it fit for a wedding invitation!", and it
-          created a nice friendlier, lighter card, which when paired with pink
-          accents, looked quite nice:
+          I gave an LLM my{" "}
+          <code className="before:content-none after:content-none">
+            &lt;Card&gt;
+          </code>{" "}
+          component and said something like: "Make it fit for a wedding
+          invitation!", and it created a nice friendlier, lighter card, which
+          when paired with pink accents, looked quite nice:
         </p>
         <WeddingStyledCard></WeddingStyledCard>
         <p>
-          And this got me thinking: "What other tailwind themes can LLM's
+          And this got me thinking: "What other tailwind themes can LLMs
           generate?" I'm sure they can spew out some more generic cards, but can
           I prompt them to give me anything <i>freaky</i>? Let's test this idea.
         </p>
@@ -74,7 +77,7 @@ export default function LLMStylePost() {
         </p>
         <p>
           Ok, so we can recreate themes that have been flogged half to death.
-          LLM's are professionals are regurgitating tailwind, so when combined
+          LLMs are professionals at regurgitating tailwind, so when combined
           with the creativity of an actual human, maybe we can cook up some new
           never-before-seen themes.
         </p>
@@ -85,7 +88,7 @@ export default function LLMStylePost() {
         </p>
         <GeminiBananaCard>The theme is banana.</GeminiBananaCard>
         <p>
-          The rest use using ChatGPT again. Gemini has a penchant for external
+          The rest were created by ChatGPT. Gemini has a penchant for external
           libraries, custom global styles, and generally disobeying the prompt
           in order to create gratuitously complex components.
         </p>
@@ -99,14 +102,14 @@ export default function LLMStylePost() {
         </CryingBabyFlightCard>
         <div className="mt-6"></div>
         <TheWayIAreCard>
-          The theme is the song "The way I are" by Timberland.
+          The theme is the song "The Way I Are" by Timberland.
         </TheWayIAreCard>
         <h2>Takeaways</h2>
         <ul>
           <li>
             {" "}
-            I feel like LLM's overuse large rounded components. These cards were
-            made with tailwind, and ChatGPT loves to slap on{" "}
+            LLMs seem to overuse large rounded components. These cards were made
+            with tailwind, and ChatGPT loves to slap on{" "}
             <code className="before:content-none after:content-none">
               rounded-3xl
             </code>{" "}
@@ -126,9 +129,9 @@ export default function LLMStylePost() {
         </ul>
         <Image
           src={"/images/blog/do-llms-have-style/rounded.png"}
-          alt="test."
-          width={1454}
-          height={1408}
+          alt="The FlexTape man slapping tape onto a water tank, but he is labelled: 'ChatGPT', the tank is labelled: 'Card Component' and the tape is labelled: 'rounded-3xl'."
+          width={978}
+          height={1094}
           className="rounded-3xl"
         ></Image>
       </article>
