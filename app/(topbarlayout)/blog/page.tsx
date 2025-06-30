@@ -1,4 +1,7 @@
-import { getSortedPostsData, getSortedCustomPostsData } from "../../../lib/posts";
+import {
+  getSortedPostsData,
+  getSortedCustomPostsData,
+} from "../../../lib/posts";
 import { Metadata } from "next";
 import BlogList from "./BlogList";
 import Link from "next/link";
@@ -9,13 +12,17 @@ export const metadata: Metadata = {
 };
 
 const tagColors: Record<string, string> = {
-  "Travel": "bg-green-500",
-  "Programming": "bg-blue-500",
-  "Brisbane": "bg-red-500",
-  "Review": "bg-yellow-500",
-  "Japan": "bg-orange-500",
+  Travel: "bg-green-500",
+  Programming: "bg-blue-500",
+  Brisbane: "bg-red-500",
+  Review: "bg-yellow-500",
+  Japan: "bg-orange-500",
 };
-export default function Page({ searchParams }: { searchParams: { tag?: string } }) {
+export default function Page({
+  searchParams,
+}: {
+  searchParams: { tag?: string };
+}) {
   const allPostsData = getSortedPostsData();
   const allCustomPostsData = getSortedCustomPostsData();
   const allPosts = [...allPostsData, ...allCustomPostsData];
@@ -29,7 +36,9 @@ export default function Page({ searchParams }: { searchParams: { tag?: string } 
           {filterTag ? (
             <div className="flex items-center justify-center gap-2">
               <span>Blog posts about:</span>
-              <span className={`px-3 py-1 text-sm font-semibold text-white ${tagColor} rounded-full`}>
+              <span
+                className={`px-3 py-1 text-sm font-semibold text-white ${tagColor} rounded-full`}
+              >
                 {filterTag}
               </span>
             </div>
@@ -47,7 +56,11 @@ export default function Page({ searchParams }: { searchParams: { tag?: string } 
             </Link>
           </div>
         )}
-        <BlogList allPosts={allPosts} filterTag={filterTag} tagColors={tagColors} />
+        <BlogList
+          allPosts={allPosts}
+          filterTag={filterTag}
+          tagColors={tagColors}
+        />
       </div>
     </section>
   );

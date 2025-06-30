@@ -62,7 +62,14 @@ export function getSortedCustomPostsData(): PostData[] {
       title: "LLM Fight Club",
       description: "Using technology to answer important questions like: Who would win in a fight, X or Y.",
       tags: ['AI'],
-    }
+    },
+    {
+      id: "do-llms-have-style",
+      date: "2025-06-30",
+      title: "Do LLM's have style?",
+      description: "A quick experiment of the stylistic tastes of LLMs in frontend design.",
+      tags: ['AI', 'Programming']
+    },
   ];
 }
 
