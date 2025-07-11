@@ -5,10 +5,12 @@ import RestaurantTable from "./RestaurantTable";
 
 export const metadata: Metadata = {
   title: "Brisbane's Best Restaurants - 2025",
-  description: "I do some data analysis to find Brisbane's best restaurants.",
+  description:
+    "Discover Brisbane's top restaurants for 2025, ranked using thousands of reviews. Find Brisbane's hidden gems here.",
   openGraph: {
     title: "Brisbane's Best Restaurants - 2025",
-    description: "I do some data analysis to find Brisbane's best restaurants.",
+    description:
+      "Discover Brisbane's top restaurants for 2025, ranked using thousands of reviews. Find Brisbane's hidden gems here.",
     url: "https://johnscolaro.xyz/projects/brisbanes-best-restaurants/2025",
     images: [
       {
