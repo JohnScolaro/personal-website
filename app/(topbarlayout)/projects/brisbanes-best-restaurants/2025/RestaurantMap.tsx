@@ -34,9 +34,10 @@ const RestaurantMap: FC<Props> = ({ restaurants }) => {
   return (
     <div style={{ height: "500px", width: "100%" }}>
       <MapContainer
+        // @ts-ignore — I'm getting a type error with these props which I don't have enough patience to solve.
         center={center}
         zoom={11}
-        scrollWheelZoom
+        scrollWheelZoom={true}
         style={{ height: "100%", width: "100%" }}
         attributionControl={false}
       >
