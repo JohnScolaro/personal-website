@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Date from "../../../../../components/date";
 import Link from "next/link";
 import RestaurantTable from "./RestaurantTable";
+import "leaflet/dist/leaflet.css";
 
 export const metadata: Metadata = {
   title: "Brisbane's Best Restaurants - 2025",
