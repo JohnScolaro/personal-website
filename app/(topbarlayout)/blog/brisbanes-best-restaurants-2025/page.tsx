@@ -21,10 +21,12 @@ import tirimisu from "./tirimisu.jpg";
 
 export const metadata: Metadata = {
   title: "Brisbane's Best Restaurants - 2025",
-  description: "I do some data analysis to find Brisbane's best restaurants.",
+  description:
+    "Discover Brisbane's top restaurants for 2025, ranked using real data. Find Brisbane's hidden gems here.",
   openGraph: {
     title: "Brisbane's Best Restaurants - 2025",
-    description: "I do some data analysis to find Brisbane's best restaurants.",
+    description:
+      "Discover Brisbane's top restaurants for 2025, ranked using real data. Find Brisbane's hidden gems here.",
     url: "https://johnscolaro.xyz/blog/brisbanes-best-restaurants-2025",
     images: [
       {
