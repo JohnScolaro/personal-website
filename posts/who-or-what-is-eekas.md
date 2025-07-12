@@ -41,8 +41,36 @@ Some nice walls
 
 Also their graffiti is prolific enough, that it was [captured by another artist](https://sidegallery.com.au/exhibitions/roadside-paintings#&gid=1&pid=15) in the painting shown below:
 
-![asd](/images/blog/who-or-what-is-eekas/eekas_painting.jpg)
+![A painting of a van, side-on. The side has been graffitied with "Eekas".](/images/blog/who-or-what-is-eekas/eekas_painting.jpg)
 
 I trawled the depths of Google to find more mentions of Eekas, and the only significant mention I could find was [this Instagram reel](https://www.instagram.com/toolsofthetrade_official/reel/CsuxBISBfVu/) showing how to pressurise a fire extinguisher and use it to spray paint. The voice has been changed and the person has been blurred to maintain anonymity, which makes sense given the nature of the video, but that's about as far as I got.
 
 Mr Eekas, if you're out there, hit me up.
+
+---
+
+**Update 12/07/25:**
+
+Here are some more tags I've seen while walking around the last week. Seeing Eekas tags are like little Brisbane [Hidden Mickey](https://en.wikipedia.org/wiki/Hidden_Mickey)s to me at this point. Secret urban easter-eggs to look out for.
+
+I think I might have found the van in the painting. I believe this was on Mollison Street.
+
+![I think this was actually the van from the painting above!](/images/blog/who-or-what-is-eekas/eekas_10.jpg)
+
+Eekas Bin.
+
+![A green skip bin sprayed with the Eekas tag.](/images/blog/who-or-what-is-eekas/eekas_11.jpg)
+
+Holographic Eekas stickers on Melbourne Street.
+
+![A pipe covered in stickers, including a Holographic Eekas sticker.](/images/blog/who-or-what-is-eekas/eekas_12.jpg)
+
+The skate park at Davies Park. (Not seen: 4 more Eekas's just to the left of this one.)
+
+![The side of a skate park. A big fancy Eekas here.](/images/blog/who-or-what-is-eekas/eekas_13.jpg)
+
+Side of a building as viewed from Riverside Drive. How'd he get up there?
+
+![A giant almost pizel-art Eekas on the side of a building.](/images/blog/who-or-what-is-eekas/eekas_14.jpg)
+
+Looking forward to finding them all!
