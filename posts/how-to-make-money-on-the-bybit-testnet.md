@@ -5,7 +5,7 @@ date: "2025-07-20"
 tags: ["Cryptocurrency", "Trading"]
 ---
 
-At the time of writing, [ByBit](www.bybit.com) is the second largest cryptocurrency exchange in the world by volume. You can deposit your hard earned cash, and trade it for visionary digital currencies like [Dogecoin](https://en.wikipedia.org/wiki/Dogecoin), or speculate on risky Fartcoin derivative products![^1]
+At the time of writing, [ByBit](https://www.bybit.com/) is the second largest cryptocurrency exchange in the world by volume. You can deposit your hard earned cash, and trade it for visionary digital currencies like [Dogecoin](https://en.wikipedia.org/wiki/Dogecoin), or speculate on risky Fartcoin derivative products![^1]
 
 ![Just a simple image of the ByBit logo](/images/blog/how-to-make-money-on-the-bybit-testnet/bybit-logo.png)
 
