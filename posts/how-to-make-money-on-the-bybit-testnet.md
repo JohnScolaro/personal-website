@@ -1,7 +1,7 @@
 ---
 title: "How to make money on the ByBit Testnet"
 description: "An article listing a number of tips for how to make money on the ByBit testnet, and some quirks of this specific test exchange."
-date: "2025-07-20"
+date: "2025-07-19"
 tags: ["Cryptocurrency", "Trading"]
 ---
 
