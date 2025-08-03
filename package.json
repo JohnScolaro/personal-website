@@ -41,7 +41,7 @@
     "tailwind-highlightjs": "^2.0.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "devDependencies": {
     "@types/node": "20.8.7",
