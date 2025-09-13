@@ -13,7 +13,7 @@ Project Hail Mary is a simple sci-fi novel with some unique world-building and l
 
 ## Engineer-core
 
-I'm also proclaiming this book as "engineer-core" in that it falls into a category of books clearly written by engineers. (Andy Weir is a former software engineer). Another example of this is "The Three Body Problem" series written by Liu Cixin (ex-Computer Engineer). Distilled, the core features of any engineer-core novel are:
+I'm also proclaiming this book as "engineer-core" in that it falls into a category of books clearly written by engineers. (Andy Weir is a former software engineer.) Another example of this is "The Three Body Problem" series written by Liu Cixin (ex-Computer Engineer). Distilled, the core features of any engineer-core novel are:
 
 - Logical problem solving.
 - Lots of problem -> thinking -> solution cycles.
@@ -70,12 +70,11 @@ The latter here doesn't make any sense. If xenonite can hold a vacuum (which it 
 
 I know Andy gives a hand-wavy explanation in the book, (throwing tennis balls into a forest, etc) but it doesn't really make sense. I'd love it if there was a more plausible explanation for this.
 
-They never cover reading and writing
-
 ## Other small comments:
 
 - I was hoping Rocky would be like "I wanna watch you poop" but I suppose he would already have "seen" it at some point anyway given he sees everything with vibrations. It could have been very funny if they talked about it.
 - Ryland learnt Rocky's alien language very fast 🤔.
+- They never cover how reading / writing / information sharing works for Eridians, which is a shame because Andy's thoroughly well-thought-out alien worldbuilding is one of the best parts of this book. I'd read a 100 page story purely about a fictional Eridian dissection to learn more about how they work.
 
 ## Movie Casting
 
