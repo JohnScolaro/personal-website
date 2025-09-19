@@ -23,7 +23,7 @@ As an engineer myself, this is satisfying. All I do at work is solve problems, a
 
 - I just coded up a program to FFT the sound waves and look the chords up in a table! All in 8 hours with little to no software experience! Easy!
 - Rocky just built a chain winch! And it works first time! Easy!
-- Breeding nitrogen-resistant Taophage works first time! Easy!
+- Breeding nitrogen-resistant Taomoeba works first time! Easy!
 
 But I can overlook this because a book where: Ryland meets Rocky, spends the next 10 days programming some shitty software, only to attempt a handful of experiments (they all fail) and then they crash into the sun, would be quite a boring novel.
 
@@ -59,14 +59,14 @@ Likewise in Chapter 8, the spacecraft's "Centrifuge Mode" is carefully explained
 
 My recommendation: just move those diagrams to the **end** of chapters 1 and 8 respectively, so we can see the schematics _after_ having the "Ah-ha" moment.
 
-## How the F does Taophage "hide" in Xenonite?
+## How the F does Taomoeba "hide" in Xenonite?
 
 I felt like there were two main intensity peaks in this story:
 
 1. Almost breaking the spaceship, and having to jettison fuel, and then having that fuel get eaten by Taomoeba.
 2. Taomoeba escaping and getting back into the fuel whilst on the return journey.
 
-The latter here doesn't make any sense. If xenonite can hold a vacuum (which it can, e.g: Rocky's ship + the Taophage enclosures), then hydrogen atoms can't get through it. If hydrogen atoms can't get through it, then a single cell organism most certainly can't get through it.
+The latter here doesn't make any sense. If xenonite can hold a vacuum (which it can, e.g: Rocky's ship + the Taomoeba enclosures), then hydrogen atoms can't get through it. If hydrogen atoms can't get through it, then a single cell organism most certainly can't get through it.
 
 I know Andy gives a hand-wavy explanation in the book, (throwing tennis balls into a forest, etc) but it doesn't really make sense. I'd love it if there was a more plausible explanation for this.
 
@@ -94,7 +94,7 @@ I loved the book, and felt it was worth reading. There was unique worldbuilding,
 An exceptionally cursed AI generated image of "Rocky" with a very suspicious 5th "leg".
 </figcaption>
 
-Mark Weir has successfully defended himself against AI generated images of Rocky by creating an entirely unique alien. AI image generation is exceptional at adapting things it's seen in loads of images, but creating something unique from text still seems out of reach for it.
+Andy Weir has successfully defended himself against AI generated images of Rocky by creating an entirely unique alien. AI image generation is exceptional at adapting things it's seen in loads of images, but creating something unique from text still seems out of reach for it.
 
 Due to my low inate artistic ability, I attempted to generate an image of Rocky. Firstly, this is hard, because it's tough to collect all the descriptions of him from the book. Here is my condensed description in case anyone else wants to give it a try:
 
