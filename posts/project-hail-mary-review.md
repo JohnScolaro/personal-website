@@ -1,5 +1,5 @@
 ---
-title: "Project Hail Mary Review"
+title: "Review: Project Hail Mary"
 description: "A review of the book 'Project Hail Mary' by Andy Weir."
 date: "2025-09-01"
 tags: ["Review"]
