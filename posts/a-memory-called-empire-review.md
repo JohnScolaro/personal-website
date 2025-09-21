@@ -7,6 +7,10 @@ tags: ["Review"]
 
 ![The cover of "A Memory Called Empire".](/images/blog/a-memory-called-empire-review/a_memory_called_empire.jpg)
 
+<figcaption class="mt-2 text-sm text-gray-500 italic text-center">
+The cover of "A Memory Called Empire".
+</figcaption>
+
 ["A Memory Called Empire"](https://en.wikipedia.org/wiki/A_Memory_Called_Empire) is a book by AnnaLinden Weller under the pen name [Arkady Martine](https://en.wikipedia.org/wiki/Arkady_Martine) that won the [Hugo Award for Best Novel](https://en.wikipedia.org/wiki/Hugo_Award_for_Best_Novel) in 2020, and since the sequel pipped [Project Hail Mary](https://en.wikipedia.org/wiki/Project_Hail_Mary) ([which I also thought was fabulous](https://johnscolaro.xyz/blog/project-hail-mary-review)) for the same award in 2022, I wanted to see if the series deserved the wins. TL;DR: I think it did, and it's one of the best books I've read all year. But I don't want to repeat the numerous praises this book has already received, I want to comment on some of the weird things that made me think: "Huh?"
 
 ## Summary
@@ -24,6 +28,10 @@ She immediately lands in a complex succession crisis, as the kingdom's most dang
 
 ![The "Im tired boss" meme. A screengrab of John Coffee from Green Mile, but he's captioned as Mahit Dzmare.](/images/blog/a-memory-called-empire-review/im_tired_boss.png)
 
+<figcaption class="mt-2 text-sm text-gray-500 italic text-center">
+An actual image of Mahit talking to Six Direction.
+</figcaption>
+
 I read a lot when I get sick. Reading is a very low energy activity, so it feels nice to curl up under the sheets with a box of tissues and just read for 8 hours. I don't recommend doing that with this book. I didn't find this to be a relaxing book. Why? Because Mahit never goes to sleep!
 
 80% of the book is Mahit frantically slamming all-nighters as she packs her schedule full of high-stakes political meetings during the day, and even higher stakes covert ops during the night. The most rest she gets in the novel is when she's unconscious, undergoing **brain surgery**!
@@ -40,6 +48,10 @@ Reading this book while sick exhausted **me**. Could we not have sent Mahit home
 ### Science's Perfect Algorithm
 
 ![The "epic handshake meme" but one arm is labelled: "one lightning", and the other is labelled: "ten pearl". The arm labelled ten pearl is wearing pearl rings.](/images/blog/a-memory-called-empire-review/military_science_alliance.png)
+
+<figcaption class="mt-2 text-sm text-gray-500 italic text-center">
+Ten Pearl being blinged out with pearls is pretty gangta ngl
+</figcaption>
 
 Of the different factions vying for power there seems to be:
 
