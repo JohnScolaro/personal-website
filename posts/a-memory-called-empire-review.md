@@ -99,7 +99,7 @@ conjured some _strong_ mental imagery while reading, which I really enjoyed.
 
 At some points in the novel, I felt like I had to read 1-2 pages of writing just to read a single to-and-fro comment from Mahit to a character. The author loves to interrupt a sentence with some of Mahit's internal thoughts, which is fine most of the time, but sometimes the train of thought flits from talking, to internal thoughts, to comments on those internal thoughts, to a comment from Yskandr, to a response to Yskandr, and back to the initial conversation. I could understand if people got a little lost while reading.
 
-Overall, she did a fantastic job of making the book readable, despite Mahit not only marshalling her own thoughts, but the thoughts of two Yskandr's to manage without devolving too far into anime-style monologuing.
+Overall, she did a good job of making the book readable, despite Mahit not only marshalling her own thoughts, but also the thoughts of two Yskandr's and it didn't devolve too far into anime-style monologuing.
 
 ### Parallels to Dune
 
@@ -117,4 +117,4 @@ I will say I enjoyed this story far more than Dune though.
 - On Teixcalaan, when people get married, do they change their names? If so, do they take the number or the noun part?
 - The Emperor sacrificing himself at the end was an _intense_ ending. Absolutely loved it.
 
-[1^]: 京 means capital. Which is why 北京 (Beijing) and 東京 (Tokyo) both have it. It's often mentioned that Teixcalaan is one glyph. Notice that the symbol is ONE syllable in both these words, yet Teixcalaan in 3.
+[^1]: 京 means capital. Which is why 北京 (Beijing) and 東京 (Tokyo) both have it. It's often mentioned that Teixcalaan is one glyph. Notice that 京 is ONE syllable in both these words, yet Teixcalaan is 3.
