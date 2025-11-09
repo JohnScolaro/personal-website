@@ -1,6 +1,6 @@
 ---
 title: "Choc Chip Cookies"
-description: "A recipe for choc-chip cookies I used to make in my youth."
+description: "A recipe for choc-chip cookies my mum made a lot in my youth."
 ---
 
 # Choc Chip Cookies
@@ -20,11 +20,13 @@ description: "A recipe for choc-chip cookies I used to make in my youth."
 
 1. Cream butter, sugar, eggs, vanilla
 2. Add salt and flour, mix well
-3. Roll into balls (add a little more flour if sticky)
-4. Makes 3 trays of biscuits
-5. Bake in moderate oven 15 minutes
-6. Cool on wire rack
-7. Enjoy!
+3. Add choc chips.
+4. Pre-heat oven to 180 degrees C.
+5. Roll into balls (add a little more flour if sticky)
+6. Makes 3 trays of biscuits
+7. Bake in oven for 15 minutes
+8. Cool on wire rack
+9. Enjoy!
 
 <details>
 <summary>
