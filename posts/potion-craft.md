@@ -2,7 +2,7 @@
 title: "Potion Craft Review"
 description: "A summary, review, and musings about the game 'Potion Craft'."
 date: "2024-03-02"
-tags: ['Review']
+tags: ["Review"]
 ---
 
 ![The Potion Craft title screen.](/images/blog/potion-craft/potion_craft.jpg)
@@ -53,7 +53,7 @@ Wait, what's an ascention! I can't wait to find out what that does! Etc.
 
 Another similar example might be when I first encountered the skill tree in [Path of Exile](https://www.pathofexile.com/):
 
-![A screenshot of the enourmous skill tree in Path of Exile](/images/blog/potion-craft/poe_skill_tree.webp)
+![A screenshot of the enourmous skill tree in Path of Exile](/images/blog/potion-craft/poe_skill_tree.jpeg)
 
 for which the only real first response can be something like: "Holy shit, that's enormous" as you get excited about exploring the depths of it at a later date.
 
@@ -107,7 +107,7 @@ or this 😈🍆:
 
 These custom potions you can create often conjure up interesting imagery and are a constant source of funny memes online:
 
-![A potion of libido and explosion accompanied by a funny image of a very sooty man](/images/blog/potion-craft/potion_craft_libido_and_explosion.webp)
+![A potion of libido and explosion accompanied by a funny image of a very sooty man](/images/blog/potion-craft/potion_craft_libido_and_explosion.jpeg)
 
 In addition to this, the game lets you grab any item from your inventory and place it in the world somewhere. You can throw them around and place them where you want, leading people to organise their potions in the shop like this:
 
@@ -179,7 +179,7 @@ Every art asset in this game has been drawn in a medieval-cartoon style. Every m
 
 Story is also a classic driving element of games and Potion Craft really makes you _feel_ like a [potion seller](https://www.youtube.com/watch?v=R_FQU4KzN7A). Through brief encounters with your customers each day, and listening to the stories they tell in their roundabout ways of asking for potions, the game has a small chance to build the world around the seller. I think Potion Craft's method of story telling has been executed pretty poorly, but if it was done incredibly well, it would probably look similar to how [Hades](<https://en.wikipedia.org/wiki/Hades_(video_game)>) handles it - with repeat encounters between the player and various characters slowly drip-feeding a story a few lines at a time. Potion Craft does not do this well, but there _are_ elements of it in the game, so it still gets an honorable mention because the ~20 custom sentences given to the herbalist are enough to evoke the following emotions from the average Redditor:
 
-![A meme basically just simping for the herbalist](/images/blog/potion-craft/potion_craft_queen.webp)
+![A meme basically just simping for the herbalist](/images/blog/potion-craft/potion_craft_queen.jpeg)
 
 ## What Makes Potion Craft NOT fun?
 
