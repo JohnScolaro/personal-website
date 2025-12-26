@@ -5,12 +5,18 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 
 export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+
   const allRecipeData = getSortedRecipeData();
 
   // Find the recipe with the matching id
   const matchingRecipe = allRecipeData.find(
-    (recipe) => recipe.id === params.id
+    (recipe) => recipe.id === resolvedParams.id
   );
+
+  if (!matchingRecipe) {
+    return { title: "not found", description: "not found" };
+  }
 
   return {
     title: matchingRecipe.title,
@@ -19,7 +25,12 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Post({ params }) {
-  const recipeData = await getRecipeData(params.id);
+  const resolvedParams = await params;
+  const recipeData = await getRecipeData(resolvedParams.id);
+
+  if (!recipeData) {
+    return <h1>Recipe Not Found</h1>;
+  }
 
   return (
     <>
@@ -27,12 +38,13 @@ export default async function Post({ params }) {
         <ReactMarkdown
           components={{
             img: (props) => {
-              if (recipeData.imageSizes[props.src]) {
-                const { width, height } = recipeData.imageSizes[props.src];
+              const src = props.src as string;
+              if (src && recipeData.imageSizes[src]) {
+                const { width, height } = recipeData.imageSizes[src];
                 return (
                   <Image
-                    src={props.src}
-                    alt={props.alt}
+                    src={src!}
+                    alt={props.alt!}
                     width={width}
                     height={height}
                   />

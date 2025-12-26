@@ -12,6 +12,7 @@ import other_countries_breakdown from "./other_countries_breakdown.json";
 import race_result_by_event_type from "./race_result_by_event_type.json";
 
 import CustomFilteredPlotlyChart from "./special-client-side-filtering-component";
+import PlotlyChart from "../../../../components/wrapped-plotly-chart";
 
 // Images
 import news_article_image from "./news_article.png";
@@ -22,16 +23,8 @@ export const metadata: Metadata = {
   description:
     "A visualisation of the race results of the 2024 Sunshine Coast Marathon Festival.",
 };
-import dynamic from "next/dynamic";
 
 export default function Page() {
-  const PlotlyChart = dynamic(
-    () => import("../../../../components/wrapped-plotly-chart"),
-    {
-      ssr: false,
-    }
-  );
-
   return (
     <>
       <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full">

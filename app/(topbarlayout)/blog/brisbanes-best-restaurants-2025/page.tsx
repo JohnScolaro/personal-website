@@ -18,6 +18,7 @@ import histogram_of_number_of_reviews from "./histogram_of_number_of_reviews.png
 import histogram_of_review_ratings from "./histogram_review_ratings.png";
 import brisbane_tier_list from "./brisbane_tier_list.jpeg";
 import tirimisu from "./tirimisu.jpg";
+import PlotlyChart from "../../../../components/wrapped-plotly-chart";
 
 export const metadata: Metadata = {
   title: "Brisbane's Best Restaurants - 2025",
@@ -39,16 +40,7 @@ export const metadata: Metadata = {
   },
 };
 
-import dynamic from "next/dynamic";
-
 export default function Page() {
-  const PlotlyChart = dynamic(
-    () => import("../../../../components/wrapped-plotly-chart"),
-    {
-      ssr: false,
-    }
-  );
-
   return (
     <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full">
       <h1 className="mb-1 lg:mb-1 text-center">

@@ -57,8 +57,14 @@ interface AllRecipeData {
   imageSizes: Record<string, { width: number; height: number }>;
 }
 
-export async function getRecipeData(id: string): Promise<AllRecipeData> {
+export async function getRecipeData(id: string): Promise<AllRecipeData | null> {
   const fullPath = path.join(recipeDirectory, `${id}.md`);
+
+  if (!fs.existsSync(fullPath)) {
+    // Fail silently and safely by returning null if the file doesn't exist
+    return null;
+  }
+
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section
@@ -75,7 +81,7 @@ export async function getRecipeData(id: string): Promise<AllRecipeData> {
       const { width, height } = sizeOf(join("public", src));
       imageSizes[src] = { width, height };
     } catch (err) {
-      console.error(`Can’t get dimensions for ${src}:`, err);
+      console.error(`Can't get dimensions for ${src}:`, err);
     }
   }
 

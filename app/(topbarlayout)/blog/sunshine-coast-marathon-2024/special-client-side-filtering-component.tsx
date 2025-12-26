@@ -4,28 +4,24 @@ import ReactSelect from "../../../../components/wrapped-select";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
+const Plot = dynamic<any>(() => import("react-plotly.js"), { ssr: false });
+
 // All data for showing dynamic plots.
 import data from "./data.json";
 import template from "./template.json";
 
 const CustomFilteredPlotlyChart = () => {
-  const PlotlyChart = dynamic(
-    () => import("../../../../components/wrapped-plotly-chart"),
-    {
-      ssr: false,
-    }
-  );
-
   // State for selected event and gender
-  const [selectedEvent, setSelectedEvent] = useState("Marathon");
-  const [selectedGender, setSelectedGender] = useState("Both");
+  const [selectedEvent, setSelectedEvent] = useState<string>("Marathon");
+  const [selectedGender, setSelectedGender] = useState<string>("Both");
 
   // State for the filtered data
-  const [filteredData, setFilteredData] = useState([]);
-  // Function to convert "HH:MM:SS" string to a Date object for Plotly
-  const parseTime = (timeStr) => {
+  const [filteredData, setFilteredData] = useState<any[]>([]);
+
+  // Function to convert "HH:MM:SS" string to number of seconds for Plotly
+  const parseTime = (timeStr: string) => {
     const [hours, minutes, seconds] = timeStr.split(":").map(Number);
-    return new Date(1970, 0, 1, hours, minutes, seconds);
+    return hours * 3600 + minutes * 60 + seconds;
   };
 
   // Filter data based on selected event and gender
@@ -46,53 +42,60 @@ const CustomFilteredPlotlyChart = () => {
       {
         x: validTimes, // Use parsed times for x-axis
         type: "histogram",
-        marker: {
-          color: "blue",
-        },
+        marker: { color: "blue" },
       },
     ];
 
     setFilteredData(plotData);
   }, [selectedEvent, selectedGender]);
+
   return (
-    <>
-      <p>Event:</p>
-      <ReactSelect
-        options={[
-          { value: "Marathon", label: "Marathon" },
-          { value: "Half Marathon", label: "Half Marathon" },
-          { value: "10km", label: "10km" },
-          { value: "5km", label: "5km" },
-          { value: "2km", label: "2km" },
-        ]}
-        defaultValue={{ value: "Marathon", label: "Marathon" }}
-        required={true}
-        onChange={(option) => setSelectedEvent(option.value)}
-        id="Race Type Dropdown"
-      ></ReactSelect>
-      <p>Gender:</p>
-      <ReactSelect
-        options={[
-          { value: "Both", label: "Both" },
-          { value: "Male", label: "Male" },
-          { value: "Female", label: "Female" },
-        ]}
-        defaultValue={{ value: "Both", label: "Both" }}
-        required={true}
-        onChange={(option) => setSelectedGender(option.value)}
-        id="Gender Dropdown"
-      ></ReactSelect>
-      <PlotlyChart
-        data={filteredData}
-        layout={{
-          title: `${selectedEvent} - ${selectedGender}`,
-          xaxis: { title: "Finish Time" },
-          yaxis: { title: "Count" },
-          template: template,
-        }}
-        config={{ responsive: true, displayModeBar: false }}
-      />
-    </>
+    <div className="space-y-4">
+      <div>
+        <p>Event:</p>
+        <ReactSelect
+          options={[
+            { value: "Marathon", label: "Marathon" },
+            { value: "Half Marathon", label: "Half Marathon" },
+            { value: "10km", label: "10km" },
+            { value: "5km", label: "5km" },
+            { value: "2km", label: "2km" },
+          ]}
+          defaultValue={{ value: "Marathon", label: "Marathon" }}
+          required
+          onChange={(option) => setSelectedEvent(option.value)}
+          id="Race Type Dropdown"
+        />
+      </div>
+
+      <div>
+        <p>Gender:</p>
+        <ReactSelect
+          options={[
+            { value: "Both", label: "Both" },
+            { value: "Male", label: "Male" },
+            { value: "Female", label: "Female" },
+          ]}
+          defaultValue={{ value: "Both", label: "Both" }}
+          required
+          onChange={(option) => setSelectedGender(option.value)}
+          id="Gender Dropdown"
+        />
+      </div>
+
+      <div className="w-full h-96">
+        <Plot
+          data={filteredData}
+          layout={{
+            title: `${selectedEvent} - ${selectedGender}`,
+            xaxis: { title: "Finish Time (seconds)" },
+            yaxis: { title: "Count" },
+            template: template,
+          }}
+          config={{ responsive: true, displayModeBar: false }}
+        />
+      </div>
+    </div>
   );
 };
 

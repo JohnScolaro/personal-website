@@ -1,15 +1,17 @@
 import ResultsTable from "./resultsTable";
 import StatsParagraph from "./statsParagraph";
-
+import { getAllSketchRankYears } from "../../utils";
 export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
   return {
-    title: `SketchRank ${params.year} Results`,
+    title: `SketchRank ${resolvedParams.year} Results`,
     description: "The results of SketchRank voting.",
   };
 }
 
-export default function Page({ params }) {
-  const year = params.year;
+export default async function Page({ params }) {
+  const resolvedParams = await params;
+  const year = resolvedParams?.year;
 
   return (
     <div className="max-w-6xl p-4 m-auto">
@@ -20,4 +22,12 @@ export default function Page({ params }) {
       </div>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  const allSketchRankYears = getAllSketchRankYears();
+
+  return allSketchRankYears.map((year) => ({
+    year: year.toString(),
+  }));
 }
