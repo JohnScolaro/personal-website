@@ -1,3 +1,3 @@
 export function getAllSketchRankYears() {
-  return ["2024", "2023"];
+  return ["2025", "2024", "2023"];
 }
