@@ -5,11 +5,13 @@ import {
   getSketchRankMetaData,
 } from "../../../../../../lib/sketch-rank/sketch-rank";
 import StyledButton from "../../../../../../components/styled-button";
+import { getAllSketchRankYears } from "../../../utils";
 
 export async function generateMetadata({ params }) {
-  const sketchRankMetaData = getSketchRankMetaData(params.year);
-  const imageMeta = sketchRankMetaData[params.id];
-  const title = `${imageMeta.title} | SketchRank ${params.year}`;
+  const resolvedParams = await params;
+  const sketchRankMetaData = getSketchRankMetaData(resolvedParams.year);
+  const imageMeta = sketchRankMetaData[resolvedParams.id];
+  const title = `${imageMeta.title} | SketchRank ${resolvedParams.year}`;
 
   return {
     title: title,
@@ -20,14 +22,16 @@ export async function generateMetadata({ params }) {
 // If loading a variable font, you don't need to specify the font weight
 const tangerine = Tangerine({ subsets: ["latin"], weight: ["700"] });
 
-export default function Page({
+export default async function Page({
   params,
 }: {
-  params: { id: string; year: string };
+  params: Promise<{ id: string; year: string }>; // Change this to a Promise
 }) {
-  const numSketchRankPhotos = getNumSketchRankPhotos(params.year);
+  const resolvedParams = await params;
 
-  if (!isParamValid(params.id, numSketchRankPhotos)) {
+  const numSketchRankPhotos = getNumSketchRankPhotos(resolvedParams.year);
+
+  if (!isParamValid(resolvedParams.id, numSketchRankPhotos)) {
     return (
       <div className="text-2xl lg:text-4xl text-center mt-10">
         🚧 Page not found 🚧
@@ -35,9 +39,9 @@ export default function Page({
     );
   }
 
-  const id = parseInt(params.id, 10);
+  const id = parseInt(resolvedParams.id, 10);
 
-  const metaData = getSketchRankMetaData(params.year);
+  const metaData = getSketchRankMetaData(resolvedParams.year);
 
   var title = "";
   var description = "";
@@ -59,19 +63,23 @@ export default function Page({
     <div className="flex flex-col gap-4 p-4 items-stretch">
       <Image
         className="m-auto"
-        src={getImageSrcFromId(params.year, id)}
-        alt={params.id}
+        src={getImageSrcFromId(resolvedParams.year, id)}
+        alt={resolvedParams.id}
         height={800}
         width={800}
       ></Image>
       <div className="flex justify-between">
         <StyledButton
-          href={`/sketch-rank/${params.year}/results/${previousId.toString()}`}
+          href={`/sketch-rank/${
+            resolvedParams.year
+          }/results/${previousId.toString()}`}
         >
           Previous
         </StyledButton>
         <StyledButton
-          href={`/sketch-rank/${params.year}/results/${nextId.toString()}`}
+          href={`/sketch-rank/${
+            resolvedParams.year
+          }/results/${nextId.toString()}`}
         >
           Next
         </StyledButton>
@@ -119,4 +127,23 @@ function getNextAndPreviousImages(
 
 function getImageSrcFromId(year: string, id: number): string {
   return `/images/sketch-rank/${year}/${id.toString()}.jpg`;
+}
+
+export async function generateStaticParams() {
+  const years = getAllSketchRankYears();
+  const paths = [];
+
+  for (const year of years) {
+    const numPhotos = getNumSketchRankPhotos(year);
+
+    // Create a path for every single image ID in that year
+    for (let i = 0; i < numPhotos; i++) {
+      paths.push({
+        year: year.toString(),
+        id: i.toString(),
+      });
+    }
+  }
+
+  return paths;
 }

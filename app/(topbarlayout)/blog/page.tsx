@@ -18,15 +18,19 @@ const tagColors: Record<string, string> = {
   Review: "bg-yellow-500",
   Japan: "bg-orange-500",
 };
-export default function Page({
+
+export default async function Page({
   searchParams,
 }: {
-  searchParams: { tag?: string };
+  searchParams: Promise<{ tag?: string }>;
 }) {
+  const params = await searchParams;
+  const filterTag = params.tag;
+
   const allPostsData = getSortedPostsData();
   const allCustomPostsData = getSortedCustomPostsData();
   const allPosts = [...allPostsData, ...allCustomPostsData];
-  const filterTag = searchParams.tag;
+
   const tagColor = filterTag ? tagColors[filterTag] || "bg-gray-500" : "";
 
   return (
@@ -46,6 +50,7 @@ export default function Page({
             "Blog"
           )}
         </div>
+
         {filterTag && (
           <div className="mt-4 text-center">
             <Link
@@ -56,6 +61,7 @@ export default function Page({
             </Link>
           </div>
         )}
+
         <BlogList
           allPosts={allPosts}
           filterTag={filterTag}

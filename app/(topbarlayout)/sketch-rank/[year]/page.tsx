@@ -2,28 +2,46 @@ import ImageCompetition from "./imageCompetition";
 import Link from "next/link";
 import { getNumSketchRankPhotos } from "../../../../lib/sketch-rank/sketch-rank";
 import { getAllSketchRankYears } from "../utils";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const year = resolvedParams?.year;
+
+  if (!year) {
+    return {
+      title: "SketchRank",
+      description: "Rank several sketches that my partner and I drew.",
+    };
+  }
+
   return {
-    title: `SketchRank ${params.year}`,
+    title: `SketchRank ${year}`,
     description: "Rank several sketches that my partner and I drew.",
     openGraph: {
-      title: `SketchRank ${params.year}`,
+      title: `SketchRank ${year}`,
       description: "Rank several sketches that my partner and I drew.",
-      url: `https://johnscolaro.xyz/projects/sketch-rank/${params.year}`,
+      url: `https://johnscolaro.xyz/projects/sketch-rank/${year}`,
       images: [
         {
-          url: `/images/preview_images/sketch_rank_${params.year}.png`,
+          url: `/images/preview_images/sketch_rank_${year}.png`,
           width: 1200,
           height: 624,
-          alt: `A little silly doodle saying: Sketch Rank ${params.year}`,
+          alt: `A little silly doodle saying: Sketch Rank ${resolvedParams.year}`,
         },
       ],
     },
   };
 }
 
-export default function Page({ params }) {
+export default async function Page({ params }) {
+  const resolvedParams = await params;
+  const year = resolvedParams?.year;
+
+  if (!params) {
+    return notFound();
+  }
+
   return (
     <>
       <div className="max-w-6xl p-4 m-auto">
@@ -47,18 +65,15 @@ export default function Page({ params }) {
         <h2 className="font-bold mt-4">Results?</h2>
         <p>
           Interested in checking out the winners? Click ✨
-          <Link
-            className="hyperlink"
-            href={`/sketch-rank/${params.year}/results`}
-          >
+          <Link className="hyperlink" href={`/sketch-rank/${year}/results`}>
             here
           </Link>
           ✨
         </p>
         <div className="h-6"></div>
         <ImageCompetition
-          year={params.year}
-          numImages={getNumSketchRankPhotos(params.year)}
+          year={year}
+          numImages={getNumSketchRankPhotos(year)}
         ></ImageCompetition>
       </div>
     </>

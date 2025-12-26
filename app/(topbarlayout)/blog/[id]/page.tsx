@@ -10,8 +10,13 @@ import path from "path";
 import fs from "fs";
 import sizeOf from "image-size";
 
-export async function generateMetadata({ params }): Promise<Metadata> {
-  const postData = await getPostData(params.id);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const postData = await getPostData(id);
 
   const imagePath = path.join(
     process.cwd(),
@@ -20,6 +25,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
     "preview_images",
     `${postData.id}.png`
   );
+
   let images;
 
   if (fs.existsSync(imagePath)) {
@@ -46,40 +52,45 @@ export async function generateMetadata({ params }): Promise<Metadata> {
   };
 }
 
-export default async function Post({ params }) {
-  const postData = await getPostData(params.id);
+export default async function Post({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const postData = await getPostData(id);
 
   return (
-    <>
-      <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full prose-code:leading-5 prose-pre:p-0 prose-code:before:content-none prose-code:after:content-none">
-        <h1 className="mb-1 lg:mb-1 text-center">{postData.title}</h1>
-        <div className="text-center">
-          <Date dateString={postData.date} />
-        </div>
-        <ReactMarkdown
-          components={{
-            img: (props) => {
-              if (postData.imageSizes[props.src]) {
-                const { width, height } = postData.imageSizes[props.src];
-                return (
-                  <Image
-                    src={props.src}
-                    alt={props.alt}
-                    width={width}
-                    height={height}
-                  />
-                );
-              } else {
-                return <img {...props} />;
-              }
-            },
-          }}
-          rehypePlugins={[rehypeRaw, remarkGfm, rehypeHighlight]}
-        >
-          {postData.markdown}
-        </ReactMarkdown>
-      </article>
-    </>
+    <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full prose-code:leading-5 prose-pre:p-0 prose-code:before:content-none prose-code:after:content-none">
+      <h1 className="mb-1 lg:mb-1 text-center">{postData.title}</h1>
+      <div className="text-center">
+        <Date dateString={postData.date} />
+      </div>
+
+      <ReactMarkdown
+        components={{
+          img: (props) => {
+            const src = props.src as string;
+            if (src && postData.imageSizes[src]) {
+              const { width, height } = postData.imageSizes[src];
+              return (
+                <Image
+                  src={src!}
+                  alt={props.alt!}
+                  width={width}
+                  height={height}
+                />
+              );
+            } else {
+              return <img {...props} />;
+            }
+          },
+        }}
+        rehypePlugins={[rehypeRaw, remarkGfm, rehypeHighlight]}
+      >
+        {postData.markdown}
+      </ReactMarkdown>
+    </article>
   );
 }
 

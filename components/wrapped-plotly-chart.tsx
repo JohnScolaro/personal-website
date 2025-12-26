@@ -1,16 +1,41 @@
+// components/wrapped-plotly-chart.tsx
 "use client";
 
-import Plot from "react-plotly.js";
+import dynamic from "next/dynamic";
 
-const PlotlyChart = ({ data, layout, config }) => {
+// don't SSR Plotly
+const Plot = dynamic<any>(() => import("react-plotly.js"), { ssr: false });
+
+interface PlotlyChartProps {
+  data: any[];
+  layout?: any;
+  config?: any;
+}
+
+export default function PlotlyChart({
+  data,
+  layout,
+  config,
+}: PlotlyChartProps) {
+  // NOTE: remove the manual window.dispatchEvent('resize') call entirely.
+  // rely on react-plotly's useResizeHandler and an explicit container height.
+
   return (
-    <Plot
-      data={data}
-      layout={layout}
-      config={config}
-      style={{ width: "100%", height: "100%" }}
-    />
+    <div className="w-full overflow-hidden" style={{ minHeight: 300 }}>
+      <Plot
+        data={data}
+        layout={{
+          autosize: true,
+          ...layout,
+        }}
+        config={{
+          responsive: true,
+          displayModeBar: false,
+          ...config,
+        }}
+        style={{ width: "100%", height: layout?.height ?? "100%" }}
+        useResizeHandler={true}
+      />
+    </div>
   );
-};
-
-export default PlotlyChart;
+}
