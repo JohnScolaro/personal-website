@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { getAllSketchRankYears } from "./utils";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "SketchRank",
   description: "A list of all blog posts I've made",
 };
 

@@ -3,7 +3,7 @@ title: "Nonna's Crack Sauce"
 description: "A quick and easy pasta sauce if you're not prepared"
 ---
 
-# Tomato Sauce
+# Nonna's Crack Sauce
 
 ## Ingredient List
 
