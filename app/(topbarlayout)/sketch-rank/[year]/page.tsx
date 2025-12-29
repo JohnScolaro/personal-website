@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `SketchRank ${year}`,
       description: "Rank several sketches that my partner and I drew.",
-      url: `https://johnscolaro.xyz/projects/sketch-rank/${year}`,
+      url: `https://johnscolaro.xyz/sketch-rank/${year}`,
       images: [
         {
           url: `/images/preview_images/sketch_rank_${year}.png`,
