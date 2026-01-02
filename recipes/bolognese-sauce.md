@@ -93,6 +93,23 @@ Optional extras that you shouldn't tell your Italian friends about:
 
 <details>
 <summary>
+Click here to read about experimentation with blending.
+</summary>
+
+## Blending Experimentation
+
+Recently I've been tinkering with the addition of a blender into my sauce preparation method. Initially I started by blending the onions instead of dicing, because sometimes I can only buy small onions, and small onions take a long time to dice. I figured I could just throw them in a blender and roughly blend them until I got ~5mm x 5mm chunks. You definately can, and it saves a lot of time. Note that the onions cook slightly worse when coarsely blended as opposed to manually diced. They burn easier, and it's harder to caramelize them. Pay close attention to them when cooking.
+
+I also blend the carrots into small cubes instead of grating them. The small carrot cubes add to the grainy texture of the cooked mince, and strictly improve the dish.
+
+I've also blended the tomato to more of a passata consistency which I enjoy more than the small chunks of tomato from tins of diced tomato.
+
+Notice that I blend these three ingredients individually, and then cook the meal normally with the blended ingredients. Do **not** cook the sauce and then partially stick blend it after, like you might a stew. This makes the sauce worse, and removes the nice meaty grainy texture.
+
+</details>
+
+<details>
+<summary>
 Click here to read that dumb story recipes normally put at the top (you're welcome)
 </summary>
 
