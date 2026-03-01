@@ -32,21 +32,67 @@ export default function Page() {
       <hr className=""></hr>
       <h2>Experience</h2>
       <ResumeCard
-        title="BHP"
-        imageSrc="/images/resume/bhp_logo.png"
-        imageAltText="BHP Logo"
+        title="Amazon"
+        role="Software Engineer"
+        imageSrc="/images/resume/amazon_logo.png"
+        imageAltText="Amazon Logo"
         roundImg={false}
-        date="2023 - Present"
+        date="2026 - Present"
+      >
+        <ul>
+          <li>I help people buy groceries on Amazon.</li>
+        </ul>
+      </ResumeCard>
+
+      <ResumeCard
+        title="Dark Forest Research"
+        role="Chief Technology Officer"
+        imageSrc="/images/resume/dfr_logo.png"
+        imageAltText="Dark Forest Research Logo"
+        roundImg={false}
+        date="2025"
       >
         <ul>
           <li>
-            Created and maintain a Python framework used by a data analysis team
-            to gain insights about BHP's many mining operations.
+            Designed and implemented high-performance Python microservices
+            interacting with centralised exchange APIs and smart contracts,
+            reliably trading millions of dollars across multiple exchanges.
+          </li>
+          <li>
+            Developed core trading logic, inventory and risk management systems,
+            and real-time monitoring and alerting pipelines.
+          </li>
+          <li>
+            Drove architectural and infrastructure decisions from initial design
+            through to deployment.
           </li>
         </ul>
       </ResumeCard>
+
+      <ResumeCard
+        title="BHP"
+        role="Senior Python Developer"
+        imageSrc="/images/resume/bhp_logo.png"
+        imageAltText="BHP Logo"
+        roundImg={false}
+        date="2024"
+      >
+        <ul>
+          <li>
+            I led and mentored a small team of developers, setting engineering
+            direction, and teaching modern Python practices.
+          </li>
+          <li>
+            I created and maintained a Python data analysis framework used
+            across multiple data analysis teams to generate insights about BHP's
+            many mining operations.
+          </li>
+        </ul>
+      </ResumeCard>
+
       <ResumeCard
         title="Polymathian (now Deswik)"
+        role="Senior Python Developer"
         imageSrc="/images/resume/polymathian_logo.jpg"
         imageAltText="Polymathian Logo"
         roundImg={false}
@@ -75,6 +121,7 @@ export default function Page() {
       </ResumeCard>
       <ResumeCard
         title="CSIRO"
+        role="Embedded Electrical Engineer"
         imageSrc="/images/resume/csiro_logo.png"
         imageAltText="CSIRO Logo"
         roundImg={false}
@@ -104,7 +151,8 @@ export default function Page() {
         </ul>
       </ResumeCard>
       <ResumeCard
-        title="University of Queensland - Tutor"
+        title="University of Queensland"
+        role="Tutor"
         imageSrc="/images/resume/uq_logo.svg"
         imageAltText="UQ Logo"
         roundImg={false}

@@ -3,6 +3,7 @@ import Image from "next/image";
 
 interface ResumeCardProps {
   title: string;
+  role?: string;
   imageSrc?: string;
   imageAltText?: string;
   children: React.ReactNode;
@@ -12,6 +13,7 @@ interface ResumeCardProps {
 
 const ResumeCard: React.FC<ResumeCardProps> = ({
   title,
+  role,
   imageSrc,
   imageAltText,
   children,
@@ -23,9 +25,12 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
       <div className="flex justify-between">
         <div className="flex flex-col justify-center">
           <h3 className="m-0 lg:m-0">{title}</h3>
-          {date ? <div>{date}</div> : null}
+          {role && (
+            <div className="text-sm font-medium text-gray-700">{role}</div>
+          )}
+          {date && <div className="text-sm text-gray-600">{date}</div>}
         </div>
-        {imageSrc ? (
+        {imageSrc && (
           <Image
             src={imageSrc}
             alt={imageAltText}
@@ -34,8 +39,8 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
             className={`m-0 h-[50px] w-[50px] lg:h-[100px] lg:w-[100px] ${
               roundImg ? "rounded-full" : ""
             }`}
-          ></Image>
-        ) : null}
+          />
+        )}
       </div>
       {children}
     </div>
