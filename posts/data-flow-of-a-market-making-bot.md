@@ -1,3 +1,10 @@
+---
+title: "Data Flow through a Trading Bot"
+description: "The hidden complexity handled by the numerous components that build a trading bot"
+date: "2026-03-02"
+tags: ["Trading", "Programming"]
+---
+
 ## Introduction
 
 I love software development. One of my favourite parts of building any somewhat large and complex blob of software is breaking the large problem with all its complexity and requirements into a bunch of smaller simple parts that work harmoniously together to perform their function.
@@ -12,11 +19,11 @@ I enjoy sharing the composition of these components for different problems (as I
 
 ## A Market Maker Bot
 
-One system I've been wrestling with for the last year is a market making bot. I'm going to assume knowledge of [limit order books](https://en.wikipedia.org/wiki/Central_limit_order_book) for the rest of this piece, so if you don't know what they are, read up on them. In a nutshell, a market making bot is a computer program that can quickly post many limit orders in an orderbook so if people want to buy or sell something on an exchange, there is a seller/buyer waiting for them. Of course, the reason to do this is because if you sell potatoes at $11 and buy them at $10, you can make a small profit from the difference in prices. Also exchange fees are significantly smaller for maker orders than for taker orders - sometimes they're even negative! - so , so the exchange PAYS you to, so if you're looking to move into a position, it is more cost effective to use maker orders instead of taker orders.
+One system I've been wrestling with for the last year is a market making bot. I'm going to assume knowledge of [limit order books](https://en.wikipedia.org/wiki/Central_limit_order_book) for the rest of this piece, so if you don't know what they are, read up on them. In a nutshell, a market making bot is a computer program that can quickly post many limit orders in an orderbook so if people want to buy or sell something on an exchange, there is a seller/buyer waiting for them. Of course, the reason to do this is because if you sell potatoes at $11 and buy them at $10, you can make a small profit from the difference in prices. Also exchange fees are significantly smaller for maker orders than for taker orders - sometimes they're even negative! - so if you're looking to move into a position, it is more cost effective to use maker orders instead of taker orders.
 
-In practice this "market making" is anything but simple, and "what price should something be" is basically an unsolvable problem that has nerd-sniped millions of smart people throughout history, whose time may have potentially been better spent actually growing potatoes.
+In practice this "market making" is anything but simple, and "what price should something be" is basically an unsolvable problem that has nerd-sniped millions of smart people throughout history, whose time may have potentially been better spent doing something else.
 
-Additionally, since "trading" is sort of a zero sum game, and there is only so much volume for market makers to compete for, nobody in this business ever tells anyone what the best way to do things is. If you're doing something smart and it's making you money, be definition you don't really want to tell anyone what you're doing, or how you're doing it, otherwise they'll do it and you won't money any more! Consequently, it feels like there is more secrecy in the trading industry than almost all others and I think that's a real shame.
+Additionally, since "trading" is sort of a zero sum game, and there is only so much volume for market makers to compete for, nobody in the market making business ever spills the beans on the best way to do things. If you're doing something smart and it's making you money, by definition you don't really want to tell anyone what you're doing, or how you're doing it, otherwise they'll start doing it, and you won't money any more! Consequently, it feels like there is more secrecy in the trading industry than almost all others and I think that's a real shame.
 
 I'm going to share how our system works anyway. For a few reasons:
 
@@ -123,4 +130,5 @@ For a change of flavour, lets
 -
 
 [^1]: Find an example of australias sea borders actually being somewhat complex.
+
 [^2]: Link ww2 lmao
