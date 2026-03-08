@@ -1,6 +1,6 @@
 ---
-title: "Data Flow through a Trading Bot"
-description: "One way to compose a number of components to create a complex trading bot"
+title: "Components of a Market Making Bot"
+description: "One way to compose a number of components to create a trading bot"
 date: "2026-03-02"
 tags: ["Trading", "Programming"]
 ---
@@ -37,7 +37,7 @@ So with that out of the way, let's get on with the show:
 
 I'm a visual learner, so here is a diagram showing a bunch of components, and arrows between them showing "data flow".
 
-![A draw.io diagram with a whole bunch of boxes and arrows between them.](/images/blog/data-flow-of-a-market-making-bot/trading_components.png)
+![A draw.io diagram with a whole bunch of boxes and arrows between them.](/images/blog/components-of-a-market-making-bot/trading_components.png)
 
 Now let's explore the roles and responsibilities of these components one-by-one!
 
