@@ -1,8 +1,8 @@
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
 import sizeOf from "image-size";
-import { join } from "path";
+import path, { join } from "path";
+import { imageSize } from "image-size";
 
 const recipeDirectory = path.join(process.cwd(), "recipes");
 
@@ -76,10 +76,15 @@ export async function getRecipeData(id: string): Promise<AllRecipeData | null> {
   let match: IteratorResult<RegExpMatchArray, any>;
   while (!(match = iterator.next()).done) {
     const [, src] = match.value;
+
     try {
-      // Images are stored in `public`
-      const { width, height } = sizeOf(join("public", src));
-      imageSizes[src] = { width, height };
+      const imagePath = join("public", src.replace(/^\/+/, ""));
+      const imageBuffer = fs.readFileSync(imagePath);
+      const { width, height } = imageSize(imageBuffer);
+
+      if (width && height) {
+        imageSizes[src] = { width, height };
+      }
     } catch (err) {
       console.error(`Can't get dimensions for ${src}:`, err);
     }

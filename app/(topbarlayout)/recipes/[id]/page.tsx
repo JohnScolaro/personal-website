@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
 
   // Find the recipe with the matching id
   const matchingRecipe = allRecipeData.find(
-    (recipe) => recipe.id === resolvedParams.id
+    (recipe) => recipe.id === resolvedParams.id,
   );
 
   if (!matchingRecipe) {
