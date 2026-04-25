@@ -8,6 +8,7 @@ import rehypeHighlight from "rehype-highlight";
 import { Metadata } from "next";
 import path from "path";
 import fs from "fs";
+import { imageSize } from "image-size";
 
 export async function generateMetadata({
   params,
