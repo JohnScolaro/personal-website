@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import processed_restaurant_data from "./processed_restaurants.json";
 
 import dynamic from "next/dynamic";
 
@@ -18,19 +17,19 @@ function wilsonScoreInterval(avgRating, numReviews, confidence, upper = false) {
       (upper ? 1 : -1) *
         z *
         Math.sqrt(
-          (p * (1 - p)) / numReviews + z ** 2 / (4 * numReviews ** 2)
+          (p * (1 - p)) / numReviews + z ** 2 / (4 * numReviews ** 2),
         )) /
     denominator;
   return adjustedProbability * 100;
 }
 
-export default function RestaurantTable() {
+export default function RestaurantTable({ data }) {
   const [confidence, setConfidence] = useState(1.96);
   const [bestMode, setBestMode] = useState(true);
   const [showMap, setShowMap] = useState(false);
 
   const sortedRestaurants = useMemo(() => {
-    let filtered = processed_restaurant_data;
+    let filtered = data || [];
 
     const restaurantsWithScores = filtered.map((restaurant) => ({
       ...restaurant,
@@ -38,7 +37,7 @@ export default function RestaurantTable() {
         restaurant.rating,
         restaurant.num_reviews,
         confidence,
-        !bestMode
+        !bestMode,
       ),
     }));
 
@@ -46,7 +45,7 @@ export default function RestaurantTable() {
 
     if (bestMode) {
       const maxScore = Math.max(
-        ...restaurantsWithScores.map((r) => r.wilson_score)
+        ...restaurantsWithScores.map((r) => r.wilson_score),
       );
       return restaurantsWithScores
         .map((restaurant) => ({
@@ -57,10 +56,10 @@ export default function RestaurantTable() {
         .slice(0, 25);
     } else {
       const minScore = Math.min(
-        ...restaurantsWithScores.map((r) => r.wilson_score)
+        ...restaurantsWithScores.map((r) => r.wilson_score),
       );
       const maxScore = Math.max(
-        ...restaurantsWithScores.map((r) => r.wilson_score)
+        ...restaurantsWithScores.map((r) => r.wilson_score),
       );
       return restaurantsWithScores
         .map((restaurant) => ({
@@ -72,11 +71,11 @@ export default function RestaurantTable() {
         .sort((a, b) => a.wilson_score - b.wilson_score)
         .slice(0, 25);
     }
-  }, [confidence, bestMode]);
+  }, [data, confidence, bestMode]);
 
   const validRestaurantsForMap = sortedRestaurants
     .filter(
-      (r) => typeof r.latitude === "number" && typeof r.longitude === "number"
+      (r) => typeof r.latitude === "number" && typeof r.longitude === "number",
     )
     .map((r) => ({
       name: r.name,
@@ -158,8 +157,8 @@ export default function RestaurantTable() {
                   typeof restaurant.longitude !== "number"
                     ? "bg-red-500 text-white"
                     : index % 2 === 0
-                    ? "bg-gray-50 hover:bg-gray-100"
-                    : "bg-white hover:bg-gray-100"
+                      ? "bg-gray-50 hover:bg-gray-100"
+                      : "bg-white hover:bg-gray-100"
                 }`}
               >
                 <td>{index + 1}</td>
