@@ -8,7 +8,6 @@ import rehypeHighlight from "rehype-highlight";
 import { Metadata } from "next";
 import path from "path";
 import fs from "fs";
-import sizeOf from "image-size";
 
 export async function generateMetadata({
   params,
@@ -23,13 +22,14 @@ export async function generateMetadata({
     "public",
     "images",
     "preview_images",
-    `${postData.id}.png`
+    `${postData.id}.png`,
   );
 
   let images;
 
   if (fs.existsSync(imagePath)) {
-    const dimensions = sizeOf(imagePath);
+    const imageBuffer = fs.readFileSync(imagePath);
+    const dimensions = imageSize(imageBuffer);
     images = [
       {
         url: `https://johnscolaro.xyz/images/preview_images/${postData.id}.png`,

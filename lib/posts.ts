@@ -1,8 +1,7 @@
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
-import sizeOf from "image-size";
-import { join } from "path";
+import { imageSize } from "image-size";
+import path, { join } from "path";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -49,26 +48,31 @@ export function getSortedCustomPostsData(): PostData[] {
       title: "Sunshine Coast Marathon Festival 2024 Results",
       description:
         "A visualisation of the results from the Sunshine Coast Marathon 2024",
-      tags: ['Running', 'Data Visualisation']
-    }, {
+      tags: ["Running", "Data Visualisation"],
+    },
+    {
       id: "brisbanes-best-restaurants-2025",
       date: "2025-04-04",
       title: "Brisbane's Best Restaurants 2025",
-      description: "I do some data analysis to find Brisbane's best restaurants.",
-      tags: ['Brisbane', 'Data Visualisation']
-    }, {
+      description:
+        "I do some data analysis to find Brisbane's best restaurants.",
+      tags: ["Brisbane", "Data Visualisation"],
+    },
+    {
       id: "llm-fight-club",
       date: "2025-04-19",
       title: "LLM Fight Club",
-      description: "Using technology to answer important questions like: Who would win in a fight, X or Y.",
-      tags: ['AI'],
+      description:
+        "Using technology to answer important questions like: Who would win in a fight, X or Y.",
+      tags: ["AI"],
     },
     {
       id: "do-llms-have-style",
       date: "2025-06-30",
       title: "Do LLMs have style?",
-      description: "A quick experiment of the stylistic tastes of LLMs in frontend design.",
-      tags: ['AI', 'Programming']
+      description:
+        "A quick experiment of the stylistic tastes of LLMs in frontend design.",
+      tags: ["AI", "Programming"],
     },
   ];
 }
@@ -106,10 +110,15 @@ export async function getPostData(id: string): Promise<AllPostData> {
   let match: IteratorResult<RegExpMatchArray, any>;
   while (!(match = iterator.next()).done) {
     const [, src] = match.value;
+
     try {
-      // Images are stored in `public`
-      const { width, height } = sizeOf(join("public", src));
-      imageSizes[src] = { width, height };
+      const imagePath = join("public", src.replace(/^\/+/, ""));
+      const imageBuffer = fs.readFileSync(imagePath);
+      const { width, height } = imageSize(imageBuffer);
+
+      if (width && height) {
+        imageSizes[src] = { width, height };
+      }
     } catch (err) {
       console.error(`Can't get dimensions for ${src}:`, err);
     }
