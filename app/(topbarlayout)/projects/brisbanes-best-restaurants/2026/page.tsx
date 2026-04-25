@@ -1,26 +1,24 @@
 import type { Metadata } from "next";
 import Date from "../../../../../components/date";
 import Link from "next/link";
-
-// 2025 still uses an old map because it was made before I standardised data collection.
-import RestaurantTable from "./RestaurantTable";
-import data_2025 from "../data/2025.json";
+import RestaurantTable from "../components/RestaurantTable";
+import data_2026 from "../data/2026.json";
 
 export const metadata: Metadata = {
-  title: "Brisbane's Best Restaurants - 2025",
+  title: "Brisbane's Best Restaurants - 2026",
   description:
-    "Discover Brisbane's top restaurants for 2025, ranked using thousands of reviews. Find Brisbane's hidden gems here.",
+    "Discover Brisbane's top restaurants for 2026, ranked using thousands of reviews. Find Brisbane's hidden gems here.",
   openGraph: {
-    title: "Brisbane's Best Restaurants - 2025",
+    title: "Brisbane's Best Restaurants - 2026",
     description:
-      "Discover Brisbane's top restaurants for 2025, ranked using thousands of reviews. Find Brisbane's hidden gems here.",
-    url: "https://johnscolaro.xyz/projects/brisbanes-best-restaurants/2025",
+      "Discover Brisbane's top restaurants for 2026, ranked using thousands of reviews. Find Brisbane's hidden gems here.",
+    url: "https://johnscolaro.xyz/projects/brisbanes-best-restaurants/2026",
     images: [
       {
-        url: "https://johnscolaro.xyz/images/preview_images/brisbanes-best-restaurants-2025.png",
+        url: "https://johnscolaro.xyz/images/preview_images/brisbanes-best-restaurants-2026.png",
         width: 1200,
         height: 624,
-        alt: "An image of text saying: 'Brisbanes Best Restaurant 2025'",
+        alt: "An image of text saying: 'Brisbanes Best Restaurant 2026'",
       },
     ],
   },
@@ -31,15 +29,15 @@ export default function Page() {
     <>
       <article className="prose prose-black max-w-4xl m-auto p-4 lg:prose-lg lg:m-auto prose-img:m-auto prose-img:max-w-xl prose-img:w-full">
         <h1 className="mb-1 lg:mb-1 text-center">
-          Brisbane's Best Restaurants 2025
+          Brisbane's Best Restaurants 2026
         </h1>
         <div className="text-center">
-          <Date dateString={"2025-03-30"} />
+          <Date dateString={"2026-04-25"} />
         </div>
-        <h2>Introduction</h2>
+        <RestaurantTable data={data_2026} />
         <p>
-          This is my ranking of all the restaurants in Brisbane. I was inspired
-          by{" "}
+          This is my ranking of all the restaurants in Brisbane. I was initially
+          inspired by{" "}
           <Link
             href={
               "https://mattsayar.com/where-are-the-best-restaurants-in-my-city-a-statistical-analysis/"
@@ -65,10 +63,9 @@ export default function Page() {
           </Link>
           , to find a good place to eat. If you'd like to see more statistics
           and read some more about how I made this{" "}
-          <Link href={"/blog/brisbanes-best-restaurants-2025"}>click here</Link>
+          <Link href={"/blog/brisbanes-best-restaurants-2026"}>click here</Link>
           .
         </p>
-        <RestaurantTable data={data_2025} />
       </article>
     </>
   );
