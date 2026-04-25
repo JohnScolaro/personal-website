@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Date from "../../../../../components/date";
 import Link from "next/link";
-import RestaurantTable from "../components/RestaurantTable";
-import "leaflet/dist/leaflet.css";
+
+// 2025 still uses an old map because it was made before I standardised data collection.
+import RestaurantTable from "./RestaurantTable";
 import data_2025 from "../data/2025.json";
 
 export const metadata: Metadata = {

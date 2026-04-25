@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Date from "../../../../../components/date";
 import Link from "next/link";
 import RestaurantTable from "../components/RestaurantTable";
-import "leaflet/dist/leaflet.css";
 import data_2026 from "../data/2026.json";
 
 export const metadata: Metadata = {
@@ -33,12 +32,12 @@ export default function Page() {
           Brisbane's Best Restaurants 2026
         </h1>
         <div className="text-center">
-          <Date dateString={"2025-03-30"} />
+          <Date dateString={"2026-04-25"} />
         </div>
-        <h2>Introduction</h2>
+        <RestaurantTable data={data_2026} />
         <p>
-          This is my ranking of all the restaurants in Brisbane. I was inspired
-          by{" "}
+          This is my ranking of all the restaurants in Brisbane. I was initially
+          inspired by{" "}
           <Link
             href={
               "https://mattsayar.com/where-are-the-best-restaurants-in-my-city-a-statistical-analysis/"
@@ -67,7 +66,6 @@ export default function Page() {
           <Link href={"/blog/brisbanes-best-restaurants-2026"}>click here</Link>
           .
         </p>
-        <RestaurantTable data={data_2026} />
       </article>
     </>
   );

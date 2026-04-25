@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import RestaurantTable from "../../projects/brisbanes-best-restaurants/2025/RestaurantTable";
+import data_2025 from "../../projects/brisbanes-best-restaurants/data/2025.json";
 import Date from "../../../../components/date";
 import Image from "next/image";
 
@@ -265,7 +266,7 @@ export default function Page() {
         lower one. This is useful for searching for the funniest Google reviews.
         Here is the table in action:
       </p>
-      <RestaurantTable></RestaurantTable>
+      <RestaurantTable data={data_2025}></RestaurantTable>
       <p>
         There were a number of other things we looked at, and wished we could
         look at while playing with this data. Let's take a look at some of
