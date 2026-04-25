@@ -14,6 +14,8 @@ const CustomFilteredPlotlyChart = () => {
   // State for selected event and gender
   const [selectedEvent, setSelectedEvent] = useState<string>("Marathon");
   const [selectedGender, setSelectedGender] = useState<string>("Both");
+  const [tickvals, setTickvals] = useState<number[]>([]);
+  const [ticktext, setTicktext] = useState<string[]>([]);
 
   // State for the filtered data
   const [filteredData, setFilteredData] = useState<any[]>([]);
@@ -22,6 +24,16 @@ const CustomFilteredPlotlyChart = () => {
   const parseTime = (timeStr: string) => {
     const [hours, minutes, seconds] = timeStr.split(":").map(Number);
     return hours * 3600 + minutes * 60 + seconds;
+  };
+
+  const formatSeconds = (s: number) => {
+    const h = Math.floor(s / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    const sec = s % 60;
+
+    if (h > 0) return `${h}h ${m}m`;
+    if (m > 0) return `${m}m ${sec}s`;
+    return `${sec}s`;
   };
 
   // Filter data based on selected event and gender
@@ -45,6 +57,22 @@ const CustomFilteredPlotlyChart = () => {
         marker: { color: "blue" },
       },
     ];
+
+    const min = Math.min(...validTimes);
+    const max = Math.max(...validTimes);
+
+    const step = 600;
+
+    const tv: number[] = [];
+    const tt: string[] = [];
+
+    for (let v = min; v <= max; v += step) {
+      tv.push(v);
+      tt.push(formatSeconds(v));
+    }
+
+    setTickvals(tv);
+    setTicktext(tt);
 
     setFilteredData(plotData);
   }, [selectedEvent, selectedGender]);
@@ -83,14 +111,19 @@ const CustomFilteredPlotlyChart = () => {
         />
       </div>
 
-      <div className="w-full h-96">
+      <div className="w-full h-96 mb-8">
         <Plot
           data={filteredData}
           layout={{
             title: `${selectedEvent} - ${selectedGender}`,
-            xaxis: { title: "Finish Time (seconds)" },
+            xaxis: {
+              title: "Finish Time",
+              tickmode: "array",
+              tickvals,
+              ticktext,
+            },
             yaxis: { title: "Count" },
-            template: template,
+            template,
           }}
           config={{ responsive: true, displayModeBar: false }}
         />
