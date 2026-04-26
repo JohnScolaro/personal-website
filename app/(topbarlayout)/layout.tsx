@@ -5,17 +5,16 @@ import Link from "next/link";
 export default function Layout({ children }) {
   return (
     <>
-      <div className="flex border-b-2 border-gray-300 p-2 items-center">
-        <Link href={"/"} className="flex-shrink-0">
-          <Image
-            src="/icon.png"
-            alt="Website Logo"
-            height={48}
-            width={48}
-          ></Image>
+      <div className="flex w-full items-center border-b-2 border-gray-300 p-2 overflow-hidden">
+        <Link href="/" className="flex-shrink-0">
+          <Image src="/icon.png" alt="Website Logo" height={48} width={48} />
         </Link>
-        <BreadCrumbs></BreadCrumbs>
+
+        <div className="flex-1 min-w-0">
+          <BreadCrumbs />
+        </div>
       </div>
+
       {children}
     </>
   );

@@ -61,11 +61,26 @@ export default function Page() {
           >
             algorithm
           </Link>
-          , to find a good place to eat. If you'd like to see more statistics
-          and read some more about how I made this{" "}
-          <Link href={"/blog/brisbanes-best-restaurants-2026"}>click here</Link>
-          .
+          , to find a good place to eat. If you'd like to see more statistics,
+          check out some of my other blog posts in this saga:
         </p>
+        <ul className="list-disc pl-6 my-4 space-y-2">
+          <li>
+            <Link href={"/blog/brisbanes-best-restaurants-2026"}>
+              Brisbane's Best Restaurants - 2026
+            </Link>
+          </li>
+          <li>
+            <Link href={"/blog/brisbanes-best-restaurants-2025"}>
+              Brisbane's Best Restaurants - 2025
+            </Link>
+          </li>
+          <li>
+            <Link href={"/blog/google-places-api"}>
+              Google's Places API (new)
+            </Link>
+          </li>
+        </ul>
       </article>
     </>
   );
