@@ -5,6 +5,45 @@ import dynamic from "next/dynamic";
 
 const RestaurantMap = dynamic(() => import("./RestaurantMap"), { ssr: false });
 
+const BLACKLIST = new Set([
+  "restaurant",
+  "food",
+  "point_of_interest",
+  "establishment",
+  "meal_takeaway",
+  "store",
+  "food_store",
+  "fast_food_restaurant",
+  "service",
+  "food_delivery",
+  "meal_delivery",
+  "event_venue",
+  "manufacturer",
+  "confectionery",
+  "wholesaler",
+  "grocery_store",
+  "catering_service",
+  "association_or_organization",
+  "fusion_restaurant",
+  "gas_station",
+  "halal_restaurant",
+  "finance",
+  "snack_bar",
+  "convenience_store",
+  "wedding_venue",
+  "atm",
+  "supplier",
+  "supermarket",
+  "live_music_venue",
+  "lodging",
+  "beer_garden",
+  "liquor_store",
+  "diner",
+  "asian_fusion_restaurant",
+  "ice_cream_shop",
+  "sports_club",
+]);
+
 function wilsonScoreInterval(avgRating, numReviews, confidence, upper = false) {
   if (numReviews === 0) return 0;
   const p = avgRating / 5;
@@ -26,9 +65,35 @@ export default function RestaurantTable({ data }) {
   const [confidence, setConfidence] = useState(1.96);
   const [bestMode, setBestMode] = useState(true);
   const [showMap, setShowMap] = useState(false);
+  const [selectedType, setSelectedType] = useState("All");
+
+  const uniqueTypes = useMemo(() => {
+    if (!data) return ["All"];
+
+    const counts = {};
+
+    data.forEach((r) => {
+      if (r.types && Array.isArray(r.types)) {
+        r.types.forEach((t) => {
+          counts[t] = (counts[t] || 0) + 1;
+        });
+      }
+    });
+
+    const validTypes = Object.keys(counts).filter((type) => {
+      return !BLACKLIST.has(type) && counts[type] >= 25;
+    });
+
+    return ["All", ...validTypes.sort()];
+  }, [data]);
 
   const sortedRestaurants = useMemo(() => {
     let filtered = data || [];
+
+    if (selectedType !== "All") {
+      filtered = filtered.filter((r) => r.types?.includes(selectedType));
+    }
+
     const restaurantsWithScores = filtered.map((restaurant) => ({
       ...restaurant,
       wilson_score: wilsonScoreInterval(
@@ -65,7 +130,7 @@ export default function RestaurantTable({ data }) {
         .sort((a, b) => a.wilson_score - b.wilson_score)
         .slice(0, 25);
     }
-  }, [data, confidence, bestMode]);
+  }, [data, confidence, bestMode, selectedType]);
 
   const validRestaurantsForMap = useMemo(() => {
     return sortedRestaurants
@@ -82,12 +147,38 @@ export default function RestaurantTable({ data }) {
   }, [sortedRestaurants]);
 
   const truncateName = (name, maxLength = 35) =>
-    name.length > maxLength ? name.slice(0, maxLength) + "..." : name;
+    name
+      ? name.length > maxLength
+        ? name.slice(0, maxLength) + "..."
+        : name
+      : "Unknown";
+
+  const formatTypeName = (type) =>
+    type
+      .split("_")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
 
   return (
     <div className="max-w-7xl mx-auto p-4">
       <div className="my-4 space-y-2 bg-gray-200 rounded p-2">
-        {/* Restored your original Toggle Styles */}
+        <div className="flex flex-col gap-1 bg-gray-300 rounded p-2">
+          <label className="text-xs sm:text-sm text-gray-600">
+            Filter by Cuisine
+          </label>
+          <select
+            value={selectedType}
+            onChange={(e) => setSelectedType(e.target.value)}
+            className="w-full p-2 rounded border-gray-400 text-sm bg-white focus:ring-2 focus:ring-blue-500 outline-none"
+          >
+            {uniqueTypes.map((type) => (
+              <option key={type} value={type}>
+                {type === "All" ? "All" : formatTypeName(type)}
+              </option>
+            ))}
+          </select>
+        </div>
+
         <div className="flex items-center gap-2 bg-gray-300 rounded p-2">
           <span className="text-xs sm:text-sm text-gray-600">Best</span>
           <label className="inline-flex items-center cursor-pointer">
@@ -166,15 +257,17 @@ export default function RestaurantTable({ data }) {
                     href={restaurant.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
+                    className="text-blue-500 hover:underline font-medium"
                   >
                     {truncateName(restaurant.name)}
                   </a>
                 </td>
-                <td className="p-1 sm:p-2">{restaurant.rating.toFixed(1)}</td>
+                <td className="p-1 sm:p-2 font-mono">
+                  {restaurant.rating?.toFixed(1)}
+                </td>
                 <td className="p-1 sm:p-2">{restaurant.num_reviews}</td>
-                <td className="p-1 sm:p-2">
-                  {restaurant.normalized_wilson_score.toFixed(1)}
+                <td className="p-1 sm:p-2 font-semibold">
+                  {restaurant.normalized_wilson_score?.toFixed(1)}%
                 </td>
               </tr>
             ))}
