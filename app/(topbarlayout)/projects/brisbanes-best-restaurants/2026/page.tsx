@@ -66,8 +66,8 @@ export default function Page() {
         </p>
         <ul className="list-disc pl-6 my-4 space-y-2">
           <li>
-            <Link href={"/blog/brisbanes-best-restaurants-2026"}>
-              Brisbane's Best Restaurants - 2026
+            <Link href={"/blog/brisbane-restaurant-data-analysis-2026"}>
+              Brisbane Restaurant Data - 2026
             </Link>
           </li>
           <li>
