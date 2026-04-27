@@ -34,6 +34,7 @@ export default async function sitemap() {
 
   const customProjectRoutes = [
     "/projects/brisbanes-best-restaurants/2025",
+    "/projects/brisbanes-best-restaurants/2026",
     "/projects/so-you-think-you-know-brisbane",
     "/projects/uber-eats-visualiser"
   ];
